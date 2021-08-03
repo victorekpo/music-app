@@ -5,7 +5,7 @@
 //BEGIN CODE
 //define constants and variables
 const fs = require('fs');
-const csv = require('csv-parser');
+const csv = require('papaparse');
 const musicFile = 'MUSIC.JSON'
 const importFile='music-import.csv';
 var music, music2;
@@ -45,24 +45,30 @@ const updateAllSongs = (obj, newkey, newval) => {
  for (song in getSongs(obj)) {obj.songs[(getSongs(obj)[song])][newkey] = newval };
  return obj;
 }
-const bulkImportSongs = (inputCSV=importFile) => {
- fs.createReadStream(inputCSV)
- .pipe(csv())
- .on('data', function(data){
-     try {
-	data.BPM = parseInt(data.BPM, 10);
-	addMusic(data.artist, data.song, data.genre, data.BPM, data.speed, data.mood, data.tags)
-         //perform the operation
-     }
-     catch(err) {
-         //error handler
-     }
- })
- .on('end',function(){
-	console.log("All songs imported");
-	music;
-     //some final operation
- });
+const readCSV = async (filePath) => {
+  const csvFile = fs.readFileSync(filePath)
+  const csvData = csvFile.toString()
+  return new Promise(resolve => {
+    csv.parse(csvData, {
+      header: true,
+      skipEmptyLines: true,
+      transformHeader: header => header.trim(),
+      complete: results => {
+        console.log('Complete', results, 'records.');
+	music2 = results;
+	for (i in music2.data) {
+		let m = music2.data[i]
+		m.BPM = parseInt(m.BPM, 10);
+		console.log(m);
+		addMusic(m.artist, m.song, m.genre, m.BPM, m.speed, m.mood, m.tags)
+	};
+        resolve(results.data);
+      }
+    });
+  });
+};
+const bulkImportSongs = async () => {
+  let parsedData = await readCSV(importFile);
 }
 
 //MAIN 
