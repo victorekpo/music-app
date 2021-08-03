@@ -22,7 +22,8 @@ const writeMusic = () => {
  fs.writeFileSync(musicFile, dataNew);
  return music;
 }
-const addMusic = (artist, song, genre, BPM, speed, mood, tags) => {
+const addMusic = (obj) => {
+ const {artist, song, genre, BPM, speed, mood, tags} = obj;
  music.songs[artist+' - '+song]={};  
  music.songs[artist+' - '+song].artist=artist;
  music.songs[artist+' - '+song].song=song;
@@ -54,15 +55,15 @@ const readCSV = async (filePath) => {
       skipEmptyLines: true,
       transformHeader: header => header.trim(),
       complete: results => {
-        console.log('Complete', results, 'records.');
 	music2 = results;
 	for (i in music2.data) {
 		let m = music2.data[i]
 		m.BPM = parseInt(m.BPM, 10);
 		console.log(m);
-		addMusic(m.artist, m.song, m.genre, m.BPM, m.speed, m.mood, m.tags)
+		addMusic(m);
 	};
         resolve(results.data);
+	console.log('Complete', results.data.length, 'records.');
       }
     });
   });

@@ -1,0 +1,32 @@
+{
+  "name": "music-app",
+  "version": "1.0.0",
+  "description": "This app will be used to organize music for all uses.",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "music": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teknixco/music-app.git"
+  },
+  "keywords": [
+    "music",
+    "music",
+    "library",
+    "DJ",
+    "Algorithm",
+    "algorithm.v"
+  ],
+  "author": "Victor E.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teknixco/music-app/issues"
+  },
+  "homepage": "https://github.com/teknixco/music-app#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "papaparse": "^5.3.1"
+  }
+}
