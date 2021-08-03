@@ -29,3 +29,4 @@ const addMusic = (artist, song, genre, BPM, speed, mood) => {
  music.songs[artist+' - '+song].mood=mood;
  return music;
 }
+readMusic();
