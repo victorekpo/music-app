@@ -73,5 +73,3 @@ const bulkImportSongs = async () => {
 
 //MAIN 
 readMusic();
-//console.log(JSON.stringify(music));
-console.log(music);
