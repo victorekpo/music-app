@@ -5,24 +5,13 @@
 //BEGIN CODE
 //define constants and variables
 const fs = require('fs');
+const csv = require('csv-parser');
 const musicFile = 'MUSIC.JSON'
 const importFile='music-import.csv';
 var music, music2;
 //const { songs, ...musicList } = music
 
 //define functions
-const cloneObj = () => {
-// music2 = JSON.parse(JSON.stringify(music))
- music2 = Object.assign(music) //new method
-}
-const getSongs = (obj) => {
- allSongsArr = (obj) => Object.keys(obj.songs);
- return allSongsArr(obj);
-}
-const updateAllSongs = (obj, newkey, newval) => {
- for (song in getSongs(obj)) {obj.songs[(getSongs(obj)[song])][newkey] = newval };
- return obj;
-}
 const readMusic = () => {
  let rawdata = fs.readFileSync(musicFile);
  music = JSON.parse(rawdata);
@@ -43,7 +32,37 @@ const addMusic = (artist, song, genre, BPM, speed, mood) => {
  music.songs[artist+' - '+song].mood=mood;
  return music;
 }
+const cloneObj = () => {
+// music2 = JSON.parse(JSON.stringify(music))
+ music2 = Object.assign(music) //new method
+}
+const getSongs = (obj) => {
+ allSongsArr = (obj) => Object.keys(obj.songs);
+ return allSongsArr(obj);
+}
+const updateAllSongs = (obj, newkey, newval) => {
+ for (song in getSongs(obj)) {obj.songs[(getSongs(obj)[song])][newkey] = newval };
+ return obj;
+}
+const bulkImportSongs = (inputCSV=importFile) => {
+ fs.createReadStream(inputCSV)
+ .pipe(csv())
+ .on('data', function(data){
+     try {
+         console.log("Artist is: "+data.artist);
+         console.log("Song is: "+data.song);
+         //perform the operation
+     }
+     catch(err) {
+         //error handler
+     }
+ })
+ .on('end',function(){
+     //some final operation
+ });
+}
 
+//MAIN 
 readMusic();
 //console.log(JSON.stringify(music));
 console.log(music);
