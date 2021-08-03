@@ -22,7 +22,7 @@ const writeMusic = () => {
  fs.writeFileSync(musicFile, dataNew);
  return music;
 }
-const addMusic = (artist, song, genre, BPM, speed, mood) => {
+const addMusic = (artist, song, genre, BPM, speed, mood, tags) => {
  music.songs[artist+' - '+song]={};  
  music.songs[artist+' - '+song].artist=artist;
  music.songs[artist+' - '+song].song=song;
@@ -30,6 +30,7 @@ const addMusic = (artist, song, genre, BPM, speed, mood) => {
  music.songs[artist+' - '+song].BPM=BPM;
  music.songs[artist+' - '+song].speed=speed;
  music.songs[artist+' - '+song].mood=mood;
+ music.songs[artist+' - '+song].tags=tags;
  return music;
 }
 const cloneObj = () => {
@@ -49,8 +50,8 @@ const bulkImportSongs = (inputCSV=importFile) => {
  .pipe(csv())
  .on('data', function(data){
      try {
-         console.log("Artist is: "+data.artist);
-         console.log("Song is: "+data.song);
+	data.BPM = parseInt(data.BPM, 10);
+	addMusic(data.artist, data.song, data.genre, data.BPM, data.speed, data.mood, data.tags)
          //perform the operation
      }
      catch(err) {
@@ -58,6 +59,8 @@ const bulkImportSongs = (inputCSV=importFile) => {
      }
  })
  .on('end',function(){
+	console.log("All songs imported");
+	music;
      //some final operation
  });
 }
@@ -66,6 +69,3 @@ const bulkImportSongs = (inputCSV=importFile) => {
 readMusic();
 //console.log(JSON.stringify(music));
 console.log(music);
-
-
-
