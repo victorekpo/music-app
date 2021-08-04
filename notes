@@ -1,12 +1,10 @@
-Use yargs to pass arguments via commandline (if needed)
-Next steps include bulk import and creating react frontend
-User Input
-Creating a Menu
-Creating an API to access it
-Creating Front End to Display it
+#!/bin/bash
+#Use yargs to pass arguments via commandline (if needed)
+#Next steps include bulk import and creating react frontend
+#User Input
+#Creating a Menu
+#Creating an API to access it
+#Creating Front End to Display it
 
-
-
-Bash Functions
-searchArtist() { cat MUSIC.JSON | jq '.songs[] | select(.artist | contains("'$@'"))' ; }
-
+#Bash Functions
+searchMusic() { cat MUSIC.JSON | jq '.songs[] | select(.'$1' | contains("'${@:2}'"))' ; }
