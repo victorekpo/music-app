@@ -69,6 +69,8 @@ const readCSV = async (filePath) => {
   });
 };
 const bulkImportSongs = async () => {
+  music = {}; // clear the music object
+  music.songs = {}; // create songs object
   let parsedData = await readCSV(importFile);
 }
 
