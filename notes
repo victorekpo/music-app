@@ -4,3 +4,9 @@ User Input
 Creating a Menu
 Creating an API to access it
 Creating Front End to Display it
+
+
+
+Bash Functions
+searchArtist() { cat MUSIC.JSON | jq '.songs[] | select(.artist | contains("'$@'"))' ; }
+
