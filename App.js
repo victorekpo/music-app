@@ -46,6 +46,27 @@ const updateAllSongs = (obj, newkey, newval) => {
  for (song in getSongs(obj)) {obj.songs[(getSongs(obj)[song])][newkey] = newval };
  return obj;
 }
+const getProps = (data, method, func) => {
+  var songsInfo = [];
+  Object.keys(data).forEach(function(prop) {
+    songsInfo.push(data[prop]);
+    if (func === undefined) {
+    //check method for logs
+     if (method == 1) { console.log(data); }
+     else { for (p in data) { console.log(p) }; };
+    }
+    else { songInfo = data[prop]; func();}
+  });
+  //check method for return
+   if (method == 1) { return songsInfo; }
+   else { for (p in data) { return "All values listed"; }; };
+ /* Usage:
+ getProps(music.songs,1)   //view object
+ getProps(music.songs,0)   //view titles
+ func = () => {console.log(songInfo)}  // if you need a  function
+ getProps(music.songs,0,func)
+ */
+};
 const readCSV = async (filePath) => {
   const csvFile = fs.readFileSync(filePath)
   const csvData = csvFile.toString()
@@ -73,27 +94,7 @@ const bulkImportSongs = async () => {
   music.songs = {}; // create songs object
   let parsedData = await readCSV(importFile);
 };
-const getProps = (data, method, func) => {
-  var songsInfo = [];
-  Object.keys(data).forEach(function(prop) {
-    songsInfo.push(data[prop]);
-    if (func === undefined) {
-    //check method for logs
-     if (method == 1) { console.log(data); }
-     else { for (p in data) { console.log(p) }; };
-    }
-    else { songInfo = data[prop]; func();}
-  });
-  //check method for return
-   if (method == 1) { return songsInfo; }
-   else { for (p in data) { return "All values listed"; }; };
- /* Usage:
- getProps(music.songs,1)   //view object
- getProps(music.songs,0)   //view titles
- func = () => {console.log(songInfo)}  // if you need a  function
- getProps(music.songs,0,func)
- */
-};
+
 
 //MAIN 
 readMusic();
