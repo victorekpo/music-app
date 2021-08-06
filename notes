@@ -5,6 +5,9 @@
 #Creating a Menu
 #Creating an API to access it
 #Creating Front End to Display it
+#Need to add Album (.album) property
 
 #Bash Functions
 searchMusic() { cat MUSIC.JSON | jq '.songs[] | select(.'$1' | contains("'${@:2}'"))' ; }
+#also added filterSongs(value) function to search within nodeJS
+
