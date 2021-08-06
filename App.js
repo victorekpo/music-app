@@ -46,7 +46,7 @@ const readCSV = async (filePath) => {
 	music2 = results;
 	for (i in music2.data) {
 		let m = music2.data[i]
-		m.BPM = parseInt(m.BPM, 10);
+		//m.BPM = parseInt(m.BPM, 10);
 		console.log(m);
 		addMusic(m);
 	};
@@ -104,7 +104,7 @@ const filterSongs = (value) => {
              getParentAndGrandParent(getPath, obj[key], value);
              getPath.pop();
          } else {
-             if (obj[key] == value) {
+             if (obj[key].includes(value)) {
                  console.log(getPath.toString());
              };
          };
