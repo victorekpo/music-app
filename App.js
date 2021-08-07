@@ -108,7 +108,8 @@ const filterSongs = (value) => {
              getParentAndGrandParent(getPath, obj[key], value);
              getPath.pop();
          } else {
-             if (obj[key].includes(value)) {
+             let regex = new RegExp( value, 'i' );
+             if (obj[key].match(regex)) {
                  console.log(getPath.toString());
              };
          };
