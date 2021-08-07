@@ -3,14 +3,10 @@
 //Description: This app will be used to organize music for all uses.
 
 //BEGIN CODE
-//Title: Music Database 
-//Author: Victor E.
-//Description: This app will be used to organize music for all uses.
-
-//BEGIN CODE
 //define constants and variables
 const fs = require('fs');
 const csv = require('papaparse');
+const yargs = require('yargs');
 const musicFile = 'MUSIC.JSON'
 const importFile='music-import.csv';
 var music, music2;
@@ -122,6 +118,28 @@ const filterSongs = (value) => {
  return "#djAlgoriddim.V";
  /* Usage: filterSongs('any key's value') */
 };
+const argv = yargs
+    .command('read', 'Tells whether an year is leap year or not')
+    .command('filter', 'Tells whether an yasdfadear is leap year or not', {
+        all: {
+            description: 'the year to casdfheck for',
+            alias: 'all',
+            type: 'string',
+        }
+    })
+    .option('time', {
+        alias: 't',
+        description: 'Tell the present Time',
+        type: 'boolean',
+    })
+    .help()
+    .alias('help', 'h')
+    .argv;
 
 //MAIN 
-readMusic();
+if (argv._.includes('read')) {
+        readMusic();
+}
+if (argv._.includes('filter')) {
+        filterSongs(argv.all);
+}
