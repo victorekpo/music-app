@@ -138,8 +138,8 @@ const argv = yargs
 
 //MAIN 
 if (argv._.includes('read')) {
-        readMusic();
+       console.log("test"); readMusic();console.log(music);
 }
 if (argv._.includes('filter')) {
-        filterSongs(argv.all);
+        readMusic(); filterSongs(argv.all);console.log("#djAlgoriddim.V");
 }

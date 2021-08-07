@@ -12,14 +12,14 @@ dir=~/projects/music/music-app
 #Bash Aliases
 alias jsontocsv=". $dir/jsontocsv"
 alias syncMusictoGS="$dir/jsontocsv > $dir/MUSIC.CSV && php $dir/update-musicsheet.php"
-alias readMusic="node $dir/music-yargs.js read"
-alias writeMusic="node $dir/music-yargs.js write"
-alias bulkImport="node $dir/music-yargs.js bulkImport"
+alias readMusic="node $dir/App.js read"
+alias writeMusic="node $dir/App.js write"
+alias bulkImport="node $dir/App.js bulkImport"
 
 #Bash Functions
 searchMusic() { cat $dir/MUSIC.JSON | jq '.songs[] | select(.'$1' | contains("'${@:2}'"))' ; }
 #also added filterSongs(value) function to search within nodeJS
-filterSongs() { node $dir/music-yargs.js filter --all "`echo $@`"; }
+filterSongs() { node $dir/App.js filter --all "`echo $@`"; }
 
 #Steps to Sync App with Database (Google Sheets)
 #when adding from the command line
