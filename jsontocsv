@@ -1,0 +1,2 @@
+#!/bin/bash
+cat MUSIC.JSON | jq -r '.[] | [.artist, .song, .genre, .BPM, .speed, .mood, .tags] | @tsv' | sed "s/\t/,/g"
