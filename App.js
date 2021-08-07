@@ -4,11 +4,12 @@
 
 //BEGIN CODE
 //define constants and variables
+const dir = '~/projects/music/music-app'
 const fs = require('fs');
 const csv = require('papaparse');
 const yargs = require('yargs');
-const musicFile = 'MUSIC.JSON'
-const importFile='music-import.csv';
+const musicFile = dir + '/MUSIC.JSON"
+const importFile = dir + '/music-import.csv';
 var music, music2;
 //const { songs, ...musicList } = music
 
@@ -120,10 +121,10 @@ const filterSongs = (value) => {
  /* Usage: filterSongs('any key's value') */
 };
 const argv = yargs
-    .command('read', 'Tells whether an year is leap year or not')
-    .command('filter', 'Tells whether an yasdfadear is leap year or not', {
+    .command('read', 'View current songs')
+    .command('filter', 'Search for songs', {
         all: {
-            description: 'the year to casdfheck for',
+            description: 'Search by any attribute',
             alias: 'all',
             type: 'string',
         }
