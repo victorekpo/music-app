@@ -1,0 +1,15 @@
+commands for yargs
+read
+write
+bulkImport
+filter
+ --all <value>
+
+
+commands for bash
+readMusic
+writeMusic
+bulkImport
+jsontocsv
+syncMusictoGS
+filterSongs <value>
