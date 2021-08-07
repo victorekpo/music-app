@@ -1,2 +1,3 @@
 #!/bin/bash
-cat MUSIC.JSON | jq -r '.songs[] | [.artist, .song, .genre, .BPM, .speed, .mood, .tags] | @tsv' | sed "s/\t/,/g"
+dir=~/projects/music/music-app
+cat $dir/MUSIC.JSON | jq -r '.songs[] | [.artist, .song, .genre, .BPM, .speed, .mood, .tags] | @tsv' | sed "s/\t/,/g"
