@@ -11,3 +11,10 @@
 searchMusic() { cat MUSIC.JSON | jq '.songs[] | select(.'$1' | contains("'${@:2}'"))' ; }
 #also added filterSongs(value) function to search within nodeJS
 
+#Steps to Sync App with Database (Google Sheets)
+#when adding from the command line
+#download from google sheets as CSV
+#bulkImportSongs()
+#addMusic() 
+#writeMusic() this saves local copy
+#syncMusic() this uploads json to google sheets, this will require google sheets api integration
