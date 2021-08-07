@@ -4,12 +4,12 @@
 
 //BEGIN CODE
 //define constants and variables
-const dir = '~/projects/music/music-app'
+const dir = '/home/ubuntu/projects/music/music-app'
 const fs = require('fs');
 const csv = require('papaparse');
 const yargs = require('yargs');
-const musicFile = dir + '/MUSIC.JSON"
-const importFile = dir + '/music-import.csv';
+const musicFile = `${dir}/MUSIC.JSON`
+const importFile = `${dir}/music-import.csv`;
 var music, music2;
 //const { songs, ...musicList } = music
 

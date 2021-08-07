@@ -7,7 +7,7 @@
 #Creating Front End to Display it
 #Need to add Album (.album) property
 
-dir=~/projects/music/music-app
+dir=/home/ubuntu/projects/music/music-app
 
 #Bash Aliases
 alias jsontocsv=". $dir/jsontocsv"
