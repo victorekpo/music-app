@@ -67,7 +67,7 @@ $service = new Google_Service_Sheets($client);
 // Prints the names and majors of students in a sample spreadsheet:
 // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
 $spreadsheetId = '1IcBU5LJmLSmIQe1j0TpJnQKDcw8lnVzrbCXcy8BpoMQ';
-$range = 'Test!A2:Z';
+$range = 'Songs!A2:Z';
 $response = $service->spreadsheets_values->get($spreadsheetId, $range);
 $oldvalues = $response->getValues();
 
