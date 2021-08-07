@@ -3,6 +3,11 @@
 //Description: This app will be used to organize music for all uses.
 
 //BEGIN CODE
+//Title: Music Database 
+//Author: Victor E.
+//Description: This app will be used to organize music for all uses.
+
+//BEGIN CODE
 //define constants and variables
 const fs = require('fs');
 const csv = require('papaparse');
@@ -65,6 +70,9 @@ const cloneObj = () => {
 // music2 = JSON.parse(JSON.stringify(music))
  music2 = Object.assign(music) //new method
 }
+const objtoArrObj = (data) => {
+ return Object.values(data)
+}
 const getSongs = (obj) => {
  allSongsArr = (obj) => Object.keys(obj.songs);
  return allSongsArr(obj);
@@ -111,10 +119,9 @@ const filterSongs = (value) => {
      };
  };
  getParentAndGrandParent(getPath, obj, value);
- /* Usage: filterSongs('any key's value') */
  return "#djAlgoriddim.V";
+ /* Usage: filterSongs('any key's value') */
 };
-
 
 //MAIN 
 readMusic();
