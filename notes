@@ -15,9 +15,8 @@ alias syncMusic="$dir/jsontocsv > $dir/MUSIC.CSV && php $dir/update-musicsheet.p
 alias viewMusic="node $dir/App.js read"
 
 #Bash Functions
-searchMusic() { cat $dir/MUSIC.JSON | jq '.songs[] | select(.'$1' | contains("'${@:2}'"))' ; }
-#also added filterSongs(value) function to search within nodeJS
-filterSongs() { node $dir/App.js filter --all "`echo $@`"; }
+searchMusic() { cat $dir/MUSIC.JSON | jq '.songs[] | select(.'$1' | match("'${@:2}'";"i"))' ; }
+searchSongs() { node $dir/App.js filter --all "`echo $@`"; }
 
 #Steps to Sync App with Database (Google Sheets)
 #when adding from the command line
