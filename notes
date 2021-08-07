@@ -10,11 +10,9 @@
 dir=/home/ubuntu/projects/music/music-app
 
 #Bash Aliases
-alias jsontocsv=". $dir/jsontocsv"
-alias syncMusictoGS="$dir/jsontocsv > $dir/MUSIC.CSV && php $dir/update-musicsheet.php"
-alias readMusic="node $dir/App.js read"
-alias writeMusic="node $dir/App.js write"
-alias bulkImport="node $dir/App.js bulkImport"
+alias importMusic="node $dir/App.js bulkImport"
+alias syncMusic="$dir/jsontocsv > $dir/MUSIC.CSV && php $dir/update-musicsheet.php"
+alias viewMusic="node $dir/App.js read"
 
 #Bash Functions
 searchMusic() { cat $dir/MUSIC.JSON | jq '.songs[] | select(.'$1' | contains("'${@:2}'"))' ; }
