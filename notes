@@ -6,6 +6,7 @@
 #Creating an API to access it
 #Creating Front End to Display it
 #Need to add Album (.album) property
+#Need to add Quotes (.quotes) property
 
 dir=/home/ubuntu/projects/music/music-app
 
