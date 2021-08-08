@@ -9,7 +9,7 @@ const fs = require('fs');
 const csv = require('papaparse');
 const yargs = require('yargs');
 const musicFile = `${dir}/MUSIC.JSON`
-const importFile = `${dir}/music-import.csv`;
+const importFile = `${dir}/MUSIC.CSV`;
 var music, music2;
 //const { songs, ...musicList } = music
 
@@ -140,7 +140,7 @@ const argv = yargs
 
 //MAIN 
 if (argv._.includes('read')) {
-       console.log("test"); readMusic();console.log(music);
+        readMusic();console.log(music);
 }
 if (argv._.includes('filter')) {
         readMusic(); filterSongs(argv.all);console.log("#djAlgoriddim.V");
