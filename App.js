@@ -162,5 +162,5 @@ if (argv._.includes('read')) {
         readMusic();console.log(music);
 }
 if (argv._.includes('filter')) {
-        readMusic(); filterSongs(argv.all);console.log("#djAlgoriddim.V");
+        readMusic(); bulkImportSongs(); writeMusic(); filterSongs(argv.all);console.log("#djAlgoriddim.V");
 }
