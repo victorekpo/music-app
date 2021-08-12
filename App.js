@@ -38,7 +38,7 @@ const addMusic = (obj) => {
  music.songs[artist+' - '+song].quotes=quotes;
  return music;
 };
-const readCSV = async (filePath) => {
+const readCSV = async (filePath, mode) => {
   const csvFile = fs.readFileSync(filePath)
   const csvData = csvFile.toString()
   return new Promise(resolve => {
@@ -51,12 +51,12 @@ const readCSV = async (filePath) => {
 	for (i in music2.data) {
 		let m = music2.data[i]
 		//m.BPM = parseInt(m.BPM, 10);
-		console.log(m);
+		if (mode == 1) { console.log(m); }
 		addMusic(m);
 	};
         resolve(results.data);
-	console.log('Complete', results.data.length, 'records.');
-      }
+	if (mode == 1) { console.log('Complete', results.data.length, 'records.'); };
+      };
     });
   });
 };
@@ -77,10 +77,10 @@ const writeCSV = () => {
  var csvExport = csv.unparse({ fields, data });
  return csvExport;
 };
-const bulkImportSongs = async () => {
+const bulkImportSongs = async (mode) => {
   music = {}; // clear the music object
   music.songs = {}; // create songs object
-  let parsedData = await readCSV(importFile);
+  let parsedData = await readCSV(importFile, mode);
 };
 const cloneObj = () => {
 // music2 = JSON.parse(JSON.stringify(music))
@@ -141,6 +141,7 @@ const filterSongs = (value) => {
 };
 const argv = yargs
     .command('read', 'View current songs')
+    .command('import', 'Import songs from Google Sheets database')
     .command('filter', 'Search for songs', {
         all: {
             description: 'Search by any attribute',
@@ -159,8 +160,11 @@ const argv = yargs
 
 //MAIN 
 if (argv._.includes('read')) {
-        readMusic();console.log(music);
+        readMusic(); console.log(music);
+}
+if (argv._.includes('import')) {
+        bulkImportSongs(1); writeMusic(); console.log(music);
 }
 if (argv._.includes('filter')) {
-        readMusic(); bulkImportSongs(); writeMusic(); filterSongs(argv.all);console.log("#djAlgoriddim.V");
+        readMusic(); filterSongs(argv.all);console.log("#djAlgoriddim.V");
 }
