@@ -25,7 +25,7 @@ const writeMusic = () => {
  return music;
 };
 const addMusic = (obj) => {
- const {artist, song, genre, BPM, speed, mood, tags} = obj;
+ const {artist, song, album, genre, BPM, speed, mood, tags, quotes} = obj;
  music.songs[artist+' - '+song]={};  
  music.songs[artist+' - '+song].artist=artist;
  music.songs[artist+' - '+song].song=song;
