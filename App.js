@@ -56,7 +56,7 @@ const readCSV = async (filePath, mode) => {
 	};
         resolve(results.data);
 	if (mode == 1) { console.log('Complete', results.data.length, 'records.'); };
-      };
+      }
     });
   });
 };
