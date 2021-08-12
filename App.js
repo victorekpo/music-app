@@ -29,11 +29,13 @@ const addMusic = (obj) => {
  music.songs[artist+' - '+song]={};  
  music.songs[artist+' - '+song].artist=artist;
  music.songs[artist+' - '+song].song=song;
+ music.songs[artist+' - '+song].album=album;
  music.songs[artist+' - '+song].genre=genre;
  music.songs[artist+' - '+song].BPM=BPM;
  music.songs[artist+' - '+song].speed=speed;
  music.songs[artist+' - '+song].mood=mood;
  music.songs[artist+' - '+song].tags=tags;
+ music.songs[artist+' - '+song].quotes=quotes;
  return music;
 };
 const readCSV = async (filePath) => {
@@ -57,6 +59,23 @@ const readCSV = async (filePath) => {
       }
     });
   });
+};
+const writeCSV = () => {
+ var objects = objtoArrObj(music.songs)
+ var fields = ['artist', 'song', 'album', 'genre', 'BPM', 'speed', 'mood', 'tags', 'quotes'];
+ var data = objects.map(obj => [
+   obj.artist,
+   obj.song,
+   obj.album,
+   obj.genre,
+   obj.BPM,
+   obj.speed,
+   obj.mood,
+   obj.tags,
+   obj.quotes
+ ]);
+ var csvExport = csv.unparse({ fields, data });
+ return csvExport;
 };
 const bulkImportSongs = async () => {
   music = {}; // clear the music object
