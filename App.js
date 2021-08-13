@@ -14,6 +14,42 @@ var music, music2;
 //const { songs, ...musicList } = music
 
 //define functions
+const cloneObj = () => {
+// music2 = JSON.parse(JSON.stringify(music))
+ music2 = Object.assign(music) //new method
+}
+const objtoArrObj = (data) => {
+ return Object.values(data)
+}
+const getSongs = (obj) => {
+ allSongsArr = (obj) => Object.keys(obj.songs);
+ return allSongsArr(obj);
+}
+const updateAllSongs = (obj, newkey, newval) => {
+ for (song in getSongs(obj)) {obj.songs[(getSongs(obj)[song])][newkey] = newval };
+ return obj;
+}
+const getProps = (data, method, func) => {
+  var songsInfo = [];
+  Object.keys(data).forEach(function(prop) {
+    songsInfo.push(data[prop]);
+    if (func === undefined) {
+    //check method for logs
+     if (method == 1) { console.log(data); }
+     else { for (p in data) { console.log(p) }; };
+    }
+    else { songInfo = data[prop]; func();}
+  });
+  //check method for return
+  if (method == 1) { return songsInfo; }
+  else { return "All values listed"; };
+  /* Usage:
+  getProps(music.songs,1)   //view object
+  getProps(music.songs,0)   //view titles
+  func = () => {console.log(songInfo)}  // if you need a  function
+  getProps(music.songs,0,func)
+  */
+};
 const readMusic = () => {
  let rawdata = fs.readFileSync(musicFile);
  music = JSON.parse(rawdata);
@@ -81,42 +117,6 @@ const bulkImportSongs = async (mode) => {
   music = {}; // clear the music object
   music.songs = {}; // create songs object
   let parsedData = await readCSV(importFile, mode);
-};
-const cloneObj = () => {
-// music2 = JSON.parse(JSON.stringify(music))
- music2 = Object.assign(music) //new method
-}
-const objtoArrObj = (data) => {
- return Object.values(data)
-}
-const getSongs = (obj) => {
- allSongsArr = (obj) => Object.keys(obj.songs);
- return allSongsArr(obj);
-}
-const updateAllSongs = (obj, newkey, newval) => {
- for (song in getSongs(obj)) {obj.songs[(getSongs(obj)[song])][newkey] = newval };
- return obj;
-}
-const getProps = (data, method, func) => {
-  var songsInfo = [];
-  Object.keys(data).forEach(function(prop) {
-    songsInfo.push(data[prop]);
-    if (func === undefined) {
-    //check method for logs
-     if (method == 1) { console.log(data); }
-     else { for (p in data) { console.log(p) }; };
-    }
-    else { songInfo = data[prop]; func();}
-  });
-  //check method for return
-  if (method == 1) { return songsInfo; }
-  else { return "All values listed"; };
-  /* Usage:
-  getProps(music.songs,1)   //view object
-  getProps(music.songs,0)   //view titles
-  func = () => {console.log(songInfo)}  // if you need a  function
-  getProps(music.songs,0,func)
-  */
 };
 const filterSongs = (value) => {
  obj = music.songs; // set object
