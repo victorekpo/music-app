@@ -1558,7 +1558,7 @@
   speed: 'medium-fast',
   mood: '',
   tags: '',
-  quotes: '"Everything is nice, the party is banging"'
+  quotes: '"Everything is nice, the band is banging"; "The time is right, I see the money coming"'
 }
 {
   artist: 'Burna Boy',
@@ -3904,7 +3904,7 @@ Complete 213 records.
       speed: 'medium-fast',
       mood: '',
       tags: '',
-      quotes: '"Everything is nice, the party is banging"'
+      quotes: '"Everything is nice, the band is banging"; "The time is right, I see the money coming"'
     },
     'Burna Boy - Onyeka (Baby)': {
       artist: 'Burna Boy',
