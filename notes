@@ -16,7 +16,7 @@ alias syncMusic="$dir/jsontocsv > $dir/MUSIC.CSV && php $dir/update-musicsheet.p
 alias viewMusic="node $dir/App.js read"
 
 #Bash Functions
-searchMusic() { cat $dir/MUSIC.JSON | jq  --arg v "${@:2}" '.songs[] | select(.'$1' | match($v;"i"))' | tr -d \" | tr -d { | tr -d } | sed "s/artist://g" | sed "s/song://g" | sed "s/album://g" | sed "s/genre://g" | sed "s/BPM://g" | sed "s/speed://g" | sed "s/mood://g" | sed "s/tags://g" | sed "s/quotes://g" | sed "/ ,/d" | tr -d "," | sed 's/\\//g' ; echo "#djAlgoriddim.V"; }
+searchMusic() { cat $dir/MUSIC.JSON | jq  --arg v "${@:2}" '.songs[] | select(.'$1' | match($v;"i"))' | tr -d \" | tr -d { | tr -d } | sed "s/artist://g" | sed "s/song://g" | sed "s/album://g" | sed "s/genre://g" | sed "s/BPM://g" | sed "s/speed://g" | sed "s/mood://g" | sed "s/tags://g" | sed "s/quotes://g" | sed "/ ,/d" | tr -d "," | sed 's/\\//g' | sed "s/;/,/g" ; echo "#djAlgoriddim.V"; }
 searchSongs() { node $dir/App.js filter --all "`echo $@`"; }
 
 #Steps to Sync App with Database (Google Sheets)

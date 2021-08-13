@@ -65,6 +65,17 @@
   quotes: 'My beautiful baby oo.. as I love you I hope you love me too"'
 }
 {
+  artist: 'Brenda Fassie',
+  song: 'Vulindlela',
+  album: '',
+  genre: 'Africa Old School',
+  BPM: '105.96',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Burna Boy',
   song: '23',
   album: '',
@@ -131,6 +142,17 @@
   quotes: ''
 }
 {
+  artist: 'Burna Boy',
+  song: 'Onyeka (Baby)',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: '"I say my baby, my baby oo, osondi owendi oo"'
+}
+{
   artist: 'Chike',
   song: 'If You No Love',
   album: '',
@@ -175,6 +197,17 @@
   quotes: ''
 }
 {
+  artist: 'D-Black; Sarkodie; Singlet',
+  song: 'OMEGA',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '112.08',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: '"Jehovah is so great"; "Alpha is so great"; "Omega is so great"'
+}
+{
   artist: 'Dammy Krane',
   song: 'Shaku Shaku',
   album: '',
@@ -183,6 +216,17 @@
   speed: '',
   mood: '',
   tags: '',
+  quotes: ''
+}
+{
+  artist: 'Danny Lerman',
+  song: 'No Ordinary Love',
+  album: '',
+  genre: 'Smooth Jazz',
+  BPM: '111.52',
+  speed: '',
+  mood: '',
+  tags: 'instrumental',
   quotes: ''
 }
 {
@@ -417,6 +461,17 @@
   quotes: ''
 }
 {
+  artist: 'Davido; Reminisce',
+  song: 'Daddy',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '120.1',
+  speed: 'medium-fast',
+  mood: '',
+  tags: '',
+  quotes: '"Everything is nice, the band is banging"; "The time is right, I see the money coming"'
+}
+{
   artist: 'Davido; Uhuru',
   song: 'The Sound',
   album: '',
@@ -461,11 +516,132 @@
   quotes: ''
 }
 {
+  artist: 'DJ Spinall; Mr. Eazi',
+  song: 'Ohema',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '107.01',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'DMW',
   song: 'Prayer',
   album: '',
   genre: 'Naija Hip-Hop',
   BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'DMW; Davido; Mayorkun',
+  song: 'Prayer',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '119.93',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'DMW; Davido; Mayorkun; Dremo; Peruzzi',
+  song: 'Mind',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '114.26',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'DMW; Ichaba; Dremo; Mayorkun',
+  song: 'Back 2 Back',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '130.87',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Dr. Sid; Tiwa Savage',
+  song: 'Oyari',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '109.59',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Drake; Lykke Li',
+  song: 'Little Bit',
+  album: '',
+  genre: 'Hip-Hop',
+  BPM: '120.41',
+  speed: 'medium-fast',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Eazzy; Mr. Eazi',
+  song: 'Forever',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '99.07',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Eleance Jazz',
+  song: 'Ngalua Marthe',
+  album: 'Melodies of the Republic of Congo',
+  genre: 'Africa Highlife',
+  BPM: '129.72',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Eugy; Mr. Eazi',
+  song: 'Dance For Me',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '107.26',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Fela Kuti',
+  song: 'Water No Get Enemy',
+  album: '',
+  genre: 'Africa Old School',
+  BPM: '91.1',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Fela Kuti',
+  song: "Teacher Don't Teach Me Nonsense",
+  album: '',
+  genre: 'Africa Old School',
+  BPM: '108.65',
   speed: '',
   mood: '',
   tags: '',
@@ -670,6 +846,17 @@
   quotes: ''
 }
 {
+  artist: 'Fuse ODG; Wyclef Jean',
+  song: 'Antenna',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '128.08',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Gyptian',
   song: 'Hold Yuh',
   album: '',
@@ -686,6 +873,28 @@
   album: '',
   genre: 'Naija Hip-Hop',
   BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Harrysong',
+  song: 'Arabanko',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '134.08',
+  speed: 'fast',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Hezekiah Walker',
+  song: 'Every Praise',
+  album: '',
+  genre: 'Gospel',
+  BPM: '106.42',
   speed: '',
   mood: '',
   tags: '',
@@ -736,6 +945,39 @@
   quotes: ''
 }
 {
+  artist: 'Joepraize',
+  song: 'Miracle Papa',
+  album: '',
+  genre: 'Naija Gospel',
+  BPM: '130.01',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Jonathon Nelson',
+  song: 'I Believe (Island Medley)',
+  album: '',
+  genre: 'Gospel',
+  BPM: '101.93',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Kanye West',
+  song: "Can't Tell Me Nothing",
+  album: '',
+  genre: 'Hip-Hop',
+  BPM: '104.86',
+  speed: 'slow',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Kizz Daniel',
   song: 'Mama',
   album: '',
@@ -780,6 +1022,83 @@
   quotes: ''
 }
 {
+  artist: 'Lagbaja',
+  song: 'Konko Below',
+  album: '',
+  genre: 'Africa Old School',
+  BPM: '93.09',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Lagbaja',
+  song: 'Suru Lere',
+  album: '',
+  genre: 'Africa Old School',
+  BPM: '88.82',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Lara George',
+  song: 'Hallelujah',
+  album: '',
+  genre: 'Naija Gospel',
+  BPM: '119.92',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Lil Kesh',
+  song: 'Gbese',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '122.08',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Lil Kesh',
+  song: 'Ibile',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '124.88',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Lil Kesh',
+  song: 'No Fake Love',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '110.03',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Lil Kesh',
+  song: 'Shele Gan Gan',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '139.05',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Lil Kesh; Davido; Olamide',
   song: 'Shoki (remix)',
   album: '',
@@ -791,11 +1110,33 @@
   quotes: ''
 }
 {
+  artist: 'Lil Kesh; Patoranking',
+  song: 'Is It Because I Love You',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '125.02',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Logiq',
   song: 'Protection',
   album: '',
   genre: 'Naija Hip-Hop',
   BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'MAJOR',
+  song: 'Why I Love You',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '165.22',
   speed: '',
   mood: '',
   tags: '',
@@ -835,6 +1176,17 @@
   quotes: ''
 }
 {
+  artist: "Mavins; Don Jazzy; Reekado Banks; Di'ja; Korede Bello",
+  song: 'Adaobi',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '127.95',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Mayorkun',
   song: 'Mama',
   album: '',
@@ -851,6 +1203,72 @@
   album: '',
   genre: 'Naija Hip-Hop',
   BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mayorkun',
+  song: 'Che Che',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '106.83',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mayorkun',
+  song: 'Eleko',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '118.02',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mayorkun',
+  song: 'Mama',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '105.22',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mayorkun',
+  song: 'Sade',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '114',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mayorkun',
+  song: 'Yawa',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '126.51',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mayorkun; Mr. Eazi',
+  song: 'Love You Tire',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '108.95',
   speed: '',
   mood: '',
   tags: '',
@@ -884,6 +1302,138 @@
   album: '',
   genre: 'Naija Hip-Hop',
   BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi',
+  song: 'Feelings',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '92.02',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi',
+  song: 'Pour Me Water',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi',
+  song: 'Leg Over',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi',
+  song: 'Sample You',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '105.5',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi; DJ Cuppy',
+  song: 'Fight',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '113.05',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi; Efya',
+  song: 'Skin Tight',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '133.34',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi; Joey B',
+  song: 'Hollup',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '107.18',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi; Juls; Pappy',
+  song: 'Bankulize',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '131.73',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi; Mugeez',
+  song: 'Business',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '134.04',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi; Phyno; Olamide',
+  song: 'Life is Eazi',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '91.19',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi; Rita Ora; Wizkid',
+  song: 'Skin Tight (Remix)',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '133.05',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Mr. Eazi; Tekno; BkChatLDN; Odunsi; Temi; Eddie Kadie; Oyemykke',
+  song: 'Short Skirt',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '138.72',
   speed: '',
   mood: '',
   tags: '',
@@ -1011,7 +1561,18 @@
   quotes: ''
 }
 {
-  artist: 'Oreke',
+  artist: 'Omo Akin',
+  song: 'Borrow Borrow Make Me Shine',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '127.53',
+  speed: 'fast',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Oreke; Joeboy',
   song: 'E Kelly',
   album: '',
   genre: 'Naija Hip-Hop',
@@ -1022,7 +1583,7 @@
   quotes: ''
 }
 {
-  artist: 'P Square',
+  artist: 'P-Square',
   song: 'Bunieya Enu',
   album: '',
   genre: 'Naija Hip-Hop',
@@ -1033,7 +1594,7 @@
   quotes: ''
 }
 {
-  artist: 'P Square',
+  artist: 'P-Square',
   song: 'Do Me',
   album: '',
   genre: 'Naija Hip-Hop',
@@ -1044,7 +1605,7 @@
   quotes: ''
 }
 {
-  artist: 'P Square',
+  artist: 'P-Square',
   song: 'Testimony',
   album: '',
   genre: 'Naija Hip-Hop',
@@ -1110,11 +1671,33 @@
   quotes: ''
 }
 {
+  artist: 'Phyno; P-Square',
+  song: 'Financial Woman',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '108.95',
+  speed: 'slow-medium',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Reekado Banks',
   song: 'Like',
   album: '',
   genre: 'Naija Hip-Hop',
   BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Reekado Banks',
+  song: 'Chop Am',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '127.8',
   speed: '',
   mood: '',
   tags: '',
@@ -1231,6 +1814,17 @@
   quotes: ''
 }
 {
+  artist: 'Samsong; Chioma',
+  song: 'Jesus Odogwu',
+  album: '',
+  genre: 'Naija Gospel',
+  BPM: '95',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Selebobo; Davido',
   song: 'Waka Waka',
   album: '',
@@ -1253,11 +1847,33 @@
   quotes: ''
 }
 {
+  artist: 'Skales',
+  song: 'Shake Body',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '130.85',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Skiibii',
   song: 'Are You Vhere',
   album: '',
   genre: 'Naija Hip-Hop',
   BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'SOLLO7',
+  song: 'Still Marry You',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '143.86',
   speed: '',
   mood: '',
   tags: '',
@@ -1313,468 +1929,6 @@
   album: '',
   genre: 'Naija Hip-Hop',
   BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Timaya',
-  song: 'Balance',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Timaya',
-  song: 'Bang Bang',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Timaya',
-  song: 'Don Dada',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Timaya',
-  song: 'Kom Kom',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Timaya',
-  song: 'Sanko',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Timaya',
-  song: 'Telli Person',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Timaya; Davido',
-  song: 'Kekwanu',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Timaya; Don Jazzy',
-  song: 'I Concur',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Timi Dakola',
-  song: 'Amen',
-  album: '',
-  genre: 'Naija Gospel',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Tiwa Savage',
-  song: 'All Over',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Tiwa Savage',
-  song: 'Koroba',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Toyin Ores',
-  song: 'Feel the Same',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '115',
-  speed: 'medium',
-  mood: 'sensual',
-  tags: 'dance; sensual; tease',
-  quotes: ''
-}
-{
-  artist: 'Wale; Davido; Olamide',
-  song: 'Fine Girl',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Wizboyy',
-  song: 'Salambala',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Wizkid',
-  song: 'Celebrate',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Wizkid',
-  song: 'Essence',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Wizkid',
-  song: 'Joro',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Wizkid',
-  song: 'Ojuelegba',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Wizkid',
-  song: 'Pull Over',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Wizkid',
-  song: 'Soco',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Wizkid; Burna Boy',
-  song: 'Ginger',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Davido; Reminisce',
-  song: 'Daddy',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '120.1',
-  speed: 'medium-fast',
-  mood: '',
-  tags: '',
-  quotes: '"Everything is nice, the band is banging"; "The time is right, I see the money coming"'
-}
-{
-  artist: 'Burna Boy',
-  song: 'Onyeka (Baby)',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: '"I say my baby, my baby oo, osondi owendi oo"'
-}
-{
-  artist: 'Drake; Lykke Li',
-  song: 'Little Bit',
-  album: '',
-  genre: 'Hip-Hop',
-  BPM: '120.41',
-  speed: 'medium-fast',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Phyno; P-Square',
-  song: 'Financial Woman',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '108.95',
-  speed: 'slow-medium',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Kanye West',
-  song: "Can't Tell Me Nothing",
-  album: '',
-  genre: 'Hip-Hop',
-  BPM: '104.86',
-  speed: 'slow',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Omo Akin',
-  song: 'Borrow Borrow Make Me Shine',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '127.53',
-  speed: 'fast',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Danny Lerman',
-  song: 'No Ordinary Love',
-  album: '',
-  genre: 'Smooth Jazz',
-  BPM: '111.52',
-  speed: '',
-  mood: '',
-  tags: 'instrumental',
-  quotes: ''
-}
-{
-  artist: 'Fela Kuti',
-  song: 'Water No Get Enemy',
-  album: '',
-  genre: 'Naija Old School',
-  BPM: '91.1',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Fela Kuti',
-  song: "Teacher Don't Teach Me Nonsense",
-  album: '',
-  genre: 'Naija Old School',
-  BPM: '108.65',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Lara George',
-  song: 'Hallelujah',
-  album: '',
-  genre: 'Naija Gospel',
-  BPM: '119.92',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Harrysong',
-  song: 'Arabanko',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '134.08',
-  speed: 'fast',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Hezekiah Walker',
-  song: 'Every Praise',
-  album: '',
-  genre: 'Gospel',
-  BPM: '106.42',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Wizzboy; Ice Prince',
-  song: 'Jacuzzi',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '122.98',
-  speed: 'fast',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Jonathon Nelson',
-  song: 'I Believe (Island Medley)',
-  album: '',
-  genre: 'Gospel',
-  BPM: '101.93',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Lagbaja',
-  song: 'Konko Below',
-  album: '',
-  genre: 'Naija Old School',
-  BPM: '93.09',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Lagbaja',
-  song: 'Suru Lere',
-  album: '',
-  genre: 'Naija Old School',
-  BPM: '88.82',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'MAJOR',
-  song: 'Why I Love You',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '165.22',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Joepraize',
-  song: 'Miracle Papa',
-  album: '',
-  genre: 'Naija Gospel',
-  BPM: '130.01',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Samsong; Chioma',
-  song: 'Jesus Odogwu',
-  album: '',
-  genre: 'Naija Gospel',
-  BPM: '95',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'SOLLO7',
-  song: 'Still Marry You',
-  album: '',
-  genre: 'Naija Hip-Hop',
-  BPM: '143.86',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Travis Greene',
-  song: 'Intentional',
-  album: '',
-  genre: 'Gospel',
-  BPM: '76.02',
   speed: '',
   mood: '',
   tags: '',
@@ -1913,208 +2067,10 @@
   quotes: ''
 }
 {
-  artist: 'Eleance Jazz',
-  song: 'Ngalua Marthe',
-  album: 'Melodies of the Republic of Congo',
-  genre: 'Africa Highlife',
-  BPM: '129.72',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'DMW; Davido; Mayorkun',
-  song: 'Prayer',
+  artist: 'Timaya',
+  song: 'Balance',
   album: '',
-  genre: '',
-  BPM: '119.93',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'DMW; Ichaba; Dremo; Mayorkun',
-  song: 'Back 2 Back',
-  album: '',
-  genre: '',
-  BPM: '130.87',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'DMW; Davido; Mayorkun; Dremo; Peruzzi',
-  song: 'Mind',
-  album: '',
-  genre: '',
-  BPM: '114.26',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mayorkun',
-  song: 'Che Che',
-  album: '',
-  genre: '',
-  BPM: '106.83',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mayorkun',
-  song: 'Eleko',
-  album: '',
-  genre: '',
-  BPM: '118.02',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mayorkun',
-  song: 'Mama',
-  album: '',
-  genre: '',
-  BPM: '105.22',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mayorkun',
-  song: 'Sade',
-  album: '',
-  genre: '',
-  BPM: '114',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mayorkun',
-  song: 'Yawa',
-  album: '',
-  genre: '',
-  BPM: '126.51',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mayorkun; Mr. Eazi',
-  song: 'Love You Tire',
-  album: '',
-  genre: '',
-  BPM: '108.95',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mr. Eazi; Juls; Pappy',
-  song: 'Bankulize',
-  album: '',
-  genre: '',
-  BPM: '131.73',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'DJ Spinall; Mr. Eazi',
-  song: 'Ohema',
-  album: '',
-  genre: '',
-  BPM: '107.01',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Eazzy; Mr. Eazi',
-  song: 'Forever',
-  album: '',
-  genre: '',
-  BPM: '99.07',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Eugy; Mr. Eazi',
-  song: 'Dance For Me',
-  album: '',
-  genre: '',
-  BPM: '107.26',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mr. Eazi; Mugeez',
-  song: 'Business',
-  album: '',
-  genre: '',
-  BPM: '134.04',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mr. Eazi',
-  song: 'Feelings',
-  album: '',
-  genre: '',
-  BPM: '92.02',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mr. Eazi; DJ Cuppy',
-  song: 'Fight',
-  album: '',
-  genre: '',
-  BPM: '113.05',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mr. Eazi; Joey B',
-  song: 'Hollup',
-  album: '',
-  genre: '',
-  BPM: '107.18',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mr. Eazi',
-  song: 'Pour Me Water',
-  album: '',
-  genre: '',
+  genre: 'Naija Hip-Hop',
   BPM: '',
   speed: '',
   mood: '',
@@ -2122,32 +2078,10 @@
   quotes: ''
 }
 {
-  artist: 'Mr. Eazi; Tekno; BkChatLDN; Odunsi; Temi; Eddie Kadie; Oyemykke',
-  song: 'Short Skirt',
+  artist: 'Timaya',
+  song: 'Bang Bang',
   album: '',
-  genre: '',
-  BPM: '138.72',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mr. Eazi; Efya',
-  song: 'Skin Tight',
-  album: '',
-  genre: '',
-  BPM: '133.34',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Mr. Eazi',
-  song: 'Leg Over',
-  album: '',
-  genre: '',
+  genre: 'Naija Hip-Hop',
   BPM: '',
   speed: '',
   mood: '',
@@ -2155,55 +2089,99 @@
   quotes: ''
 }
 {
-  artist: 'Mr. Eazi',
-  song: 'Sample You',
+  artist: 'Timaya',
+  song: 'Don Dada',
   album: '',
-  genre: '',
-  BPM: '105.5',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
   speed: '',
   mood: '',
   tags: '',
   quotes: ''
 }
 {
-  artist: 'Mr. Eazi; Rita Ora; Wizkid',
-  song: 'Skin Tight (Remix)',
+  artist: 'Timaya',
+  song: 'Kom Kom',
   album: '',
-  genre: '',
-  BPM: '133.05',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
   speed: '',
   mood: '',
   tags: '',
   quotes: ''
 }
 {
-  artist: 'Mr. Eazi; Phyno; Olamide',
-  song: 'Life is Eazi',
+  artist: 'Timaya',
+  song: 'Sanko',
   album: '',
-  genre: '',
-  BPM: '91.19',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
   speed: '',
   mood: '',
   tags: '',
   quotes: ''
 }
 {
-  artist: 'Reekado Banks',
-  song: 'Chop Am',
+  artist: 'Timaya',
+  song: 'Telli Person',
   album: '',
-  genre: '',
-  BPM: '127.8',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
   speed: '',
   mood: '',
   tags: '',
   quotes: ''
 }
 {
-  artist: 'Skales',
-  song: 'Shake Body',
+  artist: 'Timaya; Davido',
+  song: 'Kekwanu',
   album: '',
-  genre: '',
-  BPM: '130.85',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Timaya; Don Jazzy',
+  song: 'I Concur',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Timi Dakola',
+  song: 'Amen',
+  album: '',
+  genre: 'Naija Gospel',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Tiwa Savage',
+  song: 'All Over',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Tiwa Savage',
+  song: 'Koroba',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
   speed: '',
   mood: '',
   tags: '',
@@ -2213,7 +2191,7 @@
   artist: 'Toofan',
   song: 'Gweta',
   album: '',
-  genre: '',
+  genre: 'Naija Hip-Hop',
   BPM: '134.86',
   speed: '',
   mood: '',
@@ -2221,88 +2199,22 @@
   quotes: ''
 }
 {
-  artist: 'Brenda Fassie',
-  song: 'Vulindlela',
+  artist: 'Toyin Ores',
+  song: 'Feel the Same',
   album: '',
-  genre: '',
-  BPM: '105.96',
-  speed: '',
-  mood: '',
-  tags: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '115',
+  speed: 'medium',
+  mood: 'sensual',
+  tags: 'dance; sensual; tease',
   quotes: ''
 }
 {
-  artist: 'Fuse ODG; Wyclef Jean',
-  song: 'Antenna',
+  artist: 'Travis Greene',
+  song: 'Intentional',
   album: '',
-  genre: '',
-  BPM: '128.08',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: "Mavins; Don Jazzy; Reekado Banks; Di'ja; Korede Bello",
-  song: 'Adaobi',
-  album: '',
-  genre: '',
-  BPM: '127.95',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Lil Kesh',
-  song: 'Gbese',
-  album: '',
-  genre: '',
-  BPM: '122.08',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Lil Kesh',
-  song: 'Ibile',
-  album: '',
-  genre: '',
-  BPM: '124.88',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Lil Kesh; Patoranking',
-  song: 'Is It Because I Love You',
-  album: '',
-  genre: '',
-  BPM: '125.02',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Lil Kesh',
-  song: 'No Fake Love',
-  album: '',
-  genre: '',
-  BPM: '110.03',
-  speed: '',
-  mood: '',
-  tags: '',
-  quotes: ''
-}
-{
-  artist: 'Lil Kesh',
-  song: 'Shele Gan Gan',
-  album: '',
-  genre: '',
-  BPM: '139.05',
+  genre: 'Gospel',
+  BPM: '76.02',
   speed: '',
   mood: '',
   tags: '',
@@ -2312,7 +2224,7 @@
   artist: 'Viktoh; Lil Kesh',
   song: 'Skibi Dat',
   album: '',
-  genre: '',
+  genre: 'Naija Hip-Hop',
   BPM: '110.95',
   speed: '',
   mood: '',
@@ -2320,26 +2232,114 @@
   quotes: ''
 }
 {
-  artist: 'Dr. Sid; Tiwa Savage',
-  song: 'Oyari',
+  artist: 'Wale; Davido; Olamide',
+  song: 'Fine Girl',
   album: '',
-  genre: '',
-  BPM: '109.59',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
   speed: '',
   mood: '',
   tags: '',
   quotes: ''
 }
 {
-  artist: 'D-Black; Sarkodie; Singlet',
-  song: 'OMEGA',
+  artist: 'Wizboyy',
+  song: 'Salambala',
   album: '',
-  genre: '',
-  BPM: '112.08',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
   speed: '',
   mood: '',
   tags: '',
-  quotes: '"Jehovah is so great"; "Alpha is so great"; "Omega is so great"'
+  quotes: ''
+}
+{
+  artist: 'Wizkid',
+  song: 'Celebrate',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Wizkid',
+  song: 'Essence',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Wizkid',
+  song: 'Joro',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Wizkid',
+  song: 'Ojuelegba',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Wizkid',
+  song: 'Pull Over',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Wizkid',
+  song: 'Soco',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Wizkid; Burna Boy',
+  song: 'Ginger',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Wizzboy; Ice Prince',
+  song: 'Jacuzzi',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '122.98',
+  speed: 'fast',
+  mood: '',
+  tags: '',
+  quotes: ''
 }
 Complete 213 records.
 {
@@ -2410,6 +2410,17 @@ Complete 213 records.
       tags: '',
       quotes: 'My beautiful baby oo.. as I love you I hope you love me too"'
     },
+    'Brenda Fassie - Vulindlela': {
+      artist: 'Brenda Fassie',
+      song: 'Vulindlela',
+      album: '',
+      genre: 'Africa Old School',
+      BPM: '105.96',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Burna Boy - 23': {
       artist: 'Burna Boy',
       song: '23',
@@ -2476,6 +2487,17 @@ Complete 213 records.
       tags: 'intro',
       quotes: ''
     },
+    'Burna Boy - Onyeka (Baby)': {
+      artist: 'Burna Boy',
+      song: 'Onyeka (Baby)',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: '"I say my baby, my baby oo, osondi owendi oo"'
+    },
     'Chike - If You No Love': {
       artist: 'Chike',
       song: 'If You No Love',
@@ -2520,6 +2542,17 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'D-Black; Sarkodie; Singlet - OMEGA': {
+      artist: 'D-Black; Sarkodie; Singlet',
+      song: 'OMEGA',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '112.08',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: '"Jehovah is so great"; "Alpha is so great"; "Omega is so great"'
+    },
     'Dammy Krane - Shaku Shaku': {
       artist: 'Dammy Krane',
       song: 'Shaku Shaku',
@@ -2529,6 +2562,17 @@ Complete 213 records.
       speed: '',
       mood: '',
       tags: '',
+      quotes: ''
+    },
+    'Danny Lerman - No Ordinary Love': {
+      artist: 'Danny Lerman',
+      song: 'No Ordinary Love',
+      album: '',
+      genre: 'Smooth Jazz',
+      BPM: '111.52',
+      speed: '',
+      mood: '',
+      tags: 'instrumental',
       quotes: ''
     },
     'Davido - Aye': {
@@ -2762,6 +2806,17 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Davido; Reminisce - Daddy': {
+      artist: 'Davido; Reminisce',
+      song: 'Daddy',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '120.1',
+      speed: 'medium-fast',
+      mood: '',
+      tags: '',
+      quotes: '"Everything is nice, the band is banging"; "The time is right, I see the money coming"'
+    },
     'Davido; Uhuru - The Sound': {
       artist: 'Davido; Uhuru',
       song: 'The Sound',
@@ -2806,12 +2861,133 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'DJ Spinall; Mr. Eazi - Ohema': {
+      artist: 'DJ Spinall; Mr. Eazi',
+      song: 'Ohema',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '107.01',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'DMW - Prayer': {
       artist: 'DMW',
       song: 'Prayer',
       album: '',
       genre: 'Naija Hip-Hop',
       BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'DMW; Davido; Mayorkun - Prayer': {
+      artist: 'DMW; Davido; Mayorkun',
+      song: 'Prayer',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '119.93',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'DMW; Davido; Mayorkun; Dremo; Peruzzi - Mind': {
+      artist: 'DMW; Davido; Mayorkun; Dremo; Peruzzi',
+      song: 'Mind',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '114.26',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'DMW; Ichaba; Dremo; Mayorkun - Back 2 Back': {
+      artist: 'DMW; Ichaba; Dremo; Mayorkun',
+      song: 'Back 2 Back',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '130.87',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Dr. Sid; Tiwa Savage - Oyari': {
+      artist: 'Dr. Sid; Tiwa Savage',
+      song: 'Oyari',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '109.59',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Drake; Lykke Li - Little Bit': {
+      artist: 'Drake; Lykke Li',
+      song: 'Little Bit',
+      album: '',
+      genre: 'Hip-Hop',
+      BPM: '120.41',
+      speed: 'medium-fast',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Eazzy; Mr. Eazi - Forever': {
+      artist: 'Eazzy; Mr. Eazi',
+      song: 'Forever',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '99.07',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Eleance Jazz - Ngalua Marthe': {
+      artist: 'Eleance Jazz',
+      song: 'Ngalua Marthe',
+      album: 'Melodies of the Republic of Congo',
+      genre: 'Africa Highlife',
+      BPM: '129.72',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Eugy; Mr. Eazi - Dance For Me': {
+      artist: 'Eugy; Mr. Eazi',
+      song: 'Dance For Me',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '107.26',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Fela Kuti - Water No Get Enemy': {
+      artist: 'Fela Kuti',
+      song: 'Water No Get Enemy',
+      album: '',
+      genre: 'Africa Old School',
+      BPM: '91.1',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    "Fela Kuti - Teacher Don't Teach Me Nonsense": {
+      artist: 'Fela Kuti',
+      song: "Teacher Don't Teach Me Nonsense",
+      album: '',
+      genre: 'Africa Old School',
+      BPM: '108.65',
       speed: '',
       mood: '',
       tags: '',
@@ -3015,6 +3191,17 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Fuse ODG; Wyclef Jean - Antenna': {
+      artist: 'Fuse ODG; Wyclef Jean',
+      song: 'Antenna',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '128.08',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Gyptian - Hold Yuh': {
       artist: 'Gyptian',
       song: 'Hold Yuh',
@@ -3032,6 +3219,28 @@ Complete 213 records.
       album: '',
       genre: 'Naija Hip-Hop',
       BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Harrysong - Arabanko': {
+      artist: 'Harrysong',
+      song: 'Arabanko',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '134.08',
+      speed: 'fast',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Hezekiah Walker - Every Praise': {
+      artist: 'Hezekiah Walker',
+      song: 'Every Praise',
+      album: '',
+      genre: 'Gospel',
+      BPM: '106.42',
       speed: '',
       mood: '',
       tags: '',
@@ -3081,6 +3290,39 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Joepraize - Miracle Papa': {
+      artist: 'Joepraize',
+      song: 'Miracle Papa',
+      album: '',
+      genre: 'Naija Gospel',
+      BPM: '130.01',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Jonathon Nelson - I Believe (Island Medley)': {
+      artist: 'Jonathon Nelson',
+      song: 'I Believe (Island Medley)',
+      album: '',
+      genre: 'Gospel',
+      BPM: '101.93',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    "Kanye West - Can't Tell Me Nothing": {
+      artist: 'Kanye West',
+      song: "Can't Tell Me Nothing",
+      album: '',
+      genre: 'Hip-Hop',
+      BPM: '104.86',
+      speed: 'slow',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Kizz Daniel - Mama': {
       artist: 'Kizz Daniel',
       song: 'Mama',
@@ -3125,6 +3367,83 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Lagbaja - Konko Below': {
+      artist: 'Lagbaja',
+      song: 'Konko Below',
+      album: '',
+      genre: 'Africa Old School',
+      BPM: '93.09',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Lagbaja - Suru Lere': {
+      artist: 'Lagbaja',
+      song: 'Suru Lere',
+      album: '',
+      genre: 'Africa Old School',
+      BPM: '88.82',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Lara George - Hallelujah': {
+      artist: 'Lara George',
+      song: 'Hallelujah',
+      album: '',
+      genre: 'Naija Gospel',
+      BPM: '119.92',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Lil Kesh - Gbese': {
+      artist: 'Lil Kesh',
+      song: 'Gbese',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '122.08',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Lil Kesh - Ibile': {
+      artist: 'Lil Kesh',
+      song: 'Ibile',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '124.88',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Lil Kesh - No Fake Love': {
+      artist: 'Lil Kesh',
+      song: 'No Fake Love',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '110.03',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Lil Kesh - Shele Gan Gan': {
+      artist: 'Lil Kesh',
+      song: 'Shele Gan Gan',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '139.05',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Lil Kesh; Davido; Olamide - Shoki (remix)': {
       artist: 'Lil Kesh; Davido; Olamide',
       song: 'Shoki (remix)',
@@ -3136,12 +3455,34 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Lil Kesh; Patoranking - Is It Because I Love You': {
+      artist: 'Lil Kesh; Patoranking',
+      song: 'Is It Because I Love You',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '125.02',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Logiq - Protection': {
       artist: 'Logiq',
       song: 'Protection',
       album: '',
       genre: 'Naija Hip-Hop',
       BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'MAJOR - Why I Love You': {
+      artist: 'MAJOR',
+      song: 'Why I Love You',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '165.22',
       speed: '',
       mood: '',
       tags: '',
@@ -3180,11 +3521,22 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    "Mavins; Don Jazzy; Reekado Banks; Di'ja; Korede Bello - Adaobi": {
+      artist: "Mavins; Don Jazzy; Reekado Banks; Di'ja; Korede Bello",
+      song: 'Adaobi',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '127.95',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Mayorkun - Mama': {
       artist: 'Mayorkun',
       song: 'Mama',
       album: '',
-      genre: '',
+      genre: 'Naija Hip-Hop',
       BPM: '105.22',
       speed: '',
       mood: '',
@@ -3197,6 +3549,61 @@ Complete 213 records.
       album: '',
       genre: 'Naija Hip-Hop',
       BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mayorkun - Che Che': {
+      artist: 'Mayorkun',
+      song: 'Che Che',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '106.83',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mayorkun - Eleko': {
+      artist: 'Mayorkun',
+      song: 'Eleko',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '118.02',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mayorkun - Sade': {
+      artist: 'Mayorkun',
+      song: 'Sade',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '114',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mayorkun - Yawa': {
+      artist: 'Mayorkun',
+      song: 'Yawa',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '126.51',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mayorkun; Mr. Eazi - Love You Tire': {
+      artist: 'Mayorkun; Mr. Eazi',
+      song: 'Love You Tire',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '108.95',
       speed: '',
       mood: '',
       tags: '',
@@ -3230,6 +3637,138 @@ Complete 213 records.
       album: '',
       genre: 'Naija Hip-Hop',
       BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi - Feelings': {
+      artist: 'Mr. Eazi',
+      song: 'Feelings',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '92.02',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi - Pour Me Water': {
+      artist: 'Mr. Eazi',
+      song: 'Pour Me Water',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi - Leg Over': {
+      artist: 'Mr. Eazi',
+      song: 'Leg Over',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi - Sample You': {
+      artist: 'Mr. Eazi',
+      song: 'Sample You',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '105.5',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi; DJ Cuppy - Fight': {
+      artist: 'Mr. Eazi; DJ Cuppy',
+      song: 'Fight',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '113.05',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi; Efya - Skin Tight': {
+      artist: 'Mr. Eazi; Efya',
+      song: 'Skin Tight',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '133.34',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi; Joey B - Hollup': {
+      artist: 'Mr. Eazi; Joey B',
+      song: 'Hollup',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '107.18',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi; Juls; Pappy - Bankulize': {
+      artist: 'Mr. Eazi; Juls; Pappy',
+      song: 'Bankulize',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '131.73',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi; Mugeez - Business': {
+      artist: 'Mr. Eazi; Mugeez',
+      song: 'Business',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '134.04',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi; Phyno; Olamide - Life is Eazi': {
+      artist: 'Mr. Eazi; Phyno; Olamide',
+      song: 'Life is Eazi',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '91.19',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi; Rita Ora; Wizkid - Skin Tight (Remix)': {
+      artist: 'Mr. Eazi; Rita Ora; Wizkid',
+      song: 'Skin Tight (Remix)',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '133.05',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Mr. Eazi; Tekno; BkChatLDN; Odunsi; Temi; Eddie Kadie; Oyemykke - Short Skirt': {
+      artist: 'Mr. Eazi; Tekno; BkChatLDN; Odunsi; Temi; Eddie Kadie; Oyemykke',
+      song: 'Short Skirt',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '138.72',
       speed: '',
       mood: '',
       tags: '',
@@ -3356,8 +3895,19 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
-    'Oreke - E Kelly': {
-      artist: 'Oreke',
+    'Omo Akin - Borrow Borrow Make Me Shine': {
+      artist: 'Omo Akin',
+      song: 'Borrow Borrow Make Me Shine',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '127.53',
+      speed: 'fast',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Oreke; Joeboy - E Kelly': {
+      artist: 'Oreke; Joeboy',
       song: 'E Kelly',
       album: '',
       genre: 'Naija Hip-Hop',
@@ -3367,8 +3917,8 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
-    'P Square - Bunieya Enu': {
-      artist: 'P Square',
+    'P-Square - Bunieya Enu': {
+      artist: 'P-Square',
       song: 'Bunieya Enu',
       album: '',
       genre: 'Naija Hip-Hop',
@@ -3378,8 +3928,8 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
-    'P Square - Do Me': {
-      artist: 'P Square',
+    'P-Square - Do Me': {
+      artist: 'P-Square',
       song: 'Do Me',
       album: '',
       genre: 'Naija Hip-Hop',
@@ -3389,8 +3939,8 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
-    'P Square - Testimony': {
-      artist: 'P Square',
+    'P-Square - Testimony': {
+      artist: 'P-Square',
       song: 'Testimony',
       album: '',
       genre: 'Naija Hip-Hop',
@@ -3455,12 +4005,34 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Phyno; P-Square - Financial Woman': {
+      artist: 'Phyno; P-Square',
+      song: 'Financial Woman',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '108.95',
+      speed: 'slow-medium',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Reekado Banks - Like': {
       artist: 'Reekado Banks',
       song: 'Like',
       album: '',
       genre: 'Naija Hip-Hop',
       BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Reekado Banks - Chop Am': {
+      artist: 'Reekado Banks',
+      song: 'Chop Am',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '127.8',
       speed: '',
       mood: '',
       tags: '',
@@ -3576,6 +4148,17 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Samsong; Chioma - Jesus Odogwu': {
+      artist: 'Samsong; Chioma',
+      song: 'Jesus Odogwu',
+      album: '',
+      genre: 'Naija Gospel',
+      BPM: '95',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Selebobo; Davido - Waka Waka': {
       artist: 'Selebobo; Davido',
       song: 'Waka Waka',
@@ -3598,12 +4181,34 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Skales - Shake Body': {
+      artist: 'Skales',
+      song: 'Shake Body',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '130.85',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Skiibii - Are You Vhere': {
       artist: 'Skiibii',
       song: 'Are You Vhere',
       album: '',
       genre: 'Naija Hip-Hop',
       BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'SOLLO7 - Still Marry You': {
+      artist: 'SOLLO7',
+      song: 'Still Marry You',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '143.86',
       speed: '',
       mood: '',
       tags: '',
@@ -3659,468 +4264,6 @@ Complete 213 records.
       album: '',
       genre: 'Naija Hip-Hop',
       BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Timaya - Balance': {
-      artist: 'Timaya',
-      song: 'Balance',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Timaya - Bang Bang': {
-      artist: 'Timaya',
-      song: 'Bang Bang',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Timaya - Don Dada': {
-      artist: 'Timaya',
-      song: 'Don Dada',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Timaya - Kom Kom': {
-      artist: 'Timaya',
-      song: 'Kom Kom',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Timaya - Sanko': {
-      artist: 'Timaya',
-      song: 'Sanko',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Timaya - Telli Person': {
-      artist: 'Timaya',
-      song: 'Telli Person',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Timaya; Davido - Kekwanu': {
-      artist: 'Timaya; Davido',
-      song: 'Kekwanu',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Timaya; Don Jazzy - I Concur': {
-      artist: 'Timaya; Don Jazzy',
-      song: 'I Concur',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Timi Dakola - Amen': {
-      artist: 'Timi Dakola',
-      song: 'Amen',
-      album: '',
-      genre: 'Naija Gospel',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Tiwa Savage - All Over': {
-      artist: 'Tiwa Savage',
-      song: 'All Over',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Tiwa Savage - Koroba': {
-      artist: 'Tiwa Savage',
-      song: 'Koroba',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Toyin Ores - Feel the Same': {
-      artist: 'Toyin Ores',
-      song: 'Feel the Same',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '115',
-      speed: 'medium',
-      mood: 'sensual',
-      tags: 'dance; sensual; tease',
-      quotes: ''
-    },
-    'Wale; Davido; Olamide - Fine Girl': {
-      artist: 'Wale; Davido; Olamide',
-      song: 'Fine Girl',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Wizboyy - Salambala': {
-      artist: 'Wizboyy',
-      song: 'Salambala',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Wizkid - Celebrate': {
-      artist: 'Wizkid',
-      song: 'Celebrate',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Wizkid - Essence': {
-      artist: 'Wizkid',
-      song: 'Essence',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Wizkid - Joro': {
-      artist: 'Wizkid',
-      song: 'Joro',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Wizkid - Ojuelegba': {
-      artist: 'Wizkid',
-      song: 'Ojuelegba',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Wizkid - Pull Over': {
-      artist: 'Wizkid',
-      song: 'Pull Over',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Wizkid - Soco': {
-      artist: 'Wizkid',
-      song: 'Soco',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Wizkid; Burna Boy - Ginger': {
-      artist: 'Wizkid; Burna Boy',
-      song: 'Ginger',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Davido; Reminisce - Daddy': {
-      artist: 'Davido; Reminisce',
-      song: 'Daddy',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '120.1',
-      speed: 'medium-fast',
-      mood: '',
-      tags: '',
-      quotes: '"Everything is nice, the band is banging"; "The time is right, I see the money coming"'
-    },
-    'Burna Boy - Onyeka (Baby)': {
-      artist: 'Burna Boy',
-      song: 'Onyeka (Baby)',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: '"I say my baby, my baby oo, osondi owendi oo"'
-    },
-    'Drake; Lykke Li - Little Bit': {
-      artist: 'Drake; Lykke Li',
-      song: 'Little Bit',
-      album: '',
-      genre: 'Hip-Hop',
-      BPM: '120.41',
-      speed: 'medium-fast',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Phyno; P-Square - Financial Woman': {
-      artist: 'Phyno; P-Square',
-      song: 'Financial Woman',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '108.95',
-      speed: 'slow-medium',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    "Kanye West - Can't Tell Me Nothing": {
-      artist: 'Kanye West',
-      song: "Can't Tell Me Nothing",
-      album: '',
-      genre: 'Hip-Hop',
-      BPM: '104.86',
-      speed: 'slow',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Omo Akin - Borrow Borrow Make Me Shine': {
-      artist: 'Omo Akin',
-      song: 'Borrow Borrow Make Me Shine',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '127.53',
-      speed: 'fast',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Danny Lerman - No Ordinary Love': {
-      artist: 'Danny Lerman',
-      song: 'No Ordinary Love',
-      album: '',
-      genre: 'Smooth Jazz',
-      BPM: '111.52',
-      speed: '',
-      mood: '',
-      tags: 'instrumental',
-      quotes: ''
-    },
-    'Fela Kuti - Water No Get Enemy': {
-      artist: 'Fela Kuti',
-      song: 'Water No Get Enemy',
-      album: '',
-      genre: 'Naija Old School',
-      BPM: '91.1',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    "Fela Kuti - Teacher Don't Teach Me Nonsense": {
-      artist: 'Fela Kuti',
-      song: "Teacher Don't Teach Me Nonsense",
-      album: '',
-      genre: 'Naija Old School',
-      BPM: '108.65',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Lara George - Hallelujah': {
-      artist: 'Lara George',
-      song: 'Hallelujah',
-      album: '',
-      genre: 'Naija Gospel',
-      BPM: '119.92',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Harrysong - Arabanko': {
-      artist: 'Harrysong',
-      song: 'Arabanko',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '134.08',
-      speed: 'fast',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Hezekiah Walker - Every Praise': {
-      artist: 'Hezekiah Walker',
-      song: 'Every Praise',
-      album: '',
-      genre: 'Gospel',
-      BPM: '106.42',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Wizzboy; Ice Prince - Jacuzzi': {
-      artist: 'Wizzboy; Ice Prince',
-      song: 'Jacuzzi',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '122.98',
-      speed: 'fast',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Jonathon Nelson - I Believe (Island Medley)': {
-      artist: 'Jonathon Nelson',
-      song: 'I Believe (Island Medley)',
-      album: '',
-      genre: 'Gospel',
-      BPM: '101.93',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Lagbaja - Konko Below': {
-      artist: 'Lagbaja',
-      song: 'Konko Below',
-      album: '',
-      genre: 'Naija Old School',
-      BPM: '93.09',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Lagbaja - Suru Lere': {
-      artist: 'Lagbaja',
-      song: 'Suru Lere',
-      album: '',
-      genre: 'Naija Old School',
-      BPM: '88.82',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'MAJOR - Why I Love You': {
-      artist: 'MAJOR',
-      song: 'Why I Love You',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '165.22',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Joepraize - Miracle Papa': {
-      artist: 'Joepraize',
-      song: 'Miracle Papa',
-      album: '',
-      genre: 'Naija Gospel',
-      BPM: '130.01',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Samsong; Chioma - Jesus Odogwu': {
-      artist: 'Samsong; Chioma',
-      song: 'Jesus Odogwu',
-      album: '',
-      genre: 'Naija Gospel',
-      BPM: '95',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'SOLLO7 - Still Marry You': {
-      artist: 'SOLLO7',
-      song: 'Still Marry You',
-      album: '',
-      genre: 'Naija Hip-Hop',
-      BPM: '143.86',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Travis Greene - Intentional': {
-      artist: 'Travis Greene',
-      song: 'Intentional',
-      album: '',
-      genre: 'Gospel',
-      BPM: '76.02',
       speed: '',
       mood: '',
       tags: '',
@@ -4247,287 +4390,122 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
-    'Eleance Jazz - Ngalua Marthe': {
-      artist: 'Eleance Jazz',
-      song: 'Ngalua Marthe',
-      album: 'Melodies of the Republic of Congo',
-      genre: 'Africa Highlife',
-      BPM: '129.72',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'DMW; Davido; Mayorkun - Prayer': {
-      artist: 'DMW; Davido; Mayorkun',
-      song: 'Prayer',
+    'Timaya - Balance': {
+      artist: 'Timaya',
+      song: 'Balance',
       album: '',
-      genre: '',
-      BPM: '119.93',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'DMW; Ichaba; Dremo; Mayorkun - Back 2 Back': {
-      artist: 'DMW; Ichaba; Dremo; Mayorkun',
-      song: 'Back 2 Back',
-      album: '',
-      genre: '',
-      BPM: '130.87',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'DMW; Davido; Mayorkun; Dremo; Peruzzi - Mind': {
-      artist: 'DMW; Davido; Mayorkun; Dremo; Peruzzi',
-      song: 'Mind',
-      album: '',
-      genre: '',
-      BPM: '114.26',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mayorkun - Che Che': {
-      artist: 'Mayorkun',
-      song: 'Che Che',
-      album: '',
-      genre: '',
-      BPM: '106.83',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mayorkun - Eleko': {
-      artist: 'Mayorkun',
-      song: 'Eleko',
-      album: '',
-      genre: '',
-      BPM: '118.02',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mayorkun - Sade': {
-      artist: 'Mayorkun',
-      song: 'Sade',
-      album: '',
-      genre: '',
-      BPM: '114',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mayorkun - Yawa': {
-      artist: 'Mayorkun',
-      song: 'Yawa',
-      album: '',
-      genre: '',
-      BPM: '126.51',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mayorkun; Mr. Eazi - Love You Tire': {
-      artist: 'Mayorkun; Mr. Eazi',
-      song: 'Love You Tire',
-      album: '',
-      genre: '',
-      BPM: '108.95',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mr. Eazi; Juls; Pappy - Bankulize': {
-      artist: 'Mr. Eazi; Juls; Pappy',
-      song: 'Bankulize',
-      album: '',
-      genre: '',
-      BPM: '131.73',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'DJ Spinall; Mr. Eazi - Ohema': {
-      artist: 'DJ Spinall; Mr. Eazi',
-      song: 'Ohema',
-      album: '',
-      genre: '',
-      BPM: '107.01',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Eazzy; Mr. Eazi - Forever': {
-      artist: 'Eazzy; Mr. Eazi',
-      song: 'Forever',
-      album: '',
-      genre: '',
-      BPM: '99.07',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Eugy; Mr. Eazi - Dance For Me': {
-      artist: 'Eugy; Mr. Eazi',
-      song: 'Dance For Me',
-      album: '',
-      genre: '',
-      BPM: '107.26',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mr. Eazi; Mugeez - Business': {
-      artist: 'Mr. Eazi; Mugeez',
-      song: 'Business',
-      album: '',
-      genre: '',
-      BPM: '134.04',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mr. Eazi - Feelings': {
-      artist: 'Mr. Eazi',
-      song: 'Feelings',
-      album: '',
-      genre: '',
-      BPM: '92.02',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mr. Eazi; DJ Cuppy - Fight': {
-      artist: 'Mr. Eazi; DJ Cuppy',
-      song: 'Fight',
-      album: '',
-      genre: '',
-      BPM: '113.05',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mr. Eazi; Joey B - Hollup': {
-      artist: 'Mr. Eazi; Joey B',
-      song: 'Hollup',
-      album: '',
-      genre: '',
-      BPM: '107.18',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mr. Eazi - Pour Me Water': {
-      artist: 'Mr. Eazi',
-      song: 'Pour Me Water',
-      album: '',
-      genre: '',
+      genre: 'Naija Hip-Hop',
       BPM: '',
       speed: '',
       mood: '',
       tags: '',
       quotes: ''
     },
-    'Mr. Eazi; Tekno; BkChatLDN; Odunsi; Temi; Eddie Kadie; Oyemykke - Short Skirt': {
-      artist: 'Mr. Eazi; Tekno; BkChatLDN; Odunsi; Temi; Eddie Kadie; Oyemykke',
-      song: 'Short Skirt',
+    'Timaya - Bang Bang': {
+      artist: 'Timaya',
+      song: 'Bang Bang',
       album: '',
-      genre: '',
-      BPM: '138.72',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mr. Eazi; Efya - Skin Tight': {
-      artist: 'Mr. Eazi; Efya',
-      song: 'Skin Tight',
-      album: '',
-      genre: '',
-      BPM: '133.34',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Mr. Eazi - Leg Over': {
-      artist: 'Mr. Eazi',
-      song: 'Leg Over',
-      album: '',
-      genre: '',
+      genre: 'Naija Hip-Hop',
       BPM: '',
       speed: '',
       mood: '',
       tags: '',
       quotes: ''
     },
-    'Mr. Eazi - Sample You': {
-      artist: 'Mr. Eazi',
-      song: 'Sample You',
+    'Timaya - Don Dada': {
+      artist: 'Timaya',
+      song: 'Don Dada',
       album: '',
-      genre: '',
-      BPM: '105.5',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
       speed: '',
       mood: '',
       tags: '',
       quotes: ''
     },
-    'Mr. Eazi; Rita Ora; Wizkid - Skin Tight (Remix)': {
-      artist: 'Mr. Eazi; Rita Ora; Wizkid',
-      song: 'Skin Tight (Remix)',
+    'Timaya - Kom Kom': {
+      artist: 'Timaya',
+      song: 'Kom Kom',
       album: '',
-      genre: '',
-      BPM: '133.05',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
       speed: '',
       mood: '',
       tags: '',
       quotes: ''
     },
-    'Mr. Eazi; Phyno; Olamide - Life is Eazi': {
-      artist: 'Mr. Eazi; Phyno; Olamide',
-      song: 'Life is Eazi',
+    'Timaya - Sanko': {
+      artist: 'Timaya',
+      song: 'Sanko',
       album: '',
-      genre: '',
-      BPM: '91.19',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
       speed: '',
       mood: '',
       tags: '',
       quotes: ''
     },
-    'Reekado Banks - Chop Am': {
-      artist: 'Reekado Banks',
-      song: 'Chop Am',
+    'Timaya - Telli Person': {
+      artist: 'Timaya',
+      song: 'Telli Person',
       album: '',
-      genre: '',
-      BPM: '127.8',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
       speed: '',
       mood: '',
       tags: '',
       quotes: ''
     },
-    'Skales - Shake Body': {
-      artist: 'Skales',
-      song: 'Shake Body',
+    'Timaya; Davido - Kekwanu': {
+      artist: 'Timaya; Davido',
+      song: 'Kekwanu',
       album: '',
-      genre: '',
-      BPM: '130.85',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Timaya; Don Jazzy - I Concur': {
+      artist: 'Timaya; Don Jazzy',
+      song: 'I Concur',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Timi Dakola - Amen': {
+      artist: 'Timi Dakola',
+      song: 'Amen',
+      album: '',
+      genre: 'Naija Gospel',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Tiwa Savage - All Over': {
+      artist: 'Tiwa Savage',
+      song: 'All Over',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Tiwa Savage - Koroba': {
+      artist: 'Tiwa Savage',
+      song: 'Koroba',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
       speed: '',
       mood: '',
       tags: '',
@@ -4537,96 +4515,30 @@ Complete 213 records.
       artist: 'Toofan',
       song: 'Gweta',
       album: '',
-      genre: '',
+      genre: 'Naija Hip-Hop',
       BPM: '134.86',
       speed: '',
       mood: '',
       tags: '',
       quotes: ''
     },
-    'Brenda Fassie - Vulindlela': {
-      artist: 'Brenda Fassie',
-      song: 'Vulindlela',
+    'Toyin Ores - Feel the Same': {
+      artist: 'Toyin Ores',
+      song: 'Feel the Same',
       album: '',
-      genre: '',
-      BPM: '105.96',
-      speed: '',
-      mood: '',
-      tags: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '115',
+      speed: 'medium',
+      mood: 'sensual',
+      tags: 'dance; sensual; tease',
       quotes: ''
     },
-    'Fuse ODG; Wyclef Jean - Antenna': {
-      artist: 'Fuse ODG; Wyclef Jean',
-      song: 'Antenna',
+    'Travis Greene - Intentional': {
+      artist: 'Travis Greene',
+      song: 'Intentional',
       album: '',
-      genre: '',
-      BPM: '128.08',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    "Mavins; Don Jazzy; Reekado Banks; Di'ja; Korede Bello - Adaobi": {
-      artist: "Mavins; Don Jazzy; Reekado Banks; Di'ja; Korede Bello",
-      song: 'Adaobi',
-      album: '',
-      genre: '',
-      BPM: '127.95',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Lil Kesh - Gbese': {
-      artist: 'Lil Kesh',
-      song: 'Gbese',
-      album: '',
-      genre: '',
-      BPM: '122.08',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Lil Kesh - Ibile': {
-      artist: 'Lil Kesh',
-      song: 'Ibile',
-      album: '',
-      genre: '',
-      BPM: '124.88',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Lil Kesh; Patoranking - Is It Because I Love You': {
-      artist: 'Lil Kesh; Patoranking',
-      song: 'Is It Because I Love You',
-      album: '',
-      genre: '',
-      BPM: '125.02',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Lil Kesh - No Fake Love': {
-      artist: 'Lil Kesh',
-      song: 'No Fake Love',
-      album: '',
-      genre: '',
-      BPM: '110.03',
-      speed: '',
-      mood: '',
-      tags: '',
-      quotes: ''
-    },
-    'Lil Kesh - Shele Gan Gan': {
-      artist: 'Lil Kesh',
-      song: 'Shele Gan Gan',
-      album: '',
-      genre: '',
-      BPM: '139.05',
+      genre: 'Gospel',
+      BPM: '76.02',
       speed: '',
       mood: '',
       tags: '',
@@ -4636,34 +4548,122 @@ Complete 213 records.
       artist: 'Viktoh; Lil Kesh',
       song: 'Skibi Dat',
       album: '',
-      genre: '',
+      genre: 'Naija Hip-Hop',
       BPM: '110.95',
       speed: '',
       mood: '',
       tags: '',
       quotes: ''
     },
-    'Dr. Sid; Tiwa Savage - Oyari': {
-      artist: 'Dr. Sid; Tiwa Savage',
-      song: 'Oyari',
+    'Wale; Davido; Olamide - Fine Girl': {
+      artist: 'Wale; Davido; Olamide',
+      song: 'Fine Girl',
       album: '',
-      genre: '',
-      BPM: '109.59',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
       speed: '',
       mood: '',
       tags: '',
       quotes: ''
     },
-    'D-Black; Sarkodie; Singlet - OMEGA': {
-      artist: 'D-Black; Sarkodie; Singlet',
-      song: 'OMEGA',
+    'Wizboyy - Salambala': {
+      artist: 'Wizboyy',
+      song: 'Salambala',
       album: '',
-      genre: '',
-      BPM: '112.08',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
       speed: '',
       mood: '',
       tags: '',
-      quotes: '"Jehovah is so great"; "Alpha is so great"; "Omega is so great"'
+      quotes: ''
+    },
+    'Wizkid - Celebrate': {
+      artist: 'Wizkid',
+      song: 'Celebrate',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Wizkid - Essence': {
+      artist: 'Wizkid',
+      song: 'Essence',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Wizkid - Joro': {
+      artist: 'Wizkid',
+      song: 'Joro',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Wizkid - Ojuelegba': {
+      artist: 'Wizkid',
+      song: 'Ojuelegba',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Wizkid - Pull Over': {
+      artist: 'Wizkid',
+      song: 'Pull Over',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Wizkid - Soco': {
+      artist: 'Wizkid',
+      song: 'Soco',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Wizkid; Burna Boy - Ginger': {
+      artist: 'Wizkid; Burna Boy',
+      song: 'Ginger',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Wizzboy; Ice Prince - Jacuzzi': {
+      artist: 'Wizzboy; Ice Prince',
+      song: 'Jacuzzi',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '122.98',
+      speed: 'fast',
+      mood: '',
+      tags: '',
+      quotes: ''
     }
   }
 }
