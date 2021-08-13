@@ -14,10 +14,6 @@ var music, music2;
 //const { songs, ...musicList } = music
 
 //define functions
-const cloneObj = () => {
-// music2 = JSON.parse(JSON.stringify(music))
- music2 = Object.assign(music) //new method
-}
 const objtoArrObj = (data) => {
  return Object.values(data)
 }
