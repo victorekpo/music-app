@@ -14,22 +14,22 @@ var music, music2;
 //const { songs, ...musicList } = music
 
 //define functions
-const objtoArrObj = (data) => Object.values(data);
+const objtoArrObj = (obj) => Object.values(obj);
 const getSongs = (obj) =>  Object.keys(obj);
 const updateAllSongs = (obj, newkey, newval) => {
  for (song in getSongs(obj)) {obj.songs[(getSongs(obj)[song])][newkey] = newval };
  return obj;
 }
-const getProps = (data, method, func) => {
+const getProps = (obj, method, func) => {
   var songsInfo = [];
-  Object.keys(data).forEach(function(prop) {
-    songsInfo.push(data[prop]);
+  Object.keys(obj).forEach(function(prop) {
+    songsInfo.push(obj[prop]);
     if (func === undefined) {
     //check method for logs
-     if (method == 1) { console.log(data); }
-     else { for (p in data) { console.log(p) }; };
+     if (method == 1) { console.log(obj); }
+     else { for (p in obj) { console.log(p) }; };
     }
-    else { songInfo = data[prop]; func();}
+    else { songInfo = obj[prop]; func();}
   });
   //check method for return
   if (method == 1) { return songsInfo; }
