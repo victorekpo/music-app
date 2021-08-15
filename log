@@ -7,7 +7,7 @@
   speed: '',
   mood: '',
   tags: '',
-  quotes: ''
+  quotes: '"Amaka..."'
 }
 {
   artist: 'Adekunle Gold',
@@ -128,7 +128,7 @@
   speed: '',
   mood: '',
   tags: '',
-  quotes: ''
+  quotes: '"Angelly, Angelina.."; "You cool my temperature"'
 }
 {
   artist: 'Burna Boy',
@@ -227,7 +227,7 @@
   speed: '',
   mood: '',
   tags: 'instrumental',
-  quotes: ''
+  quotes: '"This is no ordinary love.."'
 }
 {
   artist: 'Davido',
@@ -238,7 +238,7 @@
   speed: 'slow',
   mood: 'love',
   tags: 'romantic; dance; party; favorites',
-  quotes: ''
+  quotes: '"She no want designer, she no want Ferrari, she says am my love ohh.."; "You belong to mee.."'
 }
 {
   artist: 'Davido',
@@ -260,7 +260,7 @@
   speed: 'medium',
   mood: 'romantic',
   tags: 'chill; beginning of party; love-making',
-  quotes: ''
+  quotes: '"You no dey fear face oohh"; "Abi you talk craze oh"'
 }
 {
   artist: 'Davido',
@@ -326,7 +326,7 @@
   speed: '',
   mood: '',
   tags: '',
-  quotes: ''
+  quotes: `"A mi Omo Baba Olowo"; "And my name is Prince Davido and I'm driving all the girls crazy ohh"`
 }
 {
   artist: 'Davido',
@@ -571,6 +571,17 @@
   quotes: ''
 }
 {
+  artist: 'Donnel Jones',
+  song: "U Know What's Up",
+  album: '',
+  genre: 'Hip-Hop',
+  BPM: '96',
+  speed: 'slow',
+  mood: '',
+  tags: '',
+  quotes: `"Ooh say what say what? You know that I like it baby"; "Girl you know what's up"`
+}
+{
   artist: 'Dr. Sid; Tiwa Savage',
   song: 'Oyari',
   album: '',
@@ -604,6 +615,17 @@
   quotes: ''
 }
 {
+  artist: 'Edie Brickell',
+  song: 'Good Times',
+  album: '',
+  genre: 'Slow Jams',
+  BPM: '74.8',
+  speed: 'slow',
+  mood: '',
+  tags: '',
+  quotes: `"You don't even have to try, it comes easy for you."; "The way you moving softly.. it could make me.. cry"; "Good times, bad times, give me some of that."`
+}
+{
   artist: 'Eleance Jazz',
   song: 'Ngalua Marthe',
   album: 'Melodies of the Republic of Congo',
@@ -624,6 +646,17 @@
   mood: '',
   tags: '',
   quotes: ''
+}
+{
+  artist: 'Faze',
+  song: 'Koi Kpo Di Kpo',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: '"Girl you make me Kpo Kpo di Kpo Kpo di Kpo, Kpo Kpo di Kpo Kpooo.."'
 }
 {
   artist: 'Fela Kuti',
@@ -685,10 +718,10 @@
   song: 'Baby Oku (Dance)',
   album: '',
   genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
-  tags: '',
+  BPM: '124.4',
+  speed: 'fast',
+  mood: 'dance',
+  tags: 'party',
   quotes: ''
 }
 {
@@ -857,6 +890,28 @@
   quotes: ''
 }
 {
+  artist: 'Gramatik',
+  song: 'In My City',
+  album: '',
+  genre: 'Instrumentals',
+  BPM: '87.8',
+  speed: 'slow',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
+  artist: 'Gramatik',
+  song: 'Afternoon Soul',
+  album: '',
+  genre: 'Instrumentals',
+  BPM: '92',
+  speed: 'medium',
+  mood: '',
+  tags: 'sunny day; relax; chillax; chill',
+  quotes: ''
+}
+{
   artist: 'Gyptian',
   song: 'Hold Yuh',
   album: '',
@@ -945,6 +1000,17 @@
   quotes: ''
 }
 {
+  artist: 'Jeezy',
+  song: 'Sing Along',
+  album: '',
+  genre: 'Hip-Hop',
+  BPM: '80',
+  speed: 'slow',
+  mood: '',
+  tags: '',
+  quotes: '"My neck so icy.. my wrist so pricy.."; "Half a mil a year and its all on wifey.."'
+}
+{
   artist: 'Joepraize',
   song: 'Miracle Papa',
   album: '',
@@ -1020,6 +1086,17 @@
   mood: '',
   tags: '',
   quotes: ''
+}
+{
+  artist: 'Labor Siffre',
+  song: 'My Song',
+  album: '',
+  genre: 'Slow Jams',
+  BPM: '85.6',
+  speed: 'slow',
+  mood: '',
+  tags: 'Kanye Sample',
+  quotes: '"And I wonder, if you know what it means, to find your dream come true"'
 }
 {
   artist: 'Lagbaja',
@@ -1598,11 +1675,11 @@
   song: 'Do Me',
   album: '',
   genre: 'Naija Hip-Hop',
-  BPM: '',
-  speed: '',
-  mood: '',
+  BPM: '91.5',
+  speed: 'medium',
+  mood: 'romantic',
   tags: '',
-  quotes: ''
+  quotes: '"Girl I love the way you dey do me"; "Nah the way you dey do me"'
 }
 {
   artist: 'P-Square',
@@ -1614,6 +1691,17 @@
   mood: '',
   tags: '',
   quotes: ''
+}
+{
+  artist: 'P-Square; Waje',
+  song: 'Jeje',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '132',
+  speed: 'fast',
+  mood: '',
+  tags: 'party; dance',
+  quotes: '"Mr. DJ put the song on replay"'
 }
 {
   artist: 'Patoranking',
@@ -2067,6 +2155,17 @@
   quotes: ''
 }
 {
+  artist: 'Third World',
+  song: 'Always Around',
+  album: '',
+  genre: '',
+  BPM: '94.2',
+  speed: 'slow',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Timaya',
   song: 'Balance',
   album: '',
@@ -2243,6 +2342,17 @@
   quotes: ''
 }
 {
+  artist: 'Walter Beasley',
+  song: "Gail's Groove (Remix)",
+  album: '',
+  genre: 'Smooth Jazz',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '',
+  quotes: ''
+}
+{
   artist: 'Wizboyy',
   song: 'Salambala',
   album: '',
@@ -2341,7 +2451,18 @@
   tags: '',
   quotes: ''
 }
-Complete 213 records.
+{
+  artist: 'Wizzboy; J Martins',
+  song: 'Screen Saver (Remix)',
+  album: '',
+  genre: 'Naija Hip-Hop',
+  BPM: '97',
+  speed: 'slow',
+  mood: '',
+  tags: '',
+  quotes: '"Would you be my screen saver?"; "I no go mind if i fit get your picture"'
+}
+Complete 224 records.
 {
   songs: {
     '2Baba - Amaka': {
@@ -2353,7 +2474,7 @@ Complete 213 records.
       speed: '',
       mood: '',
       tags: '',
-      quotes: ''
+      quotes: '"Amaka..."'
     },
     'Adekunle Gold - Okay': {
       artist: 'Adekunle Gold',
@@ -2474,7 +2595,7 @@ Complete 213 records.
       speed: '',
       mood: '',
       tags: '',
-      quotes: ''
+      quotes: '"Angelly, Angelina.."; "You cool my temperature"'
     },
     'Burna Boy - Ye': {
       artist: 'Burna Boy',
@@ -2573,7 +2694,7 @@ Complete 213 records.
       speed: '',
       mood: '',
       tags: 'instrumental',
-      quotes: ''
+      quotes: '"This is no ordinary love.."'
     },
     'Davido - Aye': {
       artist: 'Davido',
@@ -2584,7 +2705,7 @@ Complete 213 records.
       speed: 'slow',
       mood: 'love',
       tags: 'romantic; dance; party; favorites',
-      quotes: ''
+      quotes: '"She no want designer, she no want Ferrari, she says am my love ohh.."; "You belong to mee.."'
     },
     'Davido - Fem': {
       artist: 'Davido',
@@ -2606,7 +2727,7 @@ Complete 213 records.
       speed: 'medium',
       mood: 'romantic',
       tags: 'chill; beginning of party; love-making',
-      quotes: ''
+      quotes: '"You no dey fear face oohh"; "Abi you talk craze oh"'
     },
     'Davido - All Of You': {
       artist: 'Davido',
@@ -2672,7 +2793,7 @@ Complete 213 records.
       speed: '',
       mood: '',
       tags: '',
-      quotes: ''
+      quotes: `"A mi Omo Baba Olowo"; "And my name is Prince Davido and I'm driving all the girls crazy ohh"`
     },
     'Davido - Gbon Gbon': {
       artist: 'Davido',
@@ -2916,6 +3037,17 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    "Donnel Jones - U Know What's Up": {
+      artist: 'Donnel Jones',
+      song: "U Know What's Up",
+      album: '',
+      genre: 'Hip-Hop',
+      BPM: '96',
+      speed: 'slow',
+      mood: '',
+      tags: '',
+      quotes: `"Ooh say what say what? You know that I like it baby"; "Girl you know what's up"`
+    },
     'Dr. Sid; Tiwa Savage - Oyari': {
       artist: 'Dr. Sid; Tiwa Savage',
       song: 'Oyari',
@@ -2949,6 +3081,17 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Edie Brickell - Good Times': {
+      artist: 'Edie Brickell',
+      song: 'Good Times',
+      album: '',
+      genre: 'Slow Jams',
+      BPM: '74.8',
+      speed: 'slow',
+      mood: '',
+      tags: '',
+      quotes: `"You don't even have to try, it comes easy for you."; "The way you moving softly.. it could make me.. cry"; "Good times, bad times, give me some of that."`
+    },
     'Eleance Jazz - Ngalua Marthe': {
       artist: 'Eleance Jazz',
       song: 'Ngalua Marthe',
@@ -2970,6 +3113,17 @@ Complete 213 records.
       mood: '',
       tags: '',
       quotes: ''
+    },
+    'Faze - Koi Kpo Di Kpo': {
+      artist: 'Faze',
+      song: 'Koi Kpo Di Kpo',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: '"Girl you make me Kpo Kpo di Kpo Kpo di Kpo, Kpo Kpo di Kpo Kpooo.."'
     },
     'Fela Kuti - Water No Get Enemy': {
       artist: 'Fela Kuti',
@@ -3031,10 +3185,10 @@ Complete 213 records.
       song: 'Baby Oku (Dance)',
       album: '',
       genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
-      tags: '',
+      BPM: '124.4',
+      speed: 'fast',
+      mood: 'dance',
+      tags: 'party',
       quotes: ''
     },
     'Flavour - Carolina': {
@@ -3202,6 +3356,28 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Gramatik - In My City': {
+      artist: 'Gramatik',
+      song: 'In My City',
+      album: '',
+      genre: 'Instrumentals',
+      BPM: '87.8',
+      speed: 'slow',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
+    'Gramatik - Afternoon Soul': {
+      artist: 'Gramatik',
+      song: 'Afternoon Soul',
+      album: '',
+      genre: 'Instrumentals',
+      BPM: '92',
+      speed: 'medium',
+      mood: '',
+      tags: 'sunny day; relax; chillax; chill',
+      quotes: ''
+    },
     'Gyptian - Hold Yuh': {
       artist: 'Gyptian',
       song: 'Hold Yuh',
@@ -3290,6 +3466,17 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Jeezy - Sing Along': {
+      artist: 'Jeezy',
+      song: 'Sing Along',
+      album: '',
+      genre: 'Hip-Hop',
+      BPM: '80',
+      speed: 'slow',
+      mood: '',
+      tags: '',
+      quotes: '"My neck so icy.. my wrist so pricy.."; "Half a mil a year and its all on wifey.."'
+    },
     'Joepraize - Miracle Papa': {
       artist: 'Joepraize',
       song: 'Miracle Papa',
@@ -3366,6 +3553,17 @@ Complete 213 records.
       mood: '',
       tags: '',
       quotes: ''
+    },
+    'Labor Siffre - My Song': {
+      artist: 'Labor Siffre',
+      song: 'My Song',
+      album: '',
+      genre: 'Slow Jams',
+      BPM: '85.6',
+      speed: 'slow',
+      mood: '',
+      tags: 'Kanye Sample',
+      quotes: '"And I wonder, if you know what it means, to find your dream come true"'
     },
     'Lagbaja - Konko Below': {
       artist: 'Lagbaja',
@@ -3933,11 +4131,11 @@ Complete 213 records.
       song: 'Do Me',
       album: '',
       genre: 'Naija Hip-Hop',
-      BPM: '',
-      speed: '',
-      mood: '',
+      BPM: '91.5',
+      speed: 'medium',
+      mood: 'romantic',
       tags: '',
-      quotes: ''
+      quotes: '"Girl I love the way you dey do me"; "Nah the way you dey do me"'
     },
     'P-Square - Testimony': {
       artist: 'P-Square',
@@ -3949,6 +4147,17 @@ Complete 213 records.
       mood: '',
       tags: '',
       quotes: ''
+    },
+    'P-Square; Waje - Jeje': {
+      artist: 'P-Square; Waje',
+      song: 'Jeje',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '132',
+      speed: 'fast',
+      mood: '',
+      tags: 'party; dance',
+      quotes: '"Mr. DJ put the song on replay"'
     },
     'Patoranking - Abule': {
       artist: 'Patoranking',
@@ -4390,6 +4599,17 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    'Third World - Always Around': {
+      artist: 'Third World',
+      song: 'Always Around',
+      album: '',
+      genre: '',
+      BPM: '94.2',
+      speed: 'slow',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Timaya - Balance': {
       artist: 'Timaya',
       song: 'Balance',
@@ -4566,6 +4786,17 @@ Complete 213 records.
       tags: '',
       quotes: ''
     },
+    "Walter Beasley - Gail's Groove (Remix)": {
+      artist: 'Walter Beasley',
+      song: "Gail's Groove (Remix)",
+      album: '',
+      genre: 'Smooth Jazz',
+      BPM: '',
+      speed: '',
+      mood: '',
+      tags: '',
+      quotes: ''
+    },
     'Wizboyy - Salambala': {
       artist: 'Wizboyy',
       song: 'Salambala',
@@ -4664,6 +4895,17 @@ Complete 213 records.
       mood: '',
       tags: '',
       quotes: ''
+    },
+    'Wizzboy; J Martins - Screen Saver (Remix)': {
+      artist: 'Wizzboy; J Martins',
+      song: 'Screen Saver (Remix)',
+      album: '',
+      genre: 'Naija Hip-Hop',
+      BPM: '97',
+      speed: 'slow',
+      mood: '',
+      tags: '',
+      quotes: '"Would you be my screen saver?"; "I no go mind if i fit get your picture"'
     }
   }
 }

@@ -14,13 +14,8 @@ var music, music2;
 //const { songs, ...musicList } = music
 
 //define functions
-const objtoArrObj = (data) => {
- return Object.values(data)
-}
-const getSongs = (obj) => {
- allSongsArr = (obj) => Object.keys(obj.songs);
- return allSongsArr(obj);
-}
+const objtoArrObj = (data) => Object.values(data);
+const getSongs = (obj) =>  Object.keys(obj);
 const updateAllSongs = (obj, newkey, newval) => {
  for (song in getSongs(obj)) {obj.songs[(getSongs(obj)[song])][newkey] = newval };
  return obj;
