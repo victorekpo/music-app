@@ -1,4 +1,21 @@
 #!/bin/bash
+dir=/home/ubuntu/projects/music/music-app
+
+#Bash Aliases
+alias importMusic="node $dir/App.js bulkImport"
+alias syncMusic="$dir/jsontocsv > $dir/MUSIC.CSV && php $dir/update-musicsheet.php"
+alias viewMusic="node $dir/App.js read"
+alias trimLines="awk '!NF {if (++n <= 1) print; next}; {n=0;print}'"
+alias runmakeSEDforDel=`makeSEDforDel`
+alias runmakeSEDforLbl=`makeSEDforLbl`
+
+#Bash Functions
+makeSEDforDel() { cat $dir/music.fields | while IFS=, read field; do echo -n 'sed "/\"'$field'\": \"\"/d" |' ; done | sed s/.$//;   }
+makeSEDforLbl() { cat $dir/music.fields | while IFS=, read field; do echo -n 'sed "s/'$field'://g" |' ; done | sed s/.$//;   }
+searchMusic() { echo -e "\n*******SEARCH RESULTS*******\n"; cat $dir/MUSIC.JSON | jq  --arg v "${@:2}" '.songs[] | select(.'$1' | match($v;"i"))' | runmakeSEDforDel | tr -d \" | tr -d { | runmakeSEDforLbl | tr -d "," | sed 's/\\//g' | sed "s/;/,/g" | awk NF | tr -d } | trimLines ; echo "#djAlgoriddim.V" ; }
+searchSongs() { node $dir/App.js filter --all "`echo $@`"; }
+
+
 #Use yargs to pass arguments via commandline (if needed)
 #Next steps include bulk import and creating react frontend
 #User Input
@@ -7,22 +24,6 @@
 #Creating Front End to Display it
 #Need to add Album (.album) property
 #Need to add Quotes (.quotes) property
-
-dir=/home/ubuntu/projects/music/music-app
-
-#Bash Aliases
-alias importMusic="node $dir/App.js bulkImport"
-alias syncMusic="$dir/jsontocsv > $dir/MUSIC.CSV && php $dir/update-musicsheet.php"
-alias viewMusic="node $dir/App.js read"
-
-#Bash Functions
-makeSEDforDel() { cat music.fields | while IFS=, read field; do echo -n 'sed "/\"'$field'\": \"\"/d" |' ; done | sed s/.$//;   }
-makeSEDforLbl() { cat music.fields | while IFS=, read field; do echo -n 'sed "s/'$field'://g" |' ; done | sed s/.$//;   }
-alias runmakeSEDforDel=`makeSEDforDel`
-alias runmakeSEDforLbl=`makeSEDforLbl`
-searchMusic() { echo -e "\n*******SEARCH RESULTS*******\n"; cat $dir/MUSIC.JSON | jq  --arg v "${@:2}" '.songs[] | select(.'$1' | match($v;"i"))' | runmakeSEDforDel | tr -d \" | tr -d { | runmakeSEDforLbl | tr -d "," | sed 's/\\//g' | sed "s/;/,/g" | awk NF | tr -d } ; echo "#djAlgoriddim.V"; }
-searchSongs() { node $dir/App.js filter --all "`echo $@`"; }
-
 #Steps to Sync App with Database (Google Sheets)
 #when adding from the command line
 #download from google sheets as CSV
