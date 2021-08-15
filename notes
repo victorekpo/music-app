@@ -16,7 +16,11 @@ alias syncMusic="$dir/jsontocsv > $dir/MUSIC.CSV && php $dir/update-musicsheet.p
 alias viewMusic="node $dir/App.js read"
 
 #Bash Functions
-searchMusic() { echo -e "\n*******SEARCH RESULTS*******\n"; cat $dir/MUSIC.JSON | jq  --arg v "${@:2}" '.songs[] | select(.'$1' | match($v;"i"))' | sed '/"album": ""/d' | sed '/"genre": ""/d' | sed '/"BPM": ""/d' | sed '/"speed": ""/d' | sed '/"mood": ""/d' | sed '/"tags": ""/d' | sed '/"quotes": ""/d' | tr -d \" | tr -d { | sed "s/artist://g" | sed "s/song://g" | sed "s/album://g" | sed "s/genre://g" | sed "s/BPM://g" | sed "s/speed://g" | sed "s/mood://g" | sed "s/tags://g" | sed "s/quotes://g" | tr -d "," | sed 's/\\//g' | sed "s/;/,/g" | awk NF | tr -d } ; echo "#djAlgoriddim.V"; }
+makeSEDforDel() { cat music.fields | while IFS=, read field; do echo -n 'sed "/\"'$field'\": \"\"/d" |' ; done | sed s/.$//;   }
+makeSEDforLbl() { cat music.fields | while IFS=, read field; do echo -n 'sed "s/'$field'://g" |' ; done | sed s/.$//;   }
+alias runmakeSEDforDel=`makeSEDforDel`
+alias runmakeSEDforLbl=`makeSEDforLbl`
+searchMusic() { echo -e "\n*******SEARCH RESULTS*******\n"; cat $dir/MUSIC.JSON | jq  --arg v "${@:2}" '.songs[] | select(.'$1' | match($v;"i"))' | runmakeSEDforDel | tr -d \" | tr -d { | runmakeSEDforLbl | tr -d "," | sed 's/\\//g' | sed "s/;/,/g" | awk NF | tr -d } ; echo "#djAlgoriddim.V"; }
 searchSongs() { node $dir/App.js filter --all "`echo $@`"; }
 
 #Steps to Sync App with Database (Google Sheets)
