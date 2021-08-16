@@ -8,8 +8,10 @@ alias viewMusic="node $musicDir/App.js read"
 alias trimLines="awk '!NF {if (++n <= 1) print; next}; {n=0;print}'"
 makeSEDforDel() { cat $musicDir/music.fields | while IFS=, read field; do echo -n 'sed "/\"'$field'\": \"\"/d" |' ; done | sed s/.$//;   }
 makeSEDforLbl() { cat $musicDir/music.fields | while IFS=, read field; do echo -n 'sed "s/'$field'://g" |' ; done | sed s/.$//;   }
-alias runmakeSEDforDel=`makeSEDforDel`
-alias runmakeSEDforLbl=`makeSEDforLbl`
+alias createmakeSEDforDel=`makeSEDforDel > $musicDir/tmp/custom.msfd.tmp`
+alias createmakeSEDforLbl=`makeSEDforLbl > $musicDir/tmp/custom.msfl.tmp`
+alias runmakeSEDforDel=`cat $musicDir/custom.msfd`
+alias runmakeSEDforLbl=`cat $musicDir/custom.msfl`
 searchMusic() { echo -e "\n*******SEARCH RESULTS*******\n"; cat $musicDir/MUSIC.JSON | jq  --arg v "${@:2}" '.songs[] | select(.'$1' | match($v;"i"))' | runmakeSEDforDel | tr -d \" | tr -d { | runmakeSEDforLbl | tr -d "," | sed 's/\\//g' | sed "s/;/,/g" | awk NF | tr -d } | trimLines ; echo "#djAlgoriddim.V" ; }
 searchSongs() { node $musicDir/App.js filter --all "`echo $@`"; }
 
