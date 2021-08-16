@@ -1,0 +1,1 @@
+sed "/\"artist\": \"\"/d" |sed "/\"song\": \"\"/d" |sed "/\"album\": \"\"/d" |sed "/\"genre\": \"\"/d" |sed "/\"BPM\": \"\"/d" |sed "/\"speed\": \"\"/d" |sed "/\"mood\": \"\"/d" |sed "/\"tags\": \"\"/d" |sed "/\"quotes\": \"\"/d" 
