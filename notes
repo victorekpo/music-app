@@ -1,19 +1,17 @@
 #!/bin/bash
-dir=/home/ubuntu/projects/music/music-app
+musicDir=/home/ubuntu/projects/music/music-app
 
-#Bash Aliases
-alias importMusic="node $dir/App.js bulkImport"
-alias syncMusic="$dir/jsontocsv > $dir/MUSIC.CSV && php $dir/update-musicsheet.php"
-alias viewMusic="node $dir/App.js read"
+#Bash Aliases and Functions
+alias importMusic="node $musicDir/App.js bulkImport"
+alias syncMusic="$musicDir/jsontocsv > $musicDir/MUSIC.CSV && php $musicDir/update-musicsheet.php"
+alias viewMusic="node $musicDir/App.js read"
 alias trimLines="awk '!NF {if (++n <= 1) print; next}; {n=0;print}'"
+makeSEDforDel() { cat $musicDir/music.fields | while IFS=, read field; do echo -n 'sed "/\"'$field'\": \"\"/d" |' ; done | sed s/.$//;   }
+makeSEDforLbl() { cat $musicDir/music.fields | while IFS=, read field; do echo -n 'sed "s/'$field'://g" |' ; done | sed s/.$//;   }
 alias runmakeSEDforDel=`makeSEDforDel`
 alias runmakeSEDforLbl=`makeSEDforLbl`
-
-#Bash Functions
-makeSEDforDel() { cat $dir/music.fields | while IFS=, read field; do echo -n 'sed "/\"'$field'\": \"\"/d" |' ; done | sed s/.$//;   }
-makeSEDforLbl() { cat $dir/music.fields | while IFS=, read field; do echo -n 'sed "s/'$field'://g" |' ; done | sed s/.$//;   }
-searchMusic() { echo -e "\n*******SEARCH RESULTS*******\n"; cat $dir/MUSIC.JSON | jq  --arg v "${@:2}" '.songs[] | select(.'$1' | match($v;"i"))' | runmakeSEDforDel | tr -d \" | tr -d { | runmakeSEDforLbl | tr -d "," | sed 's/\\//g' | sed "s/;/,/g" | awk NF | tr -d } | trimLines ; echo "#djAlgoriddim.V" ; }
-searchSongs() { node $dir/App.js filter --all "`echo $@`"; }
+searchMusic() { echo -e "\n*******SEARCH RESULTS*******\n"; cat $musicDir/MUSIC.JSON | jq  --arg v "${@:2}" '.songs[] | select(.'$1' | match($v;"i"))' | runmakeSEDforDel | tr -d \" | tr -d { | runmakeSEDforLbl | tr -d "," | sed 's/\\//g' | sed "s/;/,/g" | awk NF | tr -d } | trimLines ; echo "#djAlgoriddim.V" ; }
+searchSongs() { node $musicDir/App.js filter --all "`echo $@`"; }
 
 
 #Use yargs to pass arguments via commandline (if needed)
