@@ -1,0 +1,1 @@
+sed -E "s/(.*)--/"`tput bold``colgreen`"\1--/" | sed "s/artist:/"`colgreen`"/g" |sed "s/song:/"`tput bold``colcyanbold`"/g" | sed -E "s/(.*)/"`tput init``colwhitebold`"\1/g" | sed "s/album://g" |sed "s/genre://g" |sed "s/BPM://g" |sed "s/speed://g" |sed "s/mood://g" |sed "s/tags://g" |sed "s/quotes://g" 
