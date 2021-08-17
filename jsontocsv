@@ -1,4 +1,3 @@
 #!/bin/bash
-dir=~/projects/music/music-app
-echo "artist,song,album,genre,BPM,speed,mood,tags,quotes" > MUSIC.CSV
-cat $dir/MUSIC.JSON | jq -r '.songs[] | [.artist, .song, .album, .genre, .BPM, .speed, .mood, .tags, .quotes] | @tsv' | sed "s/\t/,/g" >> MUSIC.CSV
+echo "artist,song,album,genre,BPM,speed,mood,tags,quotes" > $musicDir/MUSIC.CSV
+cat $musicDir/MUSIC.JSON | jq -r '.songs[] | [.artist, .song, .album, .genre, .BPM, .speed, .mood, .tags, .quotes] | @tsv' | sed "s/\t/,/g" >> $musicDir/MUSIC.CSV
