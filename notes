@@ -14,7 +14,14 @@ alias runmakeSEDforDel=`cat $musicDir/custom.msfd`
 alias runmakeSEDforLbl=`cat $musicDir/custom.msfl`
 searchMusic() { echo -e "\n*******SEARCH RESULTS*******\n"; cat $musicDir/MUSIC.JSON | jq  --arg v "${@:2}" '.songs[] | select(.'$1' | match($v;"i"))' | runmakeSEDforDel | tr -d \" | tr -d { | runmakeSEDforLbl | tr -d "," | sed 's/\\//g' | sed "s/;/,/g" | awk NF | tr -d } | trimLines ; echo "`colblue`#djAlgoriddim.V`tput init`" ; }
 searchSongs() { node $musicDir/App.js filter --all "`echo $@`"; }
-
+alias searchmusic=searchMusic
+alias searchquotes=searchMusic quotes
+alias searchartist=searchMusic artist
+alias searchgenre=searchMusic genre
+alias searchtags=searchMusic tags
+alias searchalbum=searchMusic album
+alias searchspeed=searchMusic speed
+alias searchBPM=searchMusic BPM
 
 #Use yargs to pass arguments via commandline (if needed)
 #Next steps include bulk import and creating react frontend
