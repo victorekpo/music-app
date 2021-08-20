@@ -38,3 +38,4 @@ alias searchBPM="searchMusic BPM"
 #addMusic() 
 #writeMusic() this saves local copy
 #syncMusic() this uploads json to google sheets, this will require google sheets api integration
+#add music player to react app https://dev.to/kunaal438/how-to-create-music-player-with-pure-html-css-js-34lchttps://dev.to/kunaal438/how-to-create-music-player-with-pure-html-css-js-34lc
