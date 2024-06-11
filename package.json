@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/teknixco/music-app.git"
+    "url": "git+https://github.com/victorekpo/music-app.git"
   },
   "keywords": [
     "music",
@@ -22,9 +22,9 @@
   "author": "Victor E.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/teknixco/music-app/issues"
+    "url": "https://github.com/victorekpo/music-app/issues"
   },
-  "homepage": "https://github.com/teknixco/music-app#readme",
+  "homepage": "https://github.com/victorekpo/music-app#readme",
   "dependencies": {
     "bunyan": "^1.8.15",
     "config": "^3.3.11",
