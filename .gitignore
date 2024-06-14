@@ -45,3 +45,5 @@ vendor
 credentials*
 token*
 tmp
+.env*
+.idea

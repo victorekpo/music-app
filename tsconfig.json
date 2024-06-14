@@ -37,7 +37,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/@types/*.ts",
-    "config"
+    ".env.prod"
   ],
   "exclude": [
     "node_modules"
