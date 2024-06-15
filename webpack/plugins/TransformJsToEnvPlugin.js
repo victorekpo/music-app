@@ -33,11 +33,38 @@ class TransformJsToEnvPlugin {
 
   async run(compilation) {
     try {
+      await this.cleanEnvFiles();
       await this.generateEnvFiles();
       hasRun = true;
     } catch (error) {
       compilation.errors.push(error);
     }
+  }
+
+  async cleanEnvFiles() {
+    const { outputDirPath } = this.getDirectories();
+    const filesToClean = [
+      '.env',
+      '.env.local',
+      '.env.development',
+      '.env.production',
+      '.env.test'
+    ]
+
+    await Promise.all(filesToClean.map(async file => {
+      const filePath = path.join(outputDirPath, file);
+      try {
+        await fs.unlink(filePath);
+      } catch (err) {
+        if (err.code === 'ENOENT') {
+          // Do nothing
+          // console.log(`File not found: ${ file }`);
+        } else {
+          console.error('Error:', err);
+          throw err;
+        }
+      }
+    }));
   }
 
   async generateEnvFiles() {
@@ -55,14 +82,14 @@ class TransformJsToEnvPlugin {
 
   getFiles() {
     const fileExt = (this.options.fileExt || this.defaultFileExt).replace('.', '');
-    const defaultConfigFile = `${DEFAULT_CONFIG}.${fileExt}`;
-    const currentConfigFile = `${this.currentEnv}.${fileExt}`;
+    const defaultConfigFile = `${ DEFAULT_CONFIG }.${ fileExt }`;
+    const currentConfigFile = `${ this.currentEnv }.${ fileExt }`;
     return [defaultConfigFile, currentConfigFile];
   }
 
   async processFile(configFile, sourceDirPath, outputDirPath) {
     const filePath = path.join(sourceDirPath, configFile);
-    const pathname = path.basename(filePath).split('.')[0];
+    const pathname = path.basename(filePath).split('.')[ 0 ];
     const fileMappings = this.options.fileMappings || this.defaultFileMappings;
 
     const envConfig = await this.loadConfig(filePath);
@@ -73,8 +100,8 @@ class TransformJsToEnvPlugin {
         const envFilePath = path.join(outputDirPath, DEFAULT_ENV_FILE);
         await fs.writeFile(envFilePath, envContent, FILE_ENCODING);
       } else if (pathname === this.currentEnv) {
-        const mappedNodeEnv = fileMappings[pathname];
-        const envFilePath = path.join(outputDirPath, `${ENV_FILE_PREFIX}.${mappedNodeEnv}`);
+        const mappedNodeEnv = fileMappings[ pathname ];
+        const envFilePath = path.join(outputDirPath, `${ ENV_FILE_PREFIX }.${ mappedNodeEnv }`);
         await fs.writeFile(envFilePath, envContent, FILE_ENCODING);
       } else {
         throw new Error('Pathname not recognized');

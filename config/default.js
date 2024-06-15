@@ -8,7 +8,5 @@ module.exports = {
     test3: {
       test4: 'yoooo'
     }
-    // Explicit mapping to certain pages
-    // '/path-a': '/path-a'
   }
 }

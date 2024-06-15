@@ -1,3 +1,3 @@
 module.exports = {
-  defaultPort: 1000
+  defaultPort: 8080
 }
