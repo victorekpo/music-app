@@ -8,5 +8,13 @@ module.exports = {
     test3: {
       test4: 'yoooo'
     }
-  }
+  },
+  NEXT: {
+    PUBLIC: {
+      // add client side environment variables here
+      VICTOR: 'vic',
+      MYVAR: 'myvariable',
+      myvariable:' myvar'
+    }
+  },
 }

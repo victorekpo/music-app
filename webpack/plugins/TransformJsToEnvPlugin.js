@@ -46,6 +46,9 @@ class TransformJsToEnvPlugin {
     const filesToClean = [
       '.env',
       '.env.local',
+      '.env.development.local',
+      '.env.test.local',
+      '.env.production.local',
       '.env.development',
       '.env.production',
       '.env.test'
@@ -83,8 +86,13 @@ class TransformJsToEnvPlugin {
   getFiles() {
     const fileExt = (this.options.fileExt || this.defaultFileExt).replace('.', '');
     const defaultConfigFile = `${ DEFAULT_CONFIG }.${ fileExt }`;
-    const currentConfigFile = `${ this.currentEnv }.${ fileExt }`;
-    return [defaultConfigFile, currentConfigFile];
+    const currentConfigFile = this.currentEnv ? `${ this.currentEnv }.${ fileExt }` : null;
+
+    if (!this.currentEnv) {
+      console.log("NODE_CONFIG_ENV variable not set, using default configuration only");
+    }
+
+    return [defaultConfigFile, currentConfigFile].filter(x => !!x);
   }
 
   async processFile(configFile, sourceDirPath, outputDirPath) {
