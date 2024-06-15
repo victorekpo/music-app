@@ -91,7 +91,7 @@ class TransformJsToEnvPlugin {
     if (!this.currentEnv) {
       console.log("NODE_CONFIG_ENV variable not set, using default configuration only");
     }
-
+    // Filter out currentConfigFile if the NODE_CONFIG_ENV has not been set
     return [defaultConfigFile, currentConfigFile].filter(x => !!x);
   }
 
