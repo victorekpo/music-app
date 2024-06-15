@@ -5,7 +5,7 @@
   "main": "App.js",
   "scripts": {
     "music": "node App.js",
-    "dev": "next dev | bunyan",
+    "dev": "next dev",
     "build": "rm -rf dist && next build && tsc",
     "next-start": "next start",
     "start": "node dist/src/index.js",

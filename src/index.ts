@@ -4,7 +4,7 @@ import next from 'next';
 import { logger } from "./logger";
 
 const { defaultPort: port, hostname, dev, mappedPaths } = config;
-
+console.log("SERVER ENV", process.env)
 const nextApp = next({ dev, dir: '.' });
 const handle = nextApp.getRequestHandler();
 
