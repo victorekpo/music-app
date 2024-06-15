@@ -8,9 +8,9 @@ const ENV_FILE_PREFIX = '.env';
 const FILE_ENCODING = 'utf8';
 
 
-class TransformJsToEnvPlugin {
+class TransformConfigToEnvPlugin {
   defaultFileExt = 'js';
-  defaultFileMappings = {
+  defaultConfigMappings = {
     dev: 'development',
     int: 'development',
     qa: 'production',
@@ -98,17 +98,17 @@ class TransformJsToEnvPlugin {
   async processFile(configFile, sourceDirPath, outputDirPath) {
     const filePath = path.join(sourceDirPath, configFile);
     const pathname = path.basename(filePath).split('.')[ 0 ];
-    const fileMappings = this.options.fileMappings || this.defaultFileMappings;
+    const configMappings = this.options.configMappings || this.defaultConfigMappings;
 
     const envConfig = await this.loadConfig(filePath);
 
     if (envConfig) {
-      const envContent = this.transformJsToEnv(envConfig);
+      const envContent = this.transformConfigToEnv(envConfig);
       if (pathname === DEFAULT_CONFIG) {
         const envFilePath = path.join(outputDirPath, DEFAULT_ENV_FILE);
         await fs.writeFile(envFilePath, envContent, FILE_ENCODING);
       } else if (pathname === this.currentEnv) {
-        const mappedNodeEnv = fileMappings[ pathname ];
+        const mappedNodeEnv = configMappings[ pathname ];
         const envFilePath = path.join(outputDirPath, `${ ENV_FILE_PREFIX }.${ mappedNodeEnv }`);
         await fs.writeFile(envFilePath, envContent, FILE_ENCODING);
       } else {
@@ -131,12 +131,12 @@ class TransformJsToEnvPlugin {
     }
   }
 
-  transformJsToEnv(config, prefix = '') {
+  transformConfigToEnv(config, prefix = '') {
     return Object.entries(config)
       .map(([key, value]) => {
         if (typeof value === 'object' && value !== null) {
           const newPrefix = prefix ? `${ prefix }_${ key }` : key;
-          return this.transformJsToEnv(value, newPrefix);
+          return this.transformConfigToEnv(value, newPrefix);
         }
         return `${ prefix ? `${ prefix }_` : '' }${ key }=${ value }`;
       })
@@ -144,4 +144,4 @@ class TransformJsToEnvPlugin {
   }
 }
 
-module.exports = TransformJsToEnvPlugin;
+module.exports = TransformConfigToEnvPlugin;
