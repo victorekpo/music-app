@@ -4,10 +4,11 @@
   "description": "This app will be used to organize music for all uses.",
   "main": "App.js",
   "scripts": {
-    "build": "npm run clean && npm run build-next && npm run build-tsc",
+    "build": "npm run clean && npm run build-next && npm run build-tsc && npm run copy-env",
     "build-next": "bash -c 'NODE_CONFIG_ENV=prod next build'",
     "build-tsc": "tsc",
     "clean": "rm -rf dist && rm -rf .next",
+    "copy-env": "cp .env .env.production dist",
     "dev": "bash -c 'NODE_CONFIG_ENV=dev next dev'",
     "lint": "next lint",
     "next-start": "bash -c 'NODE_CONFIG_ENV=dev next start'",

@@ -1,13 +1,16 @@
 // Title: Music Database
 // Author: Victor E.
 // Description: This app will be used to organize music for all uses.
-import config from './@types/Config';
+import config from 'config';
 import express, { Request, Response } from 'express';
 import next from 'next';
 import { logger } from "./logger";
 
 // We can use config here or process.env
-const { defaultPort: port, hostname, dev, mappedPaths } = config;
+const port = <number>config.get('defaultPort');
+const hostname = <string>config.get('hostname');
+const dev = <boolean>config.get('dev');
+const mappedPaths = <Record<string, string>>config.get('mappedPaths');
 
 const nextApp = next({ dev, dir: '.' });
 const handle = nextApp.getRequestHandler();

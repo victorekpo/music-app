@@ -2,12 +2,12 @@ const path = require('path');
 const fs = require('fs').promises;
 
 let hasRun = false;
+
 const DEFAULT_CONFIG = 'default';
 const LOCAL_CONFIG = 'local';
 const DEFAULT_ENV_FILE = '.env';
 const ENV_FILE_PREFIX = '.env';
 const FILE_ENCODING = 'utf8';
-
 
 class TransformConfigToEnvPlugin {
   defaultFileExt = 'js';
@@ -86,12 +86,13 @@ class TransformConfigToEnvPlugin {
     const fileExt = (this.options.fileExt || this.defaultFileExt).replace('.', '');
     const { sourceDirPath } = this.getDirectories();
     const defaultConfigFile = `${ DEFAULT_CONFIG }.${ fileExt }`;
+    const localConfigPath = `${ LOCAL_CONFIG }.${ fileExt }`;
+    const localConfigExists = await this.fileExists(localConfigPath, sourceDirPath);
+    const localConfigFile = localConfigExists  ? localConfigPath : null;
     const currentConfigFile = this.currentEnv ? `${ this.currentEnv }.${ fileExt }` : null;
-    const localConfigExists = await this.fileExists(`${ LOCAL_CONFIG }.${ fileExt }`, sourceDirPath);
-    const localConfigFile = localConfigExists  ? `${ LOCAL_CONFIG }.${ fileExt }` : null;
 
     if (!this.currentEnv) {
-      console.log("NODE_CONFIG_ENV variable not set, using default configuration only");
+      console.log("NODE_CONFIG_ENV variable not set, skipping environment configuration");
     }
     // Filter out currentConfigFile if the NODE_CONFIG_ENV has not been set
     return [defaultConfigFile, currentConfigFile, localConfigFile].filter(x => !!x);
