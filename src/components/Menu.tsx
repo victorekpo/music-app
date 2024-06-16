@@ -1,10 +1,9 @@
 'use client'
 
-const Menu = () => {
+export const Menu = () => {
   return (
     <>
       Menu
     </>
   )
-}
-export default Menu;
+};

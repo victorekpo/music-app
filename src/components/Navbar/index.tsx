@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Menu from "@/components/Menu";
+import { Menu } from "@/components/Menu";
 import styles from './navbar.module.css';
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>Music App</div>
@@ -11,5 +11,4 @@ const Navbar = () => {
       <Menu/>
     </div>
   )
-}
-export default Navbar;
+};
