@@ -3,6 +3,7 @@ const fs = require('fs').promises;
 
 let hasRun = false;
 const DEFAULT_CONFIG = 'default';
+const LOCAL_CONFIG = 'local';
 const DEFAULT_ENV_FILE = '.env';
 const ENV_FILE_PREFIX = '.env';
 const FILE_ENCODING = 'utf8';
@@ -12,8 +13,6 @@ class TransformConfigToEnvPlugin {
   defaultFileExt = 'js';
   defaultConfigMappings = {
     dev: 'development',
-    int: 'development',
-    qa: 'production',
     prod: 'production',
     test: 'test'
   };
@@ -72,7 +71,7 @@ class TransformConfigToEnvPlugin {
 
   async generateEnvFiles() {
     const { sourceDirPath, outputDirPath } = this.getDirectories();
-    const files = this.getFiles();
+    const files = await this.getFiles();
     await Promise.all(files.map(file => this.processFile(file, sourceDirPath, outputDirPath)));
   }
 
@@ -83,16 +82,29 @@ class TransformConfigToEnvPlugin {
     return { sourceDirPath, outputDirPath };
   }
 
-  getFiles() {
+  async getFiles() {
     const fileExt = (this.options.fileExt || this.defaultFileExt).replace('.', '');
+    const { sourceDirPath } = this.getDirectories();
     const defaultConfigFile = `${ DEFAULT_CONFIG }.${ fileExt }`;
     const currentConfigFile = this.currentEnv ? `${ this.currentEnv }.${ fileExt }` : null;
+    const localConfigExists = await this.fileExists(`${ LOCAL_CONFIG }.${ fileExt }`, sourceDirPath);
+    const localConfigFile = localConfigExists  ? `${ LOCAL_CONFIG }.${ fileExt }` : null;
 
     if (!this.currentEnv) {
       console.log("NODE_CONFIG_ENV variable not set, using default configuration only");
     }
     // Filter out currentConfigFile if the NODE_CONFIG_ENV has not been set
-    return [defaultConfigFile, currentConfigFile].filter(x => !!x);
+    return [defaultConfigFile, currentConfigFile, localConfigFile].filter(x => !!x);
+  }
+
+  async fileExists(configFile, sourceDirPath) {
+    const filePath = path.join(sourceDirPath, configFile);
+    try {
+      await fs.access(filePath);
+      return true;
+    } catch (error) {
+      return false;
+    }
   }
 
   async processFile(configFile, sourceDirPath, outputDirPath) {
@@ -110,6 +122,9 @@ class TransformConfigToEnvPlugin {
       } else if (pathname === this.currentEnv) {
         const mappedNodeEnv = configMappings[ pathname ];
         const envFilePath = path.join(outputDirPath, `${ ENV_FILE_PREFIX }.${ mappedNodeEnv }`);
+        await fs.writeFile(envFilePath, envContent, FILE_ENCODING);
+      } else if (pathname === LOCAL_CONFIG) {
+        const envFilePath = path.join(outputDirPath, `${ ENV_FILE_PREFIX }.${ LOCAL_CONFIG}`);
         await fs.writeFile(envFilePath, envContent, FILE_ENCODING);
       } else {
         throw new Error('Pathname not recognized');

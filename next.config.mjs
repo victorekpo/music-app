@@ -10,8 +10,6 @@ const nextConfig = {
         outputDir: path.resolve(".", "."), // Path where .env files should be generated
         configMappings: {
           dev: "development",
-          int: "development",
-          qa: "production",
           prod: "production",
           test: "test"
         },
