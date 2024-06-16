@@ -1,7 +1,7 @@
 import { createLogger } from 'bunyan';
 
 export const logger = createLogger({
-  name: "vicBot-app",
+  name: "music-app",
   streams: [
     {
       level: "info",
