@@ -7,8 +7,8 @@ import '@/styles/globals.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Marketplace App",
-  description: "A complete e-commerce application with Next.js and Headless Wix CMS",
+  title: "Music App",
+  description: "This app will be used to organize music for all uses.",
 };
 
 export default function RootLayout({
