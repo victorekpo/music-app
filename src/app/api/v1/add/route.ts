@@ -3,8 +3,9 @@ import { readMusic } from "@/utils/music/read";
 import { writeMusic } from "@/utils/music/write";
 import { addMusic } from "@/utils/music/add";
 
-export const POST = async (req: NextRequest & { body: { song: any }}) => {
-  const { body: { song } } = req;
+export const POST = async (req: NextRequest) => {
+  const body = await req.json();
+  const { song } = body;
 
   const music = readMusic();
 
@@ -17,7 +18,6 @@ export const POST = async (req: NextRequest & { body: { song: any }}) => {
 
   writeMusic(newMusic);
 
-  console.log(music);
   return NextResponse.json({
     message: 'new music added',
     song
