@@ -4,14 +4,16 @@
   "description": "This app will be used to organize music for all uses.",
   "main": "App.js",
   "scripts": {
-    "music": "node App.js",
+    "build": "npm run clean && npm run build-next && npm run build-tsc",
+    "build-next": "bash -c 'NODE_CONFIG_ENV=prod next build'",
+    "build-tsc": "tsc",
+    "clean": "rm -rf dist && rm -rf .next",
     "dev": "bash -c 'NODE_CONFIG_ENV=dev next dev'",
-    "build": "rm -rf dist && next build && tsc",
-    "next-start": "next start",
-    "start": "node dist/src/index.js",
-    "restart": "npm run build && npm run start",
     "lint": "next lint",
-    "test": "jest --coverage"
+    "next-start": "bash -c 'NODE_CONFIG_ENV=dev next start'",
+    "restart": "npm run build && npm run start",
+    "start": "node dist/src/index.js",
+    "test": "bash -c 'NODE_CONFIG_ENV=test jest --coverage'"
   },
   "repository": {
     "type": "git",
