@@ -1,18 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
-import { readMusic } from "@/utils/music";
-import { searchSongs } from "@/utils/searchSongs";
+import { readMusic } from "@/utils/music/read";
+import { searchByKey } from "@/utils/music";
 
 export const GET = (req: NextRequest, { params }) => {
-  const { headers, url } = req;
   const { genre } = params;
-
-  console.log("req", headers, url, genre);
+  const key = 'genre';
 
   readMusic();
-  searchSongs(genre);
+  const result = searchByKey(key, genre);
 
   console.log("#djAlgoriddim.V");
   return NextResponse.json({
-    genre
+    result
   });
 };

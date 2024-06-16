@@ -1,6 +1,6 @@
 import fs from "fs";
 import { parse, unparse } from "papaparse/papaparse";
-import { music } from "@/utils/music";
+import { music } from "@/utils/music/read";
 
 export const readCSV = async (filePath, mode) => {
   const csvFile = fs.readFileSync(filePath)
@@ -33,4 +33,12 @@ export const writeCSV = () => {
   const fields = ['artist', 'song', 'album', 'genre', 'BPM', 'speed', 'mood', 'tags', 'quotes'];
   const data = objects.map((obj: any) => fields.map(field => obj[field]));
   return unparse({ fields, data });
+};
+
+const importFile = `${__dirname}/MUSIC.CSV`;
+
+export const importCSV = async (mode) => {
+  delete music.songs; // clear the music object
+  music.songs = {}; // create songs object
+  let parsedData = await readCSV(importFile, mode);
 };

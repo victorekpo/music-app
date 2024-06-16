@@ -1,10 +1,8 @@
-import { music } from "@/utils/music";
-
-const getParentAndGrandParent = (path, obj, key, value) => {
+export const searchMusicObject = (path, obj, key, value) => {
   return Object.entries(obj).flatMap(([nestedKey, nestedVal]: any) => {
     if (typeof nestedVal === 'object' && nestedVal !== null) {
       // Recursively search nested objects
-      return getParentAndGrandParent([...path, nestedKey], nestedVal, key, value);
+      return searchMusicObject([...path, nestedKey], nestedVal, key, value);
     } else if (nestedKey === key) {
       // Perform substring matching on the specified key
       const regex = new RegExp(value, 'i');
@@ -17,5 +15,3 @@ const getParentAndGrandParent = (path, obj, key, value) => {
     return [];
   });
 };
-
-export const searchSongs = (songQuery: any) => getParentAndGrandParent([], music.songs, 'song', songQuery);
