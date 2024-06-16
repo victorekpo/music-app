@@ -1,9 +1,5 @@
-export const updateAllSongs = (obj, key, newval) => {
-  const allSongs =  Object.keys(obj);
+import { music } from "@/utils/music/read";
 
-  for (let song in allSongs) {
-    obj.songs[song][key] = newval;
-  }
-
-  return obj;
+export const updateSong = (song, key, newval) => {
+  music.songs[song][key] = newval;
 };

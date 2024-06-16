@@ -1,19 +1,26 @@
 import { NextRequest, NextResponse } from "next/server";
-import { music, writeMusic } from "@/utils/music";
-import { bulkImportSongs } from "@/utils/importSongs";
+import { readMusic } from "@/utils/music/read";
+import { writeMusic } from "@/utils/music/write";
+import { addMusic } from "@/utils/music/add";
 
-const { defaultPort } = process.env;
+export const POST = async (req: NextRequest & { body: { song: any }}) => {
+  const { body: { song } } = req;
 
-export const GET = async (req: NextRequest) => {
-  const { headers, url } = req;
+  const music = readMusic();
 
-  console.log("req", headers, url);
-  console.log("route ENV", defaultPort)
+  const newSong = addMusic(song)
 
-  await bulkImportSongs(1);
-  writeMusic();
+  const newMusic = {
+    ...music,
+    newSong
+  };
+
+  writeMusic(newMusic);
 
   console.log(music);
-  return NextResponse.json('yooo');
+  return NextResponse.json({
+    message: 'new music added',
+    song
+  });
 };
 

@@ -1,11 +1,8 @@
 import fs from "fs";
-import path from "path";
 
 export let music: any = {};
 
-const projectDir = process.cwd();
-
-export const musicFile = path.resolve(projectDir, 'MUSIC.JSON');
+const musicFile = <string>process.env.musicFile;
 
 export const readMusic = () => {
   let rawData: any = fs.readFileSync(musicFile);

@@ -7,6 +7,7 @@ export const GET = (req: NextRequest, { params }) => {
   const key = 'song';
 
   readMusic();
+
   const result = searchByKey(key, song);
 
   console.log("#djAlgoriddim.V");

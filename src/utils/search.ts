@@ -6,6 +6,7 @@ export const searchMusicObject = (path, obj, key, value) => {
     } else if (nestedKey === key) {
       // Perform substring matching on the specified key
       const regex = new RegExp(value, 'i');
+
       if (regex.test(nestedVal)) {
         const fullPath = [...path, nestedKey].join(' > ');
         console.log(fullPath);

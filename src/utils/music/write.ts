@@ -1,8 +1,12 @@
 import fs from "fs";
-import { music, musicFile } from "@/utils/music/read";
+import { music } from "@/utils/music/read";
 
-export const writeMusic = () => {
-  const dataNew = JSON.stringify(music);
-  fs.writeFileSync(musicFile, dataNew);
-  return music;
+const musicFile = <string>process.env.musicFile;
+const bkMusicFile = <string>process.env.bkMusicFile;
+
+export const writeMusic = (newMusic: any) => {
+  const oldMusicString = JSON.stringify(music, null, 2);
+  const newMusicString = JSON.stringify(music, null, 2);
+  fs.writeFileSync(bkMusicFile, oldMusicString);
+  fs.writeFileSync(musicFile, newMusicString);
 };
