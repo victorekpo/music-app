@@ -150,9 +150,11 @@ class TransformConfigToEnvPlugin {
   transformConfigToEnv(config, prefix = '') {
     return Object.entries(config)
       .map(([key, value]) => {
-        if (typeof value === 'object' && value !== null) {
+        if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
           const newPrefix = prefix ? `${ prefix }_${ key }` : key;
           return this.transformConfigToEnv(value, newPrefix);
+        } else if (Array.isArray(value)) {
+          return `${ prefix ? `${ prefix }_` : '' }${ key }=${ JSON.stringify(value) }`
         }
         return `${ prefix ? `${ prefix }_` : '' }${ key }=${ value }`;
       })

@@ -8,6 +8,12 @@ module.exports = {
   hostname: 'localhost',
   musicFile: path.resolve(projectDir, 'db', 'MUSIC.JSON'),
   bkMusicFile: path.resolve(projectDir, 'db', 'BKMUSIC.JSON'),
+  authenticatedUsers: [
+    {
+      user1: 'user',
+      user2: 'user'
+    }
+  ],
   NEXT: {
     PUBLIC: {
       // add client side environment variables here
