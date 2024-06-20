@@ -9,11 +9,9 @@ const AppContext = createContext({});
 export const useCtx = () => useContext(AppContext);
 
 const initialState = {
-  searchQuery: 'love',
-  searchResults: [{
-    artist: 'VintejVic',
-    song: 'N Yo Dress'
-  }]
+  searchQuery: '',
+  queryType: 'song',
+  searchResults: []
 }
 
 export const AppContextProvider = ({ children }) => {
@@ -21,7 +19,7 @@ export const AppContextProvider = ({ children }) => {
 
   return (
     <AppContext.Provider value={[state, dispatch]} >
-      {children}
+      { children }
     </AppContext.Provider>
   )
 };
