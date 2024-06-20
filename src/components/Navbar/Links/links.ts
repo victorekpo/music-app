@@ -4,11 +4,11 @@ export const menuLinks = [
     path: "/",
   },
   {
-    title: "Search",
-    path: "/about",
+    title: "Search Music",
+    path: "/search",
   },
   {
     title: "Add Music",
-    path: "/contact",
+    path: "/add",
   }
 ];
