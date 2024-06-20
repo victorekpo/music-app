@@ -1,22 +1,24 @@
 'use client'
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useCtx } from "@/components/Context";
+import { SET_SEARCH_QUERY, SET_SEARCH_RESULTS } from "@/components/Context/actions";
 
 const getResults = async (query: string) => await fetch(`/api/v1/get/song/${query}`);
 
 const SearchPage = () => {
-  const [searchQuery, setSearchQuery] = useState('love');
-  const [results, setSearchResults] = useState([{
-    artist: 'VintejVic',
-    song: 'N Yo Dress'
-  }]);
+  const [state, dispatch] = useCtx() as any;
+  console.log("STATE", state);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await getResults(searchQuery);
+    const res = await getResults(state.searchQuery);
     const response = await res.json();
-    setSearchResults(response.result);
-  }
+    dispatch({
+      type: SET_SEARCH_RESULTS,
+      payload: response.result
+    });
+  };
 
   return (
     <>
@@ -25,14 +27,17 @@ const SearchPage = () => {
         <div>
           <form onSubmit={handleSubmit}>
             <input
-              onChange={({target: { value }}) => setSearchQuery(value)}
+              onChange={({target: { value }}) => dispatch({
+                type: SET_SEARCH_QUERY,
+                payload: value
+              })}
               style={{color: "#000"}}
               />
             <button type="submit">Submit</button>
           </form>
         </div>
         <div>
-          { results.map((result, i) => {
+          { state.searchResults.map((result, i) => {
             return (
               <li key={i}>
                 {result.artist} - {result.song}
