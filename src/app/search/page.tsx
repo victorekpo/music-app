@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const getResults = async (query: string) => await fetch(`/api/v1/get/song/${query}`);
 
 const SearchPage = () => {
-  const [searchQuery, setSearchQuery] = useState('amaka');
+  const [searchQuery, setSearchQuery] = useState('love');
   const [results, setSearchResults] = useState([{
     artist: 'VintejVic',
     song: 'N Yo Dress'
