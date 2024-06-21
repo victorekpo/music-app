@@ -1,9 +1,9 @@
-const HomePage = () => {
+const DashboardPage = () => {
   return (
     <>
-      <div className=''>HomePage</div>
+      <div className=''>Dashboard</div>
     </>
   )
 }
 
-export default HomePage
+export default DashboardPage
