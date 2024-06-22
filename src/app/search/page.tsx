@@ -39,15 +39,19 @@ const SearchPage = () => {
       <div className=''>
         Search for your music!
         <div>
-          { loading ? '.......' : ''}
+          {/*{ loading ? '.......' : ''}*/}
           <form onSubmit={handleSubmit}>
             <Select
               label="Select search type"
               className="max-w-xs"
-              onChange={({target: { value }}) => dispatch({
+              onChange={async ({target: { value }}) => {
+                dispatch({
                   type: SET_SEARCH_QUERY_TYPE,
                   payload: value
-                })}>
+                })
+              }
+            }
+            >
               {types.map((type) => (
                 <SelectItem key={type}>
                   {type}
@@ -59,16 +63,30 @@ const SearchPage = () => {
             <Input
               type="SearchQuery"
               label="Search"
-              onChange={({target: { value }}) => dispatch({
+              onChange={async ({target: { value }}) => {
+                dispatch({
                 type: SET_SEARCH_QUERY,
                 payload: value
-              })}
+              });
+                const { data } = await searchMusic({
+                  variables: {
+                    searchTerm: value,
+                    searchType: state.queryType
+                  }
+                });
+
+                dispatch({
+                  type: SET_SEARCH_RESULTS,
+                  payload: data.searchMusic
+                });
+              }
+              }
             />
             <button type="submit">Submit</button>
           </form>
         </div>
         <div>
-          { !loading && state?.searchResults?.map((result, i) => {
+          { !loading && state?.searchResults?.slice(0,20).map((result, i) => {
             return (
               <li key={i}>
                 {result.song}{state.queryType !== 'song' && state.queryType !== 'artist' && result.songInfo[state.queryType] && " - " + result.songInfo[state.queryType]}
