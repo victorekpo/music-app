@@ -1,8 +1,9 @@
 import { music, readMusic } from "@/utils/music/read";
-import { searchByType } from "@/utils/music";
+import { searchQuery } from "@/utils/music";
 import { addMusic } from "@/utils/music/add";
 import { writeMusic } from "@/utils/music/write";
 import type { Song } from "@/@types/Music";
+import type { SearchQuery } from "@/@types/SearchQuery";
 
 export const resolvers = {
   Query: {
@@ -10,10 +11,13 @@ export const resolvers = {
       readMusic();
       return music;
     },
-    searchMusic: (_, args) => {
-      const { searchTerm, searchType } = args;
+    searchMusic: (_, args: SearchQuery) => {
+      const { songQuery, artistQuery } = args;
       readMusic();
-      return searchByType(searchType, searchTerm);
+      return searchQuery({
+        songQuery,
+        artistQuery
+      });
     }
   },
 

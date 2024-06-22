@@ -30,7 +30,7 @@ export const typeDefs = `
   
   type Query {
     getAllMusic: [Song]
-    searchMusic(searchTerm: String!, searchType: String!): [Song]
+    searchMusic(songQuery: String, artistQuery: String): [Song]
   }
   
   type Mutation {

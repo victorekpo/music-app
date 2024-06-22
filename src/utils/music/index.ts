@@ -1,4 +1,5 @@
 import { searchMusicObject } from "@/utils/search";
 import { music } from "@/utils/music/read";
+import type { SearchQuery } from "@/@types/SearchQuery";
 
-export const searchByType = (type: string, songQuery: string) => searchMusicObject(music.songs, type, songQuery);
+export const searchQuery = (searchObj: SearchQuery) => searchMusicObject(music.songs, searchObj);

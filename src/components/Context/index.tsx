@@ -2,15 +2,18 @@
 
 import { createContext, useContext, useReducer } from "react";
 import { reducer } from './reducers';
-import { SET_SEARCH_QUERY } from './actions';
 
 const AppContext = createContext({});
 
 export const useCtx = () => useContext(AppContext);
 
 const initialState = {
-  searchQuery: '',
-  queryType: 'song',
+  songQuery: '',
+  artistQuery: '',
+  albumQuery: '',
+  genreQuery: '',
+  quotesQuery: '',
+  tagsQuery: '',
   searchResults: []
 }
 

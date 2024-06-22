@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
 export const SEARCH_MUSIC_QUERY = gql`
-query($searchTerm: String!, $searchType: String!) {
-  searchMusic(searchTerm: $searchTerm, searchType: $searchType) {
+query($songQuery: String, $artistQuery: String) {
+  searchMusic(songQuery: $songQuery, artistQuery: $artistQuery) {
     song
     songInfo {
       artist
