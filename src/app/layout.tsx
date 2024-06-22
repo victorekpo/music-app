@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import '@/styles/globals.css';
 import style from './layout.module.css';
 import { AppContextProvider } from "@/components/Context";
-import { ApolloWrapper } from "@/utils/graphql/wrapper";
+import { ApolloWrapper } from "@/graphql/client/wrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 

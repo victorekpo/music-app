@@ -1,30 +1,11 @@
 'use client'
 
-import { gql, useLazyQuery } from "@apollo/client";
+import { useLazyQuery } from "@apollo/client";
 import { useCtx } from "@/components/Context";
 import { SET_SEARCH_QUERY, SET_SEARCH_QUERY_TYPE, SET_SEARCH_RESULTS } from "@/components/Context/actions";
-import { readMusic } from "@/utils/music/read";
+import { SEARCH_MUSIC_QUERY } from "@/graphql/queries/searchMusic";
 
 export const dynamic = "force-dynamic";
-
-const SEARCH_MUSIC_QUERY = gql`
-query($searchTerm: String!, $searchType: String!) {
-  searchMusic(searchTerm: $searchTerm, searchType: $searchType) {
-    song
-    songInfo {
-      artist
-      song
-      genre
-      album
-      BPM
-      speed
-      mood
-      tags
-      quotes
-    }
-  }
-}
-`;
 
 const SearchPage = () => {
   const [state, dispatch] = useCtx() as any;

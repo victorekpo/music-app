@@ -21,9 +21,7 @@ export const resolvers = {
     addMusic: (_, args: { song: Song }) => {
       const { song } = args;
       const music = readMusic();
-
       const newSong = addMusic(song)
-
       const newMusic = [
         ...music,
         {
@@ -31,7 +29,6 @@ export const resolvers = {
           songInfo: newSong
         }
       ];
-
       writeMusic(newMusic);
     }
   }
