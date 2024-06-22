@@ -6,6 +6,7 @@ import '@/styles/globals.css';
 import style from './layout.module.css';
 import { AppContextProvider } from "@/components/Context";
 import { ApolloWrapper } from "@/graphql/client/wrapper";
+import { NextUIProvider } from "@nextui-org/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,9 @@ export default function RootLayout({
           <body className="container">
           <Navbar />
           <div className={style.pageContainer}>
-            {children}
+            <NextUIProvider>
+              {children}
+            </NextUIProvider>
           </div>
           <Footer />
           </body>

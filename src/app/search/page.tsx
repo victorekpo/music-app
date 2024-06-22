@@ -4,6 +4,9 @@ import { useLazyQuery } from "@apollo/client";
 import { useCtx } from "@/components/Context";
 import { SET_SEARCH_QUERY, SET_SEARCH_QUERY_TYPE, SET_SEARCH_RESULTS } from "@/components/Context/actions";
 import { SEARCH_MUSIC_QUERY } from "@/graphql/queries/searchMusic";
+import { Input } from "@nextui-org/react";
+import { Select, SelectSection, SelectItem } from "@nextui-org/react";
+import { useEffect } from "react";
 
 export const dynamic = "force-dynamic";
 
@@ -11,6 +14,9 @@ const SearchPage = () => {
   const [state, dispatch] = useCtx() as any;
   const [searchMusic, { loading, error}] = useLazyQuery(SEARCH_MUSIC_QUERY);
 
+  useEffect(() => {
+    console.log("STATE", state);
+  },[state])
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { data } = await searchMusic({
@@ -20,12 +26,13 @@ const SearchPage = () => {
       }
     })
 
-    console.log("RESPONSE", data);
     dispatch({
       type: SET_SEARCH_RESULTS,
-      payload: data
+      payload: data.searchMusic
     });
   };
+
+  const types = ['song', 'artist', 'album', 'genre', 'tags', 'quotes']
 
   return (
     <>
@@ -34,35 +41,40 @@ const SearchPage = () => {
         <div>
           { loading ? '.......' : ''}
           <form onSubmit={handleSubmit}>
-            <select onChange={({target: { value }}) => dispatch({
-              type: SET_SEARCH_QUERY_TYPE,
-              payload: value
-            })}>
-              <option value='song'>Song</option>
-              <option value='artist'>Artist</option>
-              <option value='album'>Album</option>
-              <option value='genre'>Genre</option>
-              <option value='tags'>Tags</option>
-              <option value='quotes'>Quotes</option>
-            </select>
-            <input
+            <Select
+              label="Select search type"
+              className="max-w-xs"
+              onChange={({target: { value }}) => dispatch({
+                  type: SET_SEARCH_QUERY_TYPE,
+                  payload: value
+                })}>
+              {types.map((type) => (
+                <SelectItem key={type}>
+                  {type}
+                </SelectItem>
+              ))}
+            </Select>
+            <br />
+            <br />
+            <Input
+              type="SearchQuery"
+              label="Search"
               onChange={({target: { value }}) => dispatch({
                 type: SET_SEARCH_QUERY,
                 payload: value
               })}
-              style={{color: "#000"}}
-              />
+            />
             <button type="submit">Submit</button>
           </form>
         </div>
         <div>
-          {/*{ state?.searchResults || [].map((result, i) => {*/}
-          {/*  return (*/}
-          {/*    <li key={i}>*/}
-          {/*      {result.artist} - {result.song}{state.queryType !== 'song' && state.queryType !== 'artist' && result[state.queryType] && " - " + result[state.queryType]}*/}
-          {/*    </li>*/}
-          {/*  )*/}
-          {/*}) }*/}
+          { !loading && state?.searchResults?.map((result, i) => {
+            return (
+              <li key={i}>
+                {result.song}{state.queryType !== 'song' && state.queryType !== 'artist' && result.songInfo[state.queryType] && " - " + result.songInfo[state.queryType]}
+              </li>
+            )
+          }) }
         </div>
       </div>
     </>
