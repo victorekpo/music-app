@@ -12,11 +12,22 @@ export const resolvers = {
       return music;
     },
     searchMusic: (_, args: SearchQuery) => {
-      const { songQuery, artistQuery } = args;
+      const {
+        songQuery,
+        artistQuery,
+        albumQuery,
+        genreQuery,
+        tagsQuery,
+        quotesQuery
+      } = args;
       readMusic();
       return searchQuery({
         songQuery,
-        artistQuery
+        artistQuery,
+        albumQuery,
+        genreQuery,
+        tagsQuery,
+        quotesQuery
       });
     }
   },

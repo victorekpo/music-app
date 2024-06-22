@@ -2,7 +2,13 @@
 
 import { useLazyQuery } from "@apollo/client";
 import { useCtx } from "@/components/Context";
-import { SET_SONG_QUERY, SET_ARTIST_QUERY, SET_SEARCH_RESULTS } from "@/components/Context/actions";
+import {
+  SET_SONG_QUERY,
+  SET_ARTIST_QUERY,
+  SET_SEARCH_RESULTS,
+  SET_GENRE_QUERY,
+  SET_QUOTES_QUERY
+} from "@/components/Context/actions";
 import { SEARCH_MUSIC_QUERY } from "@/graphql/queries/searchMusic";
 import { Input } from "@nextui-org/react";
 import { useEffect } from "react";
@@ -50,7 +56,11 @@ const SearchPage = () => {
                   const { data } = await searchMusic({
                     variables: {
                       songQuery: value,
-                      artistQuery: state.artistQuery
+                      artistQuery: state.artistQuery,
+                      albumQuery: state.albumQuery,
+                      genreQuery: state.genreQuery,
+                      tagsQuery: state.tagsQuery,
+                      quotesQuery: state.quotesQuery
                     }
                   });
 
@@ -72,7 +82,11 @@ const SearchPage = () => {
                   const { data } = await searchMusic({
                     variables: {
                       artistQuery: value,
-                      songQuery: state.songQuery
+                      songQuery: state.songQuery,
+                      albumQuery: state.albumQuery,
+                      genreQuery: state.genreQuery,
+                      tagsQuery: state.tagsQuery,
+                      quotesQuery: state.quotesQuery
                     }
                   });
 
@@ -84,17 +98,72 @@ const SearchPage = () => {
                 }
               />
             </div>
-              <button type="submit">Submit</button>
+            <br />
+            <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+              <Input
+                type="GenreQuery"
+                label="Genre Search"
+                onChange={async ({ target: { value } }) => {
+                  dispatch({
+                    type: SET_GENRE_QUERY,
+                    payload: value
+                  });
+                  const { data } = await searchMusic({
+                    variables: {
+                      songQuery: state.songQuery,
+                      artistQuery: state.artistQuery,
+                      albumQuery: state.albumQuery,
+                      genreQuery: value,
+                      tagsQuery: state.tagsQuery,
+                      quotesQuery: state.quotesQuery
+                    }
+                  });
+
+                  dispatch({
+                    type: SET_SEARCH_RESULTS,
+                    payload: data?.searchMusic
+                  });
+                }
+                }
+              />
+              <Input
+                type="QuotesSearch"
+                label="Quotes Search"
+                onChange={async ({ target: { value } }) => {
+                  dispatch({
+                    type: SET_QUOTES_QUERY,
+                    payload: value
+                  });
+                  const { data } = await searchMusic({
+                    variables: {
+                      artistQuery: state.artistQuery,
+                      songQuery: state.songQuery,
+                      albumQuery: state.albumQuery,
+                      genreQuery: state.genreQuery,
+                      tagsQuery: state.tagsQuery,
+                      quotesQuery: value
+                    }
+                  });
+
+                  dispatch({
+                    type: SET_SEARCH_RESULTS,
+                    payload: data?.searchMusic
+                  });
+                }
+                }
+              />
+            </div>
+            <button type="submit">Submit</button>
           </form>
         </div>
         <div>
-          {!loading && state?.searchResults?.slice(0,20).map((result, i) => {
+          {!loading && state?.searchResults?.slice(0, 20).map((result, i) => {
             return (
               <li key={i}>
-                {result.song}{state.queryType !== 'song' && state.queryType !== 'artist' && result.songInfo[state.queryType] && " - " + result.songInfo[state.queryType]}
+                {result.song}
               </li>
             )
-          }) }
+          })}
         </div>
       </div>
     </>
