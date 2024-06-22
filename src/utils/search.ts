@@ -1,6 +1,5 @@
 import type { Song } from "@/@types/Music";
 import type { SearchQuery } from "@/@types/SearchQuery";
-import { shuffleArr } from "@/utils/shuffle";
 /**
  * Advanced Search Algorithm for searching database of songs using multiple query parameters
  * @param {Array} songs Array of song objects to search through.
@@ -12,9 +11,9 @@ export const searchMusicObject = (songs: Song[], searchObj: SearchQuery): Song[]
   const queries = Object.entries(searchObj).filter(([_, value]) => value);
 
   // If there are no queries, return all songs
-  if (queries.length === 0) return shuffleArr(songs);
+  if (queries.length === 0) return songs;
 
-  return shuffleArr(songs).filter(song => {
+  return songs.filter(song => {
     const songInfo = song.songInfo;
     if (songInfo && typeof songInfo === 'object') {
       // Check all queries against the songInfo

@@ -11,6 +11,7 @@ import {
 } from "@/components/Context/actions";
 import { SEARCH_MUSIC_QUERY } from "@/graphql/queries/searchMusic";
 import { Input } from "@nextui-org/react";
+import { shuffleArr } from "@/utils/shuffle";
 
 export const dynamic = "force-dynamic";
 
@@ -29,7 +30,7 @@ const SearchPage = () => {
 
     dispatch({
       type: SET_SEARCH_RESULTS,
-      payload: data.searchMusic
+      payload: shuffleArr(data.searchMusic)
     });
   };
 
@@ -61,7 +62,7 @@ const SearchPage = () => {
 
                   dispatch({
                     type: SET_SEARCH_RESULTS,
-                    payload: data?.searchMusic
+                    payload: shuffleArr(data.searchMusic)
                   });
                 }
                 }
@@ -87,7 +88,7 @@ const SearchPage = () => {
 
                   dispatch({
                     type: SET_SEARCH_RESULTS,
-                    payload: data?.searchMusic
+                    payload: shuffleArr(data.searchMusic)
                   });
                 }
                 }
@@ -116,7 +117,7 @@ const SearchPage = () => {
 
                   dispatch({
                     type: SET_SEARCH_RESULTS,
-                    payload: data?.searchMusic
+                    payload: shuffleArr(data.searchMusic)
                   });
                 }
                 }
@@ -142,7 +143,7 @@ const SearchPage = () => {
 
                   dispatch({
                     type: SET_SEARCH_RESULTS,
-                    payload: data?.searchMusic
+                    payload: shuffleArr(data.searchMusic)
                   });
                 }
                 }
