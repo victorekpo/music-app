@@ -5,13 +5,12 @@ import { useCtx } from "@/components/Context";
 import {
   SET_SONG_QUERY,
   SET_ARTIST_QUERY,
-  SET_SEARCH_RESULTS,
   SET_GENRE_QUERY,
-  SET_QUOTES_QUERY
+  SET_QUOTES_QUERY,
+  SET_SEARCH_RESULTS
 } from "@/components/Context/actions";
 import { SEARCH_MUSIC_QUERY } from "@/graphql/queries/searchMusic";
 import { Input } from "@nextui-org/react";
-import { useEffect } from "react";
 
 export const dynamic = "force-dynamic";
 
@@ -39,7 +38,6 @@ const SearchPage = () => {
       <div className=''>
         Search for your music!
         <div>
-          {/*{ loading ? '.......' : ''}*/}
           <form onSubmit={handleSubmit}>
             <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
               <Input
