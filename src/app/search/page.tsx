@@ -19,9 +19,6 @@ const SearchPage = () => {
   const [state, dispatch] = useCtx() as any;
   const [searchMusic, { loading, error}] = useLazyQuery(SEARCH_MUSIC_QUERY);
 
-  useEffect(() => {
-    console.log("STATE", state);
-  },[state])
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { data } = await searchMusic({
