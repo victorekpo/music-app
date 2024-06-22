@@ -26,7 +26,10 @@ export const resolvers = {
 
       const newMusic = [
         ...music,
-        newSong
+        {
+          song: `${newSong.artist} -- ${newSong.song}`,
+          songInfo: newSong
+        }
       ];
 
       writeMusic(newMusic);
