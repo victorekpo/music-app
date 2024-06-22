@@ -1,35 +1,48 @@
 'use client'
 
-import { useState } from "react";
+import { gql, useLazyQuery } from "@apollo/client";
 import { useCtx } from "@/components/Context";
 import { SET_SEARCH_QUERY, SET_SEARCH_QUERY_TYPE, SET_SEARCH_RESULTS } from "@/components/Context/actions";
-import { useSuspenseQuery } from "@apollo/experimental-nextjs-app-support/ssr";
-import gql from "graphql-tag";
+import { readMusic } from "@/utils/music/read";
 
 export const dynamic = "force-dynamic";
 
-const query = gql`query {
-  hello
-}`
-
-const getResults = async (query: string, queryType: string) => await fetch(`/api/v1/get/${queryType}/${query}`);
+const SEARCH_MUSIC_QUERY = gql`
+query($searchTerm: String!, $searchType: String!) {
+  searchMusic(searchTerm: $searchTerm, searchType: $searchType) {
+    song
+    songInfo {
+      artist
+      song
+      genre
+      album
+      BPM
+      speed
+      mood
+      tags
+      quotes
+    }
+  }
+}
+`;
 
 const SearchPage = () => {
   const [state, dispatch] = useCtx() as any;
-  const { data } = useSuspenseQuery(query);
-
-  console.log("STATE", state);
-  console.log("GQL", data);
+  const [searchMusic, { loading, error}] = useLazyQuery(SEARCH_MUSIC_QUERY);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await getResults(state.searchQuery, state.queryType);
-    console.log("RES", res);
-    const response = await res.json();
-    console.log("RESPONSE", response);
+    const { data } = await searchMusic({
+      variables: {
+        searchTerm: state.searchQuery || 'a',
+        searchType: state.queryType || 'song'
+      }
+    })
+
+    console.log("RESPONSE", data);
     dispatch({
       type: SET_SEARCH_RESULTS,
-      payload: response.result
+      payload: data
     });
   };
 
@@ -38,6 +51,7 @@ const SearchPage = () => {
       <div className=''>
         Search for your music!
         <div>
+          { loading ? '.......' : ''}
           <form onSubmit={handleSubmit}>
             <select onChange={({target: { value }}) => dispatch({
               type: SET_SEARCH_QUERY_TYPE,
@@ -61,13 +75,13 @@ const SearchPage = () => {
           </form>
         </div>
         <div>
-          { state.searchResults.map((result, i) => {
-            return (
-              <li key={i}>
-                {result.artist} - {result.song}{state.queryType !== 'song' && state.queryType !== 'artist' && result[state.queryType] && " - " + result[state.queryType]}
-              </li>
-            )
-          }) }
+          {/*{ state?.searchResults || [].map((result, i) => {*/}
+          {/*  return (*/}
+          {/*    <li key={i}>*/}
+          {/*      {result.artist} - {result.song}{state.queryType !== 'song' && state.queryType !== 'artist' && result[state.queryType] && " - " + result[state.queryType]}*/}
+          {/*    </li>*/}
+          {/*  )*/}
+          {/*}) }*/}
         </div>
       </div>
     </>

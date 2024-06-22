@@ -41,6 +41,7 @@ export function ApolloWrapper({ children }: React.PropsWithChildren) {
 /*
 Resources
 https://www.apollographql.com/blog/using-apollo-client-with-next-js-13-releasing-an-official-library-to-support-the-app-router
+https://www.apollographql.com/blog/how-to-use-apollo-client-with-next-js-13
 https://github.com/apollographql/apollo-client-nextjs/tree/main/packages
 https://www.apollographql.com/docs/
  */
