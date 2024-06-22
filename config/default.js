@@ -14,6 +14,7 @@ module.exports = {
       user2: 'user'
     }
   ],
+  mappedPaths: {},
   NEXT: {
     PUBLIC: {
       // add client side environment variables here

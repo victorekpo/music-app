@@ -3,12 +3,23 @@
 import { useState } from "react";
 import { useCtx } from "@/components/Context";
 import { SET_SEARCH_QUERY, SET_SEARCH_QUERY_TYPE, SET_SEARCH_RESULTS } from "@/components/Context/actions";
+import { useSuspenseQuery } from "@apollo/experimental-nextjs-app-support/ssr";
+import gql from "graphql-tag";
+
+export const dynamic = "force-dynamic";
+
+const query = gql`query {
+  hello
+}`
 
 const getResults = async (query: string, queryType: string) => await fetch(`/api/v1/get/${queryType}/${query}`);
 
 const SearchPage = () => {
   const [state, dispatch] = useCtx() as any;
+  const { data } = useSuspenseQuery(query);
+
   console.log("STATE", state);
+  console.log("GQL", data);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
