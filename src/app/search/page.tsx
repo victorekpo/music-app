@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link";
 import { useLazyQuery } from "@apollo/client";
 import { useCtx } from "@/components/Context";
 import {
@@ -156,7 +157,7 @@ const SearchPage = () => {
           {!loading && state?.searchResults?.slice(0, 20).map((result, i) => {
             return (
               <li key={i}>
-                {result.song}
+                <Link href={`/song/${result.song.replace(" -- ","--").replaceAll(" ","_")}`}>{result.song}</Link>
               </li>
             )
           })}
