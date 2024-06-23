@@ -1,0 +1,15 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: music-search
+spec:
+  secretName: music-search-tls
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: houstonetwork.com
+  dnsNames:
+    - music.teknixco.net
+# Note turn off cloudflare proxy to generate the cert
+# kubectl delete certificate music-search
+# kubectl delete secret music-search-tls
