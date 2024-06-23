@@ -34,8 +34,8 @@ spec:
   ports:
     - protocol: TCP
       port: 443
-      targetPort: 3000
-      name: https
+      targetPort: 8443
+      name: http
       nodePort: 30007
 
 ---
@@ -64,4 +64,4 @@ spec:
               service:
                 name: music-search-service
                 port:
-                  number: 443
+                  number: 3000
