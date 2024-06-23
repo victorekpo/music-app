@@ -4,6 +4,7 @@ const projectDir = process.cwd();
 
 module.exports = {
   defaultPort: 3000,
+  graphQLServer: `http://localhost:${this.defaultPort}/api/v1/graphql`,
   dev: process.env.NODE_ENV !== 'production',
   hostname: 'localhost',
   musicFile: path.resolve(projectDir, 'db', 'MUSIC.JSON'),
