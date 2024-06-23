@@ -7,7 +7,7 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: houstonetwork.com
+  commonName: music.teknixco.netg
   dnsNames:
     - music.teknixco.net
 # Note turn off cloudflare proxy to generate the cert
