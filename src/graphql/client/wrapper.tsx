@@ -12,7 +12,6 @@ import {
 } from "@apollo/experimental-nextjs-app-support/ssr";
 
 const graphQLServer = process.env.NEXT_PUBLIC_graphQLServer;
-console.log("GRAPHQL SERVER", graphQLServer);
 
 function makeClient() {
   const httpLink = new HttpLink({
