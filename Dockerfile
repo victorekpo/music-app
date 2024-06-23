@@ -18,6 +18,4 @@ RUN npm run build
 
 EXPOSE 3000
 
-RUN chmod +x run-client.sh
-
-ENTRYPOINT ["npm run start"]
+ENTRYPOINT ["npm", "run", "start"]

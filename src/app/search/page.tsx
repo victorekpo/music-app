@@ -45,6 +45,7 @@ const SearchPage = () => {
               <Input
                 type="SongSearch"
                 label="Song Search"
+                value={state.songQuery}
                 onChange={async ({ target: { value } }) => {
                   dispatch({
                     type: SET_SONG_QUERY,
@@ -71,6 +72,7 @@ const SearchPage = () => {
               <Input
                 type="ArtistSearch"
                 label="Artist Search"
+                value={state.artistQuery}
                 onChange={async ({ target: { value } }) => {
                   dispatch({
                     type: SET_ARTIST_QUERY,
@@ -100,6 +102,7 @@ const SearchPage = () => {
               <Input
                 type="GenreQuery"
                 label="Genre Search"
+                value={state.genreQuery}
                 onChange={async ({ target: { value } }) => {
                   dispatch({
                     type: SET_GENRE_QUERY,
@@ -126,6 +129,7 @@ const SearchPage = () => {
               <Input
                 type="QuotesSearch"
                 label="Quotes Search"
+                value={state.quotesQuery}
                 onChange={async ({ target: { value } }) => {
                   dispatch({
                     type: SET_QUOTES_QUERY,
