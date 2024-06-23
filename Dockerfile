@@ -17,6 +17,5 @@ ENV NODE_CONFIG_ENV=prod
 RUN npm run build
 
 EXPOSE 3000
-EXPOSE 8443
 
 ENTRYPOINT ["npm", "run", "start"]

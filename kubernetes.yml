@@ -19,7 +19,7 @@ spec:
           image: localhost:32000/music-search:v0.1
           ports:
             - containerPort: 3000
-              name: https
+              name: http
 
 ---
 # music-search-service.yaml
@@ -33,8 +33,8 @@ spec:
   type: NodePort
   ports:
     - protocol: TCP
-      port: 443
-      targetPort: 8443
+      port: 80
+      targetPort: 3000
       name: http
       nodePort: 30007
 
@@ -64,4 +64,4 @@ spec:
               service:
                 name: music-search-service
                 port:
-                  number: 443
+                  number: 80
