@@ -40,6 +40,10 @@ a {
     justify-content: space-between;
 }
 
+input {
+    font-size: 16px !important;
+}
+
 @media (max-width: 1536px) {
     .container {
         width: 1366px;
@@ -74,6 +78,6 @@ a {
 
 @media (max-width: 640px) {
     .container {
-        width: 475px;
+        width: 440px;
     }
 }

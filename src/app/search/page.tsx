@@ -1,24 +1,37 @@
 'use client'
 
-import { useState } from "react";
+import Link from "next/link";
+import { useLazyQuery } from "@apollo/client";
 import { useCtx } from "@/components/Context";
-import { SET_SEARCH_QUERY, SET_SEARCH_QUERY_TYPE, SET_SEARCH_RESULTS } from "@/components/Context/actions";
+import {
+  SET_SONG_QUERY,
+  SET_ARTIST_QUERY,
+  SET_GENRE_QUERY,
+  SET_QUOTES_QUERY,
+  SET_SEARCH_RESULTS
+} from "@/components/Context/actions";
+import { SEARCH_MUSIC_QUERY } from "@/graphql/queries/searchMusic";
+import { Input } from "@nextui-org/react";
+import { shuffleArr } from "@/utils/shuffle";
 
-const getResults = async (query: string, queryType: string) => await fetch(`/api/v1/get/${queryType}/${query}`);
+export const dynamic = "force-dynamic";
 
 const SearchPage = () => {
   const [state, dispatch] = useCtx() as any;
-  console.log("STATE", state);
+  const [searchMusic, { loading, error}] = useLazyQuery(SEARCH_MUSIC_QUERY);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await getResults(state.searchQuery, state.queryType);
-    console.log("RES", res);
-    const response = await res.json();
-    console.log("RESPONSE", response);
+    const { data } = await searchMusic({
+      variables: {
+        songQuery: state.songQuery,
+        artistQuery: state.artistQuery
+      }
+    })
+
     dispatch({
       type: SET_SEARCH_RESULTS,
-      payload: response.result
+      payload: shuffleArr(data.searchMusic)
     });
   };
 
@@ -28,35 +41,130 @@ const SearchPage = () => {
         Search for your music!
         <div>
           <form onSubmit={handleSubmit}>
-            <select onChange={({target: { value }}) => dispatch({
-              type: SET_SEARCH_QUERY_TYPE,
-              payload: value
-            })}>
-              <option value='song'>Song</option>
-              <option value='artist'>Artist</option>
-              <option value='album'>Album</option>
-              <option value='genre'>Genre</option>
-              <option value='tags'>Tags</option>
-              <option value='quotes'>Quotes</option>
-            </select>
-            <input
-              onChange={({target: { value }}) => dispatch({
-                type: SET_SEARCH_QUERY,
-                payload: value
-              })}
-              style={{color: "#000"}}
+            <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+              <Input
+                type="SongSearch"
+                label="Song Search"
+                value={state.songQuery}
+                onChange={async ({ target: { value } }) => {
+                  dispatch({
+                    type: SET_SONG_QUERY,
+                    payload: value
+                  });
+                  const { data } = await searchMusic({
+                    variables: {
+                      songQuery: value,
+                      artistQuery: state.artistQuery,
+                      albumQuery: state.albumQuery,
+                      genreQuery: state.genreQuery,
+                      tagsQuery: state.tagsQuery,
+                      quotesQuery: state.quotesQuery
+                    }
+                  });
+
+                  dispatch({
+                    type: SET_SEARCH_RESULTS,
+                    payload: shuffleArr(data.searchMusic)
+                  });
+                }
+                }
               />
+              <Input
+                type="ArtistSearch"
+                label="Artist Search"
+                value={state.artistQuery}
+                onChange={async ({ target: { value } }) => {
+                  dispatch({
+                    type: SET_ARTIST_QUERY,
+                    payload: value
+                  });
+                  const { data } = await searchMusic({
+                    variables: {
+                      artistQuery: value,
+                      songQuery: state.songQuery,
+                      albumQuery: state.albumQuery,
+                      genreQuery: state.genreQuery,
+                      tagsQuery: state.tagsQuery,
+                      quotesQuery: state.quotesQuery
+                    }
+                  });
+
+                  dispatch({
+                    type: SET_SEARCH_RESULTS,
+                    payload: shuffleArr(data.searchMusic)
+                  });
+                }
+                }
+              />
+            </div>
+            <br />
+            <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+              <Input
+                type="GenreQuery"
+                label="Genre Search"
+                value={state.genreQuery}
+                onChange={async ({ target: { value } }) => {
+                  dispatch({
+                    type: SET_GENRE_QUERY,
+                    payload: value
+                  });
+                  const { data } = await searchMusic({
+                    variables: {
+                      songQuery: state.songQuery,
+                      artistQuery: state.artistQuery,
+                      albumQuery: state.albumQuery,
+                      genreQuery: value,
+                      tagsQuery: state.tagsQuery,
+                      quotesQuery: state.quotesQuery
+                    }
+                  });
+
+                  dispatch({
+                    type: SET_SEARCH_RESULTS,
+                    payload: shuffleArr(data.searchMusic)
+                  });
+                }
+                }
+              />
+              <Input
+                type="QuotesSearch"
+                label="Quotes Search"
+                value={state.quotesQuery}
+                onChange={async ({ target: { value } }) => {
+                  dispatch({
+                    type: SET_QUOTES_QUERY,
+                    payload: value
+                  });
+                  const { data } = await searchMusic({
+                    variables: {
+                      artistQuery: state.artistQuery,
+                      songQuery: state.songQuery,
+                      albumQuery: state.albumQuery,
+                      genreQuery: state.genreQuery,
+                      tagsQuery: state.tagsQuery,
+                      quotesQuery: value
+                    }
+                  });
+
+                  dispatch({
+                    type: SET_SEARCH_RESULTS,
+                    payload: shuffleArr(data.searchMusic)
+                  });
+                }
+                }
+              />
+            </div>
             <button type="submit">Submit</button>
           </form>
         </div>
         <div>
-          { state.searchResults.map((result, i) => {
+          {!loading && state?.searchResults?.slice(0, 20).map((result, i) => {
             return (
               <li key={i}>
-                {result.artist} - {result.song}{state.queryType !== 'song' && state.queryType !== 'artist' && result[state.queryType] && " - " + result[state.queryType]}
+                <Link href={`/song/${result.song.replace(" -- ","--").replaceAll(" ","_")}`}>{result.song}</Link>
               </li>
             )
-          }) }
+          })}
         </div>
       </div>
     </>

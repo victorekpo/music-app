@@ -1,8 +1,11 @@
+const defaultPort = 3000;
+
 module.exports = {
-  defaultPort: 8080,
+  defaultPort,
+  graphQLServer: `http://localhost:${defaultPort}/api/v1/graphql`,
   NEXT: {
     PUBLIC: {
-      // add client side environment variables here
+      graphQLServer: `http://localhost:${defaultPort}/api/v1/graphql`,
       dataSet: '123vic'
     }
   }

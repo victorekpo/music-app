@@ -1,0 +1,67 @@
+---
+# music-search-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: music-search-deployment
+spec:
+  replicas: 1  # You can adjust the number of replicas as needed
+  selector:
+    matchLabels:
+      app: music-search
+  template:
+    metadata:
+      labels:
+        app: music-search
+    spec:
+      containers:
+        - name: music-search
+          image: localhost:32000/music-search:v0.1
+          ports:
+            - containerPort: 3000
+              name: http
+
+---
+# music-search-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: music-search-service
+spec:
+  selector:
+    app: music-search
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+      name: http
+      nodePort: 30007
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: music-search-ingress
+  # use the shared ingress-nginx
+ # annotations:
+ #   nginx.ingress.kubernetes.io/ssl-redirect: "true"
+ #   nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+ #   cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  ingressClassName: public
+  # tls:
+  #   - hosts:
+  #       - music.teknixco.net
+  #     secretName: music-search-tls
+  rules:
+    - host: music.teknixco.net
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: music-search-service
+                port:
+                  number: 80

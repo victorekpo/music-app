@@ -5,6 +5,8 @@ import { Footer } from "@/components/Footer";
 import '@/styles/globals.css';
 import style from './layout.module.css';
 import { AppContextProvider } from "@/components/Context";
+import { ApolloWrapper } from "@/graphql/client/wrapper";
+import { NextUIProvider } from "@nextui-org/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,16 +21,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <AppContextProvider>
-      <html lang="en">
-        <body className="container">
-        <Navbar />
-        <div className={style.pageContainer}>
-          {children}
-        </div>
-        <Footer />
-        </body>
-      </html>
-    </AppContextProvider>
+    <ApolloWrapper>
+       <AppContextProvider>
+        <html lang="en">
+          <body className="container">
+          <Navbar />
+          <div className={style.pageContainer}>
+            <NextUIProvider>
+              {children}
+            </NextUIProvider>
+          </div>
+          <Footer />
+          </body>
+        </html>
+      </AppContextProvider>
+    </ApolloWrapper>
   );
 }

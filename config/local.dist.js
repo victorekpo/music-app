@@ -1,5 +1,7 @@
+const defaultPort = 3000;
+
 module.exports = {
-  defaultPort: 3000,
+  defaultPort,
   NEXT: {
     // add client side environment variables here
     PUBLIC: {

@@ -1,0 +1,1 @@
+export const contextMiddleware = async req => ({ req })

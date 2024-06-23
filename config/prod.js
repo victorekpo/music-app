@@ -1,8 +1,11 @@
+const defaultPort = 3000;
+
 module.exports = {
-  defaultPort: 8443,
+  defaultPort,
+  graphQLServer: `http://music.teknixco.net/api/v1/graphql`,
   NEXT: {
     PUBLIC: {
-      // add client side environment variables here
+      graphQLServer: `http://music.teknixco.net/api/v1/graphql`,
     }
   }
 }
