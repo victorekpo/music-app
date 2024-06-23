@@ -9,7 +9,7 @@ const DEFAULT_ENV_FILE = '.env';
 const ENV_FILE_PREFIX = '.env';
 const FILE_ENCODING = 'utf8';
 
-class TransformConfigToEnvPlugin {
+class TransformConfigToEnv {
   defaultFileExt = 'js';
   defaultConfigMappings = {
     dev: 'development',
@@ -22,21 +22,13 @@ class TransformConfigToEnvPlugin {
     this.currentEnv = process.env.NODE_CONFIG_ENV;
   }
 
-  apply(compiler) {
-    compiler.hooks.done.tapPromise('TransformJsToEnvPlugin', async (compilation) => {
-      // Only run once
-      if (hasRun) return;
-      await this.run(compilation);
-    });
-  }
-
-  async run(compilation) {
+  async run() {
     try {
       await this.cleanEnvFiles();
       await this.generateEnvFiles();
       hasRun = true;
     } catch (error) {
-      compilation.errors.push(error);
+      console.error(error);
     }
   }
 
@@ -162,4 +154,22 @@ class TransformConfigToEnvPlugin {
   }
 }
 
-module.exports = TransformConfigToEnvPlugin;
+(async () => {
+  const plugin = new TransformConfigToEnv({
+    sourceDir: path.resolve(".", "config"), // Path to your config directory
+    outputDir: path.resolve(".", "."), // Path where .env files should be generated
+    configMappings: {
+      dev: 'development',
+      prod: 'production',
+      test: 'test'
+    },
+    fileExt: '.js'
+  });
+
+  try {
+    await plugin.run();
+    console.log('.env files generated successfully');
+  } catch (error) {
+    console.error('Error generating .env files', error);
+  }
+})();
