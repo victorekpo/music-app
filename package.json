@@ -13,7 +13,7 @@
     "lint": "next lint",
     "next-start": "bash -c 'NODE_CONFIG_ENV=dev next start'",
     "restart": "npm run build && npm run start",
-    "start": "export NODE_ENV=production && export NODE_CONFIG_ENV=prod && node dist/src/index.js'",
+    "start": "export NODE_ENV=production && export NODE_CONFIG_ENV=prod && node dist/src/index.js",
     "test": "bash -c 'NODE_CONFIG_ENV=test jest --coverage'"
   },
   "repository": {
