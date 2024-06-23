@@ -53,7 +53,7 @@ spec:
   tls:
     - hosts:
         - music.teknixco.net
-      secretName: music-search-com-tls
+      secretName: music-searchg-tls
   rules:
     - host: music.teknixco.net
       http:
