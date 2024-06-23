@@ -78,6 +78,6 @@ input {
 
 @media (max-width: 640px) {
     .container {
-        width: 475px;
+        width: 440px;
     }
 }
