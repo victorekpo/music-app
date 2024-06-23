@@ -11,9 +11,11 @@ import {
   SSRMultipartLink,
 } from "@apollo/experimental-nextjs-app-support/ssr";
 
+const graphQLServer = process.env.NEXT_PUBLIC_graphQLServer;
+
 function makeClient() {
   const httpLink = new HttpLink({
-    uri: "http://localhost:3000/api/v1/graphql",
+    uri: graphQLServer,
   });
 
   return new NextSSRApolloClient({

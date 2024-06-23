@@ -1,8 +1,9 @@
+const defaultPort = 8080;
+
 module.exports = {
-  defaultPort: 8080,
+  defaultPort,
   NEXT: {
     PUBLIC: {
-      // add client side environment variables here
       dataSet: '123vic'
     }
   }
