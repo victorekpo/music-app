@@ -1,4 +1,4 @@
-const defaultPort = 8080;
+const defaultPort = 3000;
 
 module.exports = {
   defaultPort,
