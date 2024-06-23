@@ -44,16 +44,16 @@ kind: Ingress
 metadata:
   name: music-search-ingress
   # use the shared ingress-nginx
-  annotations:
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+ # annotations:
+ #   nginx.ingress.kubernetes.io/ssl-redirect: "true"
+ #   nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+ #   cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
   ingressClassName: public
-  tls:
-    - hosts:
-        - music.teknixco.net
-      secretName: music-search-tls
+  # tls:
+  #   - hosts:
+  #       - music.teknixco.net
+  #     secretName: music-search-tls
   rules:
     - host: music.teknixco.net
       http:
