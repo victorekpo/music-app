@@ -15,6 +15,7 @@ const graphQLServer = process.env.NEXT_PUBLIC_graphQLServer;
 const graphQLServer2 = process.env.graphQLServer;
 console.log("GRAPHQL SERVER", graphQLServer);
 console.log("GRAPHQL SERVER2", graphQLServer2);
+console.log("ENV VARS", process.env)
 
 function makeClient() {
   const httpLink = new HttpLink({
