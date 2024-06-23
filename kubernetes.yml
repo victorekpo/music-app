@@ -18,15 +18,8 @@ spec:
         - name: music-search
           image: localhost:32000/music-search:v0.1
           ports:
-            - containerPort: t
+            - containerPort: 3000
               name: https
-          volumeMounts:
-            - name: nginx-tls-secret-volume
-              mountPath: keys
-      volumes:
-        - name: nginx-tls-secret-volume
-          secret:
-            secretName: houstonetwork-com-tls
 
 ---
 # music-search-service.yaml
@@ -41,83 +34,15 @@ spec:
   ports:
     - protocol: TCP
       port: 443
-      targetPort: 2053
+      targetPort: 3000
       name: https
       nodePort: 30005
-
-
----
-# houstonetwork-proxy-deployment.yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: houstonetwork-proxy-deployment
-spec:
-  replicas: 1  # You can adjust the number of replicas as needed
-  selector:
-    matchLabels:
-      app: houstonetwork-proxy
-  template:
-    metadata:
-      labels:
-        app: houstonetwork-proxy
-    spec:
-      containers:
-        - name: houstonetwork-proxy
-          image: nginx:latest
-          ports:
-            - containerPort: 443
-              name: https
-          volumeMounts:
-            - name: nginx-tls-secret-volume
-              mountPath: /etc/nginx/tls
-            - name: nginx-config
-              mountPath: /etc/nginx/nginx.conf
-            - name: nginx-config-default
-              mountPath: /etc/nginx/conf.d/default.conf
-            - name: nginx-config-common-ssl-proxy
-              mountPath: /etc/nginx/common_ssl_proxy.conf
-            - name: nginx-html-50
-              mountPath: /usr/share/nginx/html/50x.html
-      volumes:
-        - name: nginx-config
-          hostPath:
-            path: /home/ubuntu/projects/houstonetwork/server/nginx/nginx.conf
-        - name: nginx-config-default
-          hostPath:
-            path: /home/ubuntu/projects/houstonetwork/server/nginx/default.conf
-        - name: nginx-config-common-ssl-proxy
-          hostPath:
-            path: /home/ubuntu/projects/houstonetwork/server/nginx/common_ssl_proxy.conf
-        - name: nginx-html-50
-          hostPath:
-            path: /home/ubuntu/projects/houstonetwork/server/nginx/html/50x.html
-        - name: nginx-tls-secret-volume
-          secret:
-            secretName: houstonetwork-com-tls
-
----
-# houstonetwork-proxy-service.yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: houstonetwork-proxy-service
-spec:
-  selector:
-    app: houstonetwork-proxy
-  type: NodePort
-  ports:
-    - protocol: TCP
-      name: https
-      port: 443
-      targetPort: 443
-      nodePort: 30002
 
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: houstonetwork-proxy-ingress
+  name: music-search-ingress
   # use the shared ingress-nginx
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
@@ -127,27 +52,16 @@ spec:
   ingressClassName: public
   tls:
     - hosts:
-        - houstonetwork.com
-        - api.houstonetwork.com
-      secretName: houstonetwork-com-tls
+        - music.teknixco.net
+      secretName: music-search-com-tls
   rules:
-    - host: houstonetwork.com
+    - host: music.teknixco.net
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: houstonetwork-proxy-service
-                port:
-                  number: 443
-    - host: api.houstonetwork.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: houstonetwork-proxy-service
+                name: music-search-service
                 port:
                   number: 443
