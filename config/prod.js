@@ -2,10 +2,10 @@ const defaultPort = 3000;
 
 module.exports = {
   defaultPort,
-  graphQLServer: `http://music.teknixco.net/api/v1/graphql`,
+  graphQLServer: `https://music-app-7nc5.onrender.com/api/v1/graphql`,
   NEXT: {
     PUBLIC: {
-      graphQLServer: `http://music.teknixco.net/api/v1/graphql`,
+      graphQLServer: `https://music-app-7nc5.onrender.com/api/v1/graphql`,
     }
   }
 }
