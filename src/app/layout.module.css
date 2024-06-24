@@ -1,3 +1,7 @@
+.navBar {
+    position: relative;
+    z-index: 999;
+}
 .pageContainer {
-    min-height: 80vh;
+    height: 88.5vh;
 }

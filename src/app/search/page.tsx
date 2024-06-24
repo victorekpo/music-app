@@ -1,6 +1,6 @@
 'use client'
 
-import Link from "next/link";
+import { useRouter} from "next/navigation";
 import { useLazyQuery } from "@apollo/client";
 import { useCtx } from "@/components/Context";
 import {
@@ -11,14 +11,16 @@ import {
   SET_SEARCH_RESULTS
 } from "@/components/Context/actions";
 import { SEARCH_MUSIC_QUERY } from "@/graphql/queries/searchMusic";
-import { Input } from "@nextui-org/react";
+import { Button, Input, Listbox, ListboxItem } from "@nextui-org/react";
 import { shuffleArr } from "@/utils/shuffle";
+import styles from './page.module.css';
 
 export const dynamic = "force-dynamic";
 
 const SearchPage = () => {
   const [state, dispatch] = useCtx() as any;
   const [searchMusic, { loading, error}] = useLazyQuery(SEARCH_MUSIC_QUERY);
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,14 +33,14 @@ const SearchPage = () => {
 
     dispatch({
       type: SET_SEARCH_RESULTS,
-      payload: shuffleArr(data.searchMusic)
+      payload: shuffleArr(data?.searchMusic)
     });
   };
 
   return (
     <>
-      <div className=''>
-        Search for your music!
+      <div className={styles.container}>
+        <h1 className={styles.heading}>Search for your music!</h1>
         <div>
           <form onSubmit={handleSubmit}>
             <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
@@ -64,7 +66,7 @@ const SearchPage = () => {
 
                   dispatch({
                     type: SET_SEARCH_RESULTS,
-                    payload: shuffleArr(data.searchMusic)
+                    payload: shuffleArr(data?.searchMusic)
                   });
                 }
                 }
@@ -91,7 +93,7 @@ const SearchPage = () => {
 
                   dispatch({
                     type: SET_SEARCH_RESULTS,
-                    payload: shuffleArr(data.searchMusic)
+                    payload: shuffleArr(data?.searchMusic)
                   });
                 }
                 }
@@ -121,7 +123,7 @@ const SearchPage = () => {
 
                   dispatch({
                     type: SET_SEARCH_RESULTS,
-                    payload: shuffleArr(data.searchMusic)
+                    payload: shuffleArr(data?.searchMusic)
                   });
                 }
                 }
@@ -148,23 +150,29 @@ const SearchPage = () => {
 
                   dispatch({
                     type: SET_SEARCH_RESULTS,
-                    payload: shuffleArr(data.searchMusic)
+                    payload: shuffleArr(data?.searchMusic)
                   });
                 }
                 }
               />
             </div>
-            <button type="submit">Submit</button>
+            <br />
+            <Button type="submit"color="primary">Submit</Button>
           </form>
         </div>
         <div>
-          {!loading && state?.searchResults?.slice(0, 20).map((result, i) => {
+          <Listbox
+            aria-label="Actions"
+            onAction={(key) => router.push(key as string)}
+          >
+          {!loading && state?.searchResults?.slice(0, 20).map((result) => {
             return (
-              <li key={i}>
-                <Link href={`/song/${result.song.replace(" -- ","--").replaceAll(" ","_")}`}>{result.song}</Link>
-              </li>
+              <ListboxItem key={`/song/${result.song.replace(" -- ","--").replaceAll(" ","_")}`}>
+                {result.song}
+              </ListboxItem>
             )
           })}
+          </Listbox>
         </div>
       </div>
     </>

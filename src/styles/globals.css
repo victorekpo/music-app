@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 /* Global variables in globals.css can be used in other stylesheets */
+html {
+    max-height: 100vh;
+    overflow: hidden;
+    background-color: #05050a !important;
+}
+
 :root {
     --bg: #0d0c22;
     --bgSoft: #2d2b42;
