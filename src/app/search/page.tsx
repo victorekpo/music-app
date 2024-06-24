@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter} from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useLazyQuery } from "@apollo/client";
 import { useCtx } from "@/components/Context";
 import {
@@ -19,7 +19,7 @@ export const dynamic = "force-dynamic";
 
 const SearchPage = () => {
   const [state, dispatch] = useCtx() as any;
-  const [searchMusic, { loading, error}] = useLazyQuery(SEARCH_MUSIC_QUERY);
+  const [searchMusic, { loading, error }] = useLazyQuery(SEARCH_MUSIC_QUERY);
   const router = useRouter();
 
   const handleSubmit = async (e) => {
@@ -99,7 +99,7 @@ const SearchPage = () => {
                 }
               />
             </div>
-            <br />
+            <br/>
             <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
               <Input
                 type="GenreQuery"
@@ -156,22 +156,22 @@ const SearchPage = () => {
                 }
               />
             </div>
-            <br />
-            <Button type="submit"color="primary">Submit</Button>
+            <br/>
+            <Button type="submit" color="primary">Submit</Button>
           </form>
         </div>
-        <div>
+        <div className={styles.listBoxContainer}>
           <Listbox
             aria-label="Actions"
             onAction={(key) => router.push(key as string)}
           >
-          {!loading && state?.searchResults?.slice(0, 20).map((result) => {
-            return (
-              <ListboxItem key={`/song/${result.song.replace(" -- ","--").replaceAll(" ","_")}`}>
-                {result.song}
-              </ListboxItem>
-            )
-          })}
+            {!loading && state?.searchResults?.slice(0, 20).map((result) => {
+              return (
+                <ListboxItem key={`/song/${result.song.replace(" -- ", "--").replaceAll(" ", "_")}`}>
+                  {result.song}
+                </ListboxItem>
+              )
+            })}
           </Listbox>
         </div>
       </div>
