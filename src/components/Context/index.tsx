@@ -18,13 +18,12 @@ const initialState = {
   music: {}
 }
 
-
 export const AppContextProvider = ({ music, children }) => {
-  const [state, dispatch] = useReducer(reducer, {...initialState, music})
+  const [state, dispatch] = useReducer(reducer, { ...initialState, music });
 
   return (
-    <AppContext.Provider value={[state, dispatch]} >
-      { children }
+    <AppContext.Provider value={[state, dispatch]}>
+      {children}
     </AppContext.Provider>
-  )
+  );
 };

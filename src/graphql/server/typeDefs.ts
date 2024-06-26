@@ -30,6 +30,7 @@ export const typeDefs = `
   
   type Query {
     getAllMusic: [Song]
+    getSong(song: String): Song
     searchMusic(songQuery: String, artistQuery: String, albumQuery: String, genreQuery: String, tagsQuery: String, quotesQuery: String): [Song]
   }
   

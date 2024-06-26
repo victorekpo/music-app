@@ -6,8 +6,16 @@ import type { SearchQuery } from "@/@types/SearchQuery";
 
 export const resolvers = {
   Query: {
+    // Not currently being used since it introduces latency, currently reading the file at initial load and passing into Provider
     getAllMusic: () => {
-      return readMusic();
+      const currentMusic = readMusic();
+      return currentMusic.songs;
+    },
+    // Not currently being used since it introduces latency, currently getting song from State
+    getSong: (_, args: { song: string }) => {
+      const{ song } = args;
+      const currentMusic = readMusic();
+      return currentMusic.songs.find((s: SongInfo) => s.song === song)
     },
     searchMusic: (_, args: SearchQuery) => {
       const {

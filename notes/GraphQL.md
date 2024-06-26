@@ -1,0 +1,1 @@
+- remove __typename from response: https://www.apollographql.com/docs/react/api/link/apollo-link-remove-typename/

@@ -10,6 +10,7 @@
 
 .editable input {
     width: 330px;
+    font-weight: bold;
 }
 
 .formContainer input {

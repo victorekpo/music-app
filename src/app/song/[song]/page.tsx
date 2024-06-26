@@ -1,23 +1,24 @@
 'use client'
 
-import { SongInfo } from "@/@types/Music";
 import { Button, Input } from "@nextui-org/react";
 import { useState } from "react";
 import { useCtx } from "@/components/Context";
 import styles from './page.module.css';
+import type { SongInfo } from "@/@types/Music";
 
 const SongPage = ({ params }) => {
   const [edit, setEdit] = useState(false);
   const [state, dispatch] = useCtx() as any;
   const { music } = state;
 
-  console.log(params);
   const song = params.song
     .replace("--"," -- ")
     .replaceAll("_"," ")
     .replaceAll("%3B",";")
     .replaceAll("%2C",",");
-  const found = music.songs.find((s: SongInfo) => s.song === song)
+
+  const found = music.songs.find((s: SongInfo) => s.song === song);
+
   return (
     <>
       <h1 className='' style={{fontSize: "30px"}}>
@@ -32,7 +33,8 @@ const SongPage = ({ params }) => {
                 <Input
                   type={k}
                   label={k}
-                  value={v as any}
+                  value={v + ""}
+                  onChange={(e) => console.log(e.target.value)}
                 />
               </>
             ) : (
