@@ -9,6 +9,7 @@ export const addMusic = (song: SongInfo) => {
     song: `${ song.artist } -- ${ song.song }`,
     songInfo: song
   };
+  // Get new music from current music plus new song
   const newMusic = {
     ...currentMusic,
     songs: [
@@ -16,6 +17,7 @@ export const addMusic = (song: SongInfo) => {
       newSong
     ]
   };
+  // Update Global music variable, switch to DB later
   music.songs = [
     ...newMusic.songs
   ]
