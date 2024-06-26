@@ -2,43 +2,139 @@
 
 import { Button, Input } from "@nextui-org/react";
 import { useState } from "react";
+import styles from "./page.module.css";
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  console.log(e.target.values);
+const initialFormState = {
+  artist: '',
+  song: '',
+  album: '',
+  genre: '',
+  BPM: '',
+  speed: '',
+  mood: '',
+  tags: '', // Todo: change to array
+  quotes: '' // Todo: change to array
 }
+
 const AddMusicPage = () => {
-  const [artist, setArtist] = useState('');
-  const [song, setSong] = useState('');
-  const [album, setAlbum] = useState('');
-  const [genre, setGenre] = useState('');
-  const [BPM, setBPM] = useState('');
-  const [speed, setSpeed] = useState('');
-  const [mood, setMood] = useState('');
-  const [tags, setTags] = useState(''); // Todo: Change to array
-  const [quotes, setQuotes]=useState(''); // Todo: Change to array
+  const [formState, setFormState] = useState(initialFormState);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("form state", formState);
+  }
+
   return (
     <>
       <div className=''>Add Music Page</div>
-      <form onSubmit={ handleSubmit }>
+      <form className={styles.formContainer} onSubmit={ handleSubmit }>
         <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
           <Input
             type="Artist"
             label="Artist"
             required
+            onChange={ (e) => {
+              setFormState((prev) => ({
+                ...prev,
+                artist: e.target.value
+              }))
+            } }
           />
           <Input
             type="Song"
             label="Song"
             required
+            onChange={ (e) => {
+              setFormState((prev) => ({
+                ...prev,
+                song: e.target.value
+              }))
+            } }
           />
-          <Input/>
-          <Input/>
-          <Button type="submit" color="primary">Submit</Button>
+          <Input
+            type="Album"
+            label="Album"
+            required
+            onChange={ (e) => {
+              setFormState((prev) => ({
+                ...prev,
+                album: e.target.value
+              }))
+            } }
+          />
+          <Input
+            type="Genre"
+            label="Genre"
+            required
+            onChange={ (e) => {
+              setFormState((prev) => ({
+                ...prev,
+                genre: e.target.value
+              }))
+            } }
+          />
+          <Input
+            type="BPM"
+            label="BPM"
+            required
+            onChange={ (e) => {
+              setFormState((prev) => ({
+                ...prev,
+                BPM: e.target.value
+              }))
+            } }
+          />
+          <Input
+            type="Speed"
+            label="Speed"
+            required
+            onChange={ (e) => {
+              setFormState((prev) => ({
+                ...prev,
+                speed: e.target.value
+              }))
+            } }
+          />
         </div>
+          <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+            <Input
+              type="Mood"
+              label="Mood"
+              required
+              onChange={ (e) => {
+                setFormState((prev) => ({
+                  ...prev,
+                  mood: e.target.value
+                }))
+              } }
+            />
+            <Input
+              type="Tags"
+              label="Tags"
+              required
+              onChange={ (e) => {
+                setFormState((prev) => ({
+                  ...prev,
+                  tags: e.target.value
+                }))
+              } }
+            />
+            <Input
+              type="Quotes"
+              label="Quotes"
+              required
+              onChange={ (e) => {
+                setFormState((prev) => ({
+                  ...prev,
+                  quotes: e.target.value
+                }))
+              } }
+            />
+          </div>
+            <Button type="submit" color="primary">Submit</Button>
       </form>
 
-</>
+    </>
 )
 }
 
