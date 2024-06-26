@@ -1,4 +1,4 @@
-import { music, readMusic } from "@/utils/music/read";
+import { readMusic } from "@/utils/music/read";
 import { searchQuery } from "@/utils/music";
 import { addMusic } from "@/utils/music/add";
 import type { SongInfo } from "@/@types/Music";
@@ -7,8 +7,7 @@ import type { SearchQuery } from "@/@types/SearchQuery";
 export const resolvers = {
   Query: {
     getAllMusic: () => {
-      readMusic();
-      return music;
+      return readMusic();
     },
     searchMusic: (_, args: SearchQuery) => {
       const {
@@ -19,7 +18,6 @@ export const resolvers = {
         tagsQuery,
         quotesQuery
       } = args;
-      readMusic();
       return searchQuery({
         songQuery,
         artistQuery,

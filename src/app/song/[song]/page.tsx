@@ -1,13 +1,16 @@
+'use client'
 
-import { music, readMusic } from "@/utils/music/read";
 import { SongInfo } from "@/@types/Music";
 import { Button, Input } from "@nextui-org/react";
-// import { useState } from "react";
+import { useState } from "react";
+import { useCtx } from "@/components/Context";
+import styles from './page.module.css';
 
 const SongPage = ({ params }) => {
-  // const [edit, setEdit] = useState(false);
+  const [edit, setEdit] = useState(false);
+  const [state, dispatch] = useCtx() as any;
+  const { music } = state;
 
-  readMusic();
   console.log(params);
   const song = params.song
     .replace("--"," -- ")
@@ -21,22 +24,44 @@ const SongPage = ({ params }) => {
         {found?.song}
       </h1>
       <br/>
-      <p style={{fontSize: "20px"}}>
+      <form className={styles.formContainer}>
         {Object.entries(found?.songInfo || {}).map(([k,v], i) => (
-          <>
-            { false ? (
-              <Input />
+          <div key={i}>
+            { edit ? (
+              <>
+                <Input
+                  type={k}
+                  label={k}
+                  value={v as any}
+                />
+              </>
             ) : (
               <>
-                <strong key={i}>{k}:</strong> {v} <br />
+                <strong>{k}:</strong> {v} <br />
               </>
               )
             }
-          </>
+          </div>
         ))}
-      </p>
-      <br />
-      <Button type="submit" color="primary">Edit Song</Button>
+      { edit ? (<Button
+        color="primary"
+        onClick={() => {
+          setEdit(!edit)
+        }}
+      >
+        Submit
+      </Button>) : (
+        <Button
+          type="submit"
+          color="primary"
+          onClick={() => {
+            setEdit(!edit)
+          }}
+        >
+          Edit Song
+        </Button>
+      ) }
+      </form>
     </>
   )
 }

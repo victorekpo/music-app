@@ -14,11 +14,13 @@ const initialState = {
   genreQuery: '',
   quotesQuery: '',
   tagsQuery: '',
-  searchResults: []
+  searchResults: [],
+  music: {}
 }
 
-export const AppContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(reducer, initialState)
+
+export const AppContextProvider = ({ music, children }) => {
+  const [state, dispatch] = useReducer(reducer, {...initialState, music})
 
   return (
     <AppContext.Provider value={[state, dispatch]} >

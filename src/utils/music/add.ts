@@ -1,4 +1,4 @@
-import { music, readMusic } from "@/utils/music/read";
+import { readMusic } from "@/utils/music/read";
 import { SongInfo } from "@/@types/Music";
 import { writeMusic } from "@/utils/music/write";
 
@@ -17,10 +17,8 @@ export const addMusic = (song: SongInfo) => {
       newSong
     ]
   };
-  // Update Global music variable, switch to DB later
-  music.songs = [
-    ...newMusic.songs
-  ]
-  writeMusic(newMusic);
+
+  // Save to file
+  writeMusic(currentMusic, newMusic);
   return newSong;
 };
