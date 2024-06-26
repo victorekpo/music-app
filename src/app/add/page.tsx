@@ -1,7 +1,9 @@
 'use client'
 
-import { Button, Input } from "@nextui-org/react";
 import { useState } from "react";
+import { useMutation } from "@apollo/client";
+import { Button, Input } from "@nextui-org/react";
+import { ADD_MUSIC_QUERY } from "@/graphql/queries/addMusic";
 import styles from "./page.module.css";
 
 const initialFormState = {
@@ -18,10 +20,17 @@ const initialFormState = {
 
 const AddMusicPage = () => {
   const [formState, setFormState] = useState(initialFormState);
+  // call useMutation query here
+  const [addMusic, { error }] = useMutation(ADD_MUSIC_QUERY)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("form state", formState);
+    await addMusic({
+      variables: {
+        ...formState
+      }
+    })
   }
 
   return (
