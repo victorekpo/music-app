@@ -1,5 +1,19 @@
 .formContainer {
     font-size: 20px;
+
+}
+
+.editable {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.editable input {
+    width: 330px;
+}
+
+.formContainer input {
+
 }
 
 .formContainer div {

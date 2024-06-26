@@ -24,7 +24,7 @@ const SongPage = ({ params }) => {
         {found?.song}
       </h1>
       <br/>
-      <form className={styles.formContainer}>
+      <form className={styles.formContainer + " " + (edit ? styles.editable + " flex w-full flex-wrap md:flex-nowrap gap-4" : "")}>
         {Object.entries(found?.songInfo || {}).map(([k,v], i) => (
           <div key={i}>
             { edit ? (
