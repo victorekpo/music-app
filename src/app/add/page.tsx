@@ -28,7 +28,7 @@ const AddMusicPage = () => {
     console.log("form state", formState);
     await addMusic({
       variables: {
-        ...formState
+        song: { ...formState }
       }
     })
   }

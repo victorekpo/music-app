@@ -2,7 +2,7 @@ import { music, readMusic } from "@/utils/music/read";
 import { searchQuery } from "@/utils/music";
 import { addMusic } from "@/utils/music/add";
 import { writeMusic } from "@/utils/music/write";
-import type { Song } from "@/@types/Music";
+import type { SongInfo } from "@/@types/Music";
 import type { SearchQuery } from "@/@types/SearchQuery";
 
 export const resolvers = {
@@ -33,18 +33,9 @@ export const resolvers = {
   },
 
   Mutation: {
-    addMusic: (_, args: { song: Song }) => {
+    addMusic: (_, args: { song: SongInfo }) => {
       const { song } = args;
-      const music = readMusic();
-      const newSong = addMusic(song)
-      const newMusic = [
-        ...music,
-        {
-          song: `${newSong.artist} -- ${newSong.song}`,
-          songInfo: newSong
-        }
-      ];
-      writeMusic(newMusic);
+      return addMusic(song);
     }
   }
 };
