@@ -28,7 +28,7 @@ const commitChanges = (newSong: String) => {
     }
     execSync('git add -A');
     execSync(`git commit -m "Automated commit to write music file - ${newSong}"`);
-    execSync('git push origin NewMusic');
+    execSync(`git push origin NewMusic-${songBranch}`);
     execSync('git checkout master');
     execSync('git pull');
   } catch (error) {
