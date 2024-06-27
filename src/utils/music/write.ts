@@ -22,6 +22,7 @@ const commitChanges = (newSong?: String) => {
     } catch (err) {
       console.log("Branch already exists")
       execSync('git checkout NewMusic');
+      execSync('git stash -u');
       execSync('git pull');
     }
     execSync('git add .');
@@ -31,5 +32,7 @@ const commitChanges = (newSong?: String) => {
     execSync('git pull');
   } catch (error) {
     console.error('Error committing changes to Git:', error);
+    execSync('git checkout master');
+    execSync('git pull');
   }
 };
