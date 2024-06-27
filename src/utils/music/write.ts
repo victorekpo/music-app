@@ -14,16 +14,17 @@ export const writeMusic = (currentMusic: any, newMusic: any, newSong = "Default 
   commitChanges(newSong);
 };
 
-const commitChanges = (newSong?: String) => {
+const commitChanges = (newSong: String) => {
+  const songBranch = newSong.replaceAll(" ", "").trim();
   try {
     execSync('git pull');
     try {
-      execSync(`git checkout -b NewMusic-${newSong}`);
+      execSync(`git checkout -b NewMusic-${songBranch}`);
     } catch (err) {
       console.log("Branch already exists")
-      execSync(`git branch -D NewMusic-${newSong}`);
+      execSync(`git branch -D NewMusic-${songBranch}`);
       execSync('git stash -u');
-      execSync(`git checkout -b -f NewMusic-${newSong}`);
+      execSync(`git checkout -b -f NewMusic-${songBranch}`);
     }
     execSync('git add -A');
     execSync(`git commit -m "Automated commit to write music file - ${newSong}"`);
