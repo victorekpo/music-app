@@ -54,12 +54,12 @@ export const reducer = (state: Record<string, any>, action: { type: string, payl
       };
 
     case UPDATE_SONG:
-      const oldSongId = action.payload.oldSongId;
-      const newSongId = `${action.payload.artist} -- ${action.payload.song}`;
+      const { oldSongId, ...songPayload } = action.payload;
+      const newSongId = `${songPayload.artist} -- ${songPayload.song}`;
       const arrayWithoutSong = state.music.songs.filter((song: Song) => song.song !== oldSongId);
       const newSong = {
         song: newSongId,
-        songInfo: { ...action.payload }
+        songInfo: { ...songPayload }
       };
 
       return {

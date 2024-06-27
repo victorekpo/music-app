@@ -28,7 +28,6 @@ const SongPage = ({ params }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("form submission", formState);
     // Mutation query to update song in db
     await updateSong({
       variables: { oldSongId: song.song, song: { ...formState } }
