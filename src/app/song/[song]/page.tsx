@@ -1,40 +1,71 @@
 'use client'
 
 import { Button, Input } from "@nextui-org/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useCtx } from "@/components/Context";
 import styles from './page.module.css';
 import type { SongInfo } from "@/@types/Music";
+import { UPDATE_SONG } from "@/components/Context/actions";
 
 const SongPage = ({ params }) => {
   const [edit, setEdit] = useState(false);
+  const [formState, setFormState] = useState({}) as any;
   const [state, dispatch] = useCtx() as any;
   const { music } = state;
 
-  const song = params.song
+  const songId = params.song
     .replace("--"," -- ")
     .replaceAll("_"," ")
     .replaceAll("%3B",";")
     .replaceAll("%2C",",");
 
-  const found = music.songs.find((s: SongInfo) => s.song === song);
+  const found = music.songs.find((s: SongInfo) => s.song === songId);
+  const [song, setSong] = useState(found) as any;
+  
+  useEffect(() => {
+    if (found.songInfo) {
+      setFormState(found.songInfo);
+    }
+  },[]);
 
   return (
     <>
       <h1 className='' style={{fontSize: "30px"}}>
-        {found?.song}
+        {song?.song}
       </h1>
       <br/>
-      <form className={styles.formContainer + " " + (edit ? styles.editable + " flex w-full flex-wrap md:flex-nowrap gap-4" : "")}>
-        {Object.entries(found?.songInfo || {}).map(([k,v], i) => (
+      <form
+        className={styles.formContainer + " " + (edit ? styles.editable + " flex w-full flex-wrap md:flex-nowrap gap-4" : "")}
+        onSubmit={(e) => {
+          e.preventDefault();
+          console.log("form submission", formState);
+          // Mutation query to update song in db
+          // Dispatch to update state
+          dispatch({
+            type: UPDATE_SONG,
+            payload: { oldSongId: song.song, ...formState }
+          });
+          // Set new song to state
+          setSong({
+            song: `${formState.artist} -- ${formState.song}`,
+            songInfo: { ...formState }
+          })
+        }}
+      >
+        {Object.entries(song?.songInfo || {}).map(([k,v], i) => (
           <div key={i}>
             { edit ? (
               <>
                 <Input
                   type={k}
                   label={k}
-                  value={v + ""}
-                  onChange={(e) => console.log(e.target.value)}
+                  value={formState[k]}
+                  onChange={({target: { value }}) => {
+                    setFormState(prev => ({
+                      ...prev,
+                      [k]: value
+                    }));
+                  }}
                 />
               </>
             ) : (

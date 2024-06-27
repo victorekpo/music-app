@@ -5,6 +5,7 @@ import { useMutation } from "@apollo/client";
 import { Button, Input } from "@nextui-org/react";
 import { ADD_MUSIC_QUERY } from "@/graphql/queries/addMusic";
 import styles from "./page.module.css";
+import { useCtx } from "@/components/Context";
 
 const initialFormState = {
   artist: '',
@@ -19,6 +20,7 @@ const initialFormState = {
 }
 
 const AddMusicPage = () => {
+  const [state, dispatch] = useCtx() as any;
   const [formState, setFormState] = useState(initialFormState);
   // call useMutation query here
   const [addMusic, { error }] = useMutation(ADD_MUSIC_QUERY)
@@ -30,6 +32,10 @@ const AddMusicPage = () => {
       variables: {
         song: { ...formState }
       }
+    })
+    dispatch({
+      type: 'ADD_NEW_SONG',
+      payload: { ...formState }
     })
   }
 
