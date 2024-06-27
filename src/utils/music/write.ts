@@ -5,7 +5,7 @@ import { Song } from "@/@types/Music";
 const musicFile = <string>process.env.musicFile;
 const bkMusicFile = <string>process.env.bkMusicFile;
 
-export const writeMusic = (currentMusic: any, newMusic: any, newSong?: String) => {
+export const writeMusic = (currentMusic: any, newMusic: any, newSong = "Default song") => {
   const oldMusicString = JSON.stringify(currentMusic, null, 2);
   const newMusicString = JSON.stringify(newMusic, null, 2);
   fs.writeFileSync(bkMusicFile, oldMusicString);
@@ -21,11 +21,12 @@ const commitChanges = (newSong?: String) => {
       execSync('git checkout -b NewMusic');
     } catch (err) {
       console.log("Branch already exists")
+      execSync('git stash -u');
       execSync('git checkout NewMusic');
       execSync('git stash -u');
-      execSync('git pull');
+      execSync('git pull origin NewMusic');
     }
-    execSync('git add .');
+    execSync('git add -A');
     execSync(`git commit -m "Automated commit to write music file - ${newSong}"`);
     execSync('git push origin NewMusic');
     execSync('git checkout master');
