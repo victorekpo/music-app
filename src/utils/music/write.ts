@@ -24,11 +24,11 @@ const commitChanges = (newSong: String) => {
       console.log("Branch already exists")
       execSync(`git branch -D NewMusic-${songBranch}`);
       execSync('git stash -u');
-      execSync(`git checkout -b -f NewMusic-${songBranch}`);
+      execSync(`git checkout -b NewMusic-${songBranch}`);
     }
     execSync('git add -A');
     execSync(`git commit -m "Automated commit to write music file - ${newSong}"`);
-    execSync(`git push origin NewMusic-${songBranch}`);
+    execSync(`git push -f origin NewMusic-${songBranch}`);
     execSync('git checkout master');
     execSync('git pull');
   } catch (error) {
