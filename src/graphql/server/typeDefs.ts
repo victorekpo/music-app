@@ -36,5 +36,6 @@ export const typeDefs = `
   
   type Mutation {
     addMusic(song: SongInput): Song
+    updateMusic(oldSongId: String, song: SongInput): Song
   }
 `;

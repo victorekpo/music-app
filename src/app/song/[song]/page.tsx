@@ -3,9 +3,11 @@
 import { Button, Input } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import { useCtx } from "@/components/Context";
+import { useMutation } from "@apollo/client";
+import { UPDATE_SONG } from "@/components/Context/actions";
+import { UPDATE_MUSIC_QUERY } from "@/graphql/queries/updateMusic";
 import styles from './page.module.css';
 import type { SongInfo } from "@/@types/Music";
-import { UPDATE_SONG } from "@/components/Context/actions";
 
 const SongPage = ({ params }) => {
   const [edit, setEdit] = useState(false);
@@ -21,6 +23,27 @@ const SongPage = ({ params }) => {
 
   const found = music.songs.find((s: SongInfo) => s.song === songId);
   const [song, setSong] = useState(found) as any;
+
+  const [updateSong, { error } ] = useMutation(UPDATE_MUSIC_QUERY);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("form submission", formState);
+    // Mutation query to update song in db
+    await updateSong({
+      variables: { oldSongId: song.song, song: { ...formState } }
+    })
+    // Dispatch to update global state music object
+    dispatch({
+      type: UPDATE_SONG,
+      payload: { oldSongId: song.song, ...formState }
+    });
+    // Set new song to local state for current page
+    setSong({
+      song: `${formState.artist} -- ${formState.song}`,
+      songInfo: { ...formState }
+    })
+  };
   
   useEffect(() => {
     if (found.songInfo) {
@@ -36,21 +59,7 @@ const SongPage = ({ params }) => {
       <br/>
       <form
         className={styles.formContainer + " " + (edit ? styles.editable + " flex w-full flex-wrap md:flex-nowrap gap-4" : "")}
-        onSubmit={(e) => {
-          e.preventDefault();
-          console.log("form submission", formState);
-          // Mutation query to update song in db
-          // Dispatch to update state
-          dispatch({
-            type: UPDATE_SONG,
-            payload: { oldSongId: song.song, ...formState }
-          });
-          // Set new song to state
-          setSong({
-            song: `${formState.artist} -- ${formState.song}`,
-            songInfo: { ...formState }
-          })
-        }}
+        onSubmit={handleSubmit}
       >
         {Object.entries(song?.songInfo || {}).map(([k,v], i) => (
           <div key={i}>

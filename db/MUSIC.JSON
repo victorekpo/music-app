@@ -3193,31 +3193,17 @@
       }
     },
     {
-      "song": "DJ Algoriddim -- In Your Dress",
+      "song": "DJ Algoriddim -- 'N Your Dress",
       "songInfo": {
         "artist": "DJ Algoriddim",
-        "song": "In Your Dress",
-        "album": "The Better Dayz",
-        "genre": "VicMusic",
+        "song": "'N Your Dress",
+        "album": "Pure Bliss",
+        "genre": "Hip Hop, R&B",
         "BPM": "120",
         "speed": "regular",
         "mood": "mellow",
         "tags": "romantic, for my babe",
         "quotes": "\"Girl you look so sexy in your dress, I just want to confess, can I hang out? It will be alright..\""
-      }
-    },
-    {
-      "song": "New -- Song",
-      "songInfo": {
-        "artist": "New",
-        "song": "Song",
-        "album": "Album",
-        "genre": "Genre",
-        "BPM": "BPM",
-        "speed": "Speed",
-        "mood": "Mood",
-        "tags": "Tags",
-        "quotes": "Quotes"
       }
     }
   ]

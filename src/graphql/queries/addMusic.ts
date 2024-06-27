@@ -14,9 +14,7 @@ mutation ($song: SongInput) {
       mood
       tags
       quotes
-      __typename
     }
-    __typename
   }
 }
 `;
