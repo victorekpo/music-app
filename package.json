@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && bash -c 'NODE_CONFIG_ENV=prod npm run build-env' && npm run build-next && npm run build-tsc",
     "build-env": "node utils/TransformConfigToEnv.js",
-    "build-next": "bash -c 'NODE_CONFIG_ENV=prod next build'",
+    "build-next": "bash -c 'next build'",
     "build-tsc": "tsc",
     "clean": "rm -rf dist && rm -rf .next",
     "dev": "bash -c 'NODE_CONFIG_ENV=dev npm run build-env' && next dev",

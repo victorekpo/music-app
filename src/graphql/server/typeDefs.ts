@@ -30,10 +30,12 @@ export const typeDefs = `
   
   type Query {
     getAllMusic: [Song]
+    getSong(song: String): Song
     searchMusic(songQuery: String, artistQuery: String, albumQuery: String, genreQuery: String, tagsQuery: String, quotesQuery: String): [Song]
   }
   
   type Mutation {
     addMusic(song: SongInput): Song
+    updateMusic(oldSongId: String, song: SongInput): Song
   }
 `;

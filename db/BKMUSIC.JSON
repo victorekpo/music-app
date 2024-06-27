@@ -1,20 +1,6 @@
 {
   "songs": [
     {
-      "song": "2Baba -- Amaka",
-      "songInfo": {
-        "artist": "2Baba",
-        "song": "Amaka",
-        "album": "",
-        "genre": "Naija Hip-Hop",
-        "BPM": "",
-        "speed": "",
-        "mood": "",
-        "tags": "",
-        "quotes": "\"Amaka...\""
-      }
-    },
-    {
       "song": "Adekunle Gold -- Okay",
       "songInfo": {
         "artist": "Adekunle Gold",
@@ -3204,6 +3190,20 @@
         "mood": "",
         "tags": "",
         "quotes": ""
+      }
+    },
+    {
+      "song": "DJ Algoriddim -- 'N Your Dress",
+      "songInfo": {
+        "artist": "DJ Algoriddim",
+        "song": "'N Your Dress",
+        "album": "Pure Bliss",
+        "genre": "Hip Hop, R&B",
+        "BPM": "120",
+        "speed": "regular",
+        "mood": "mellow",
+        "tags": "romantic, for my babe",
+        "quotes": "\"Girl you look so sexy in your dress, I just want to confess, can I hang out? It will be alright..\""
       }
     }
   ]

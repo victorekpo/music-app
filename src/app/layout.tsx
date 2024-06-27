@@ -7,6 +7,7 @@ import style from './layout.module.css';
 import { AppContextProvider } from "@/components/Context";
 import { ApolloWrapper } from "@/graphql/client/wrapper";
 import { NextUIProvider } from "@nextui-org/react";
+import { readMusic } from "@/utils/music/read";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <ApolloWrapper>
-       <AppContextProvider>
+       <AppContextProvider music={readMusic()}>
         <html lang="en">
           <body className="container">
           <div className={style.navBar}>
