@@ -1,0 +1,3210 @@
+{
+  "songs": [
+    {
+      "song": "Adekunle Gold -- Okay",
+      "songInfo": {
+        "artist": "Adekunle Gold",
+        "song": "Okay",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Bella Shmurda; Zlatan -- Cashapp",
+      "songInfo": {
+        "artist": "Bella Shmurda; Zlatan",
+        "song": "Cashapp",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Bracket -- Celebrate",
+      "songInfo": {
+        "artist": "Bracket",
+        "song": "Celebrate",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"I celebrate.. no time to complain!\""
+      }
+    },
+    {
+      "song": "Bracket -- Panya",
+      "songInfo": {
+        "artist": "Bracket",
+        "song": "Panya",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"I'm singing this song for Panya\"; \"Oyah what is my baby name?\""
+      }
+    },
+    {
+      "song": "Bracket; Flavour -- Beautiful Baby",
+      "songInfo": {
+        "artist": "Bracket; Flavour",
+        "song": "Beautiful Baby",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "My beautiful baby oo.. as I love you I hope you love me too\""
+      }
+    },
+    {
+      "song": "Brenda Fassie -- Vulindlela",
+      "songInfo": {
+        "artist": "Brenda Fassie",
+        "song": "Vulindlela",
+        "album": "",
+        "genre": "Africa Old School",
+        "BPM": "105.96",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Burna Boy -- 23",
+      "songInfo": {
+        "artist": "Burna Boy",
+        "song": "23",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Burna Boy -- Anybody",
+      "songInfo": {
+        "artist": "Burna Boy",
+        "song": "Anybody",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Burna Boy -- Bank On It",
+      "songInfo": {
+        "artist": "Burna Boy",
+        "song": "Bank On It",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Burna Boy -- Kilometre",
+      "songInfo": {
+        "artist": "Burna Boy",
+        "song": "Kilometre",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Burna Boy -- On The Low",
+      "songInfo": {
+        "artist": "Burna Boy",
+        "song": "On The Low",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"Angelly, Angelina..\"; \"You cool my temperature\""
+      }
+    },
+    {
+      "song": "Burna Boy -- Ye",
+      "songInfo": {
+        "artist": "Burna Boy",
+        "song": "Ye",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "90",
+        "speed": "slow",
+        "mood": "chill",
+        "tags": "intro",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Burna Boy -- Onyeka (Baby)",
+      "songInfo": {
+        "artist": "Burna Boy",
+        "song": "Onyeka (Baby)",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"I say my baby, my baby oo, osondi owendi oo\""
+      }
+    },
+    {
+      "song": "Chike -- If You No Love",
+      "songInfo": {
+        "artist": "Chike",
+        "song": "If You No Love",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Chike -- Roju",
+      "songInfo": {
+        "artist": "Chike",
+        "song": "Roju",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Chike -- Running To You",
+      "songInfo": {
+        "artist": "Chike",
+        "song": "Running To You",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Chris Morgan -- Original Love",
+      "songInfo": {
+        "artist": "Chris Morgan",
+        "song": "Original Love",
+        "album": "",
+        "genre": "Naija Gospel",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "D-Black; Sarkodie; Singlet -- OMEGA",
+      "songInfo": {
+        "artist": "D-Black; Sarkodie; Singlet",
+        "song": "OMEGA",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "112.08",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"Jehovah is so great\"; \"Alpha is so great\"; \"Omega is so great\""
+      }
+    },
+    {
+      "song": "Dammy Krane -- Shaku Shaku",
+      "songInfo": {
+        "artist": "Dammy Krane",
+        "song": "Shaku Shaku",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Danny Glover; 2Pac -- A River That Flows Forever",
+      "songInfo": {
+        "artist": "Danny Glover; 2Pac",
+        "song": "A River That Flows Forever",
+        "album": "",
+        "genre": "Soulful",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"The river will flow forever.. as long as you are with me.\""
+      }
+    },
+    {
+      "song": "Danny Lerman -- No Ordinary Love",
+      "songInfo": {
+        "artist": "Danny Lerman",
+        "song": "No Ordinary Love",
+        "album": "",
+        "genre": "Smooth Jazz",
+        "BPM": "111.52",
+        "speed": "",
+        "mood": "",
+        "tags": "instrumental",
+        "quotes": "\"This is no ordinary love..\""
+      }
+    },
+    {
+      "song": "Davido -- Aye",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Aye",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "82.8",
+        "speed": "slow",
+        "mood": "love",
+        "tags": "romantic; dance; party; favorites",
+        "quotes": "\"She no want designer, she no want Ferrari, she says am my love ohh..\"; \"You belong to mee..\""
+      }
+    },
+    {
+      "song": "Davido -- Fem",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Fem",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Wonder Woman",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Wonder Woman",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "120",
+        "speed": "medium",
+        "mood": "romantic",
+        "tags": "chill; beginning of party; love-making",
+        "quotes": "\"You no dey fear face oohh\"; \"Abi you talk craze oh\""
+      }
+    },
+    {
+      "song": "Davido -- All Of You",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "All Of You",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Back When",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Back When",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Video",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Video",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Ekuro",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Ekuro",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- No Visa",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "No Visa",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Dami Duro",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Dami Duro",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"A mi Omo Baba Olowo\"; \"And my name is Prince Davido and I'm driving all the girls crazy ohh\""
+      }
+    },
+    {
+      "song": "Davido -- Gbon Gbon",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Gbon Gbon",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Assurance",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Assurance",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Coolest Kid in Africa",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Coolest Kid in Africa",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Dodo",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Dodo",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Fall",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Fall",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Fia",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Fia",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Owo Ni Koko",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Owo Ni Koko",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Skelewu",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Skelewu",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- If",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "If",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido -- Gobe",
+      "songInfo": {
+        "artist": "Davido",
+        "song": "Gobe",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido; Mayor Dagunro -- Look My Face",
+      "songInfo": {
+        "artist": "Davido; Mayor Dagunro",
+        "song": "Look My Face",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"Why you dey look my face.. you know sey my swag past..\""
+      }
+    },
+    {
+      "song": "Davido; Olamide -- The Money",
+      "songInfo": {
+        "artist": "Davido; Olamide",
+        "song": "The Money",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Davido; Reminisce -- Daddy",
+      "songInfo": {
+        "artist": "Davido; Reminisce",
+        "song": "Daddy",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "120.1",
+        "speed": "medium-fast",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"Everything is nice, the band is banging\"; \"The time is right, I see the money coming\""
+      }
+    },
+    {
+      "song": "Davido; Uhuru -- The Sound",
+      "songInfo": {
+        "artist": "Davido; Uhuru",
+        "song": "The Sound",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Diamond Platinumz; Flavour -- Nana",
+      "songInfo": {
+        "artist": "Diamond Platinumz; Flavour",
+        "song": "Nana",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "DJ Kaywise -- High Way",
+      "songInfo": {
+        "artist": "DJ Kaywise",
+        "song": "High Way",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "DJ Spinall; Davido; Wande Coal -- Olowo",
+      "songInfo": {
+        "artist": "DJ Spinall; Davido; Wande Coal",
+        "song": "Olowo",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "DJ Spinall; Mr. Eazi -- Ohema",
+      "songInfo": {
+        "artist": "DJ Spinall; Mr. Eazi",
+        "song": "Ohema",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "107.01",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "DMW -- Prayer",
+      "songInfo": {
+        "artist": "DMW",
+        "song": "Prayer",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "DMW; Davido; Mayorkun -- Prayer",
+      "songInfo": {
+        "artist": "DMW; Davido; Mayorkun",
+        "song": "Prayer",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "119.93",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "DMW; Davido; Mayorkun; Dremo; Peruzzi -- Mind",
+      "songInfo": {
+        "artist": "DMW; Davido; Mayorkun; Dremo; Peruzzi",
+        "song": "Mind",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "114.26",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "DMW; Ichaba; Dremo; Mayorkun -- Back 2 Back",
+      "songInfo": {
+        "artist": "DMW; Ichaba; Dremo; Mayorkun",
+        "song": "Back 2 Back",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "130.87",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"We be givin dem back to back..\""
+      }
+    },
+    {
+      "song": "Donnel Jones -- U Know What's Up",
+      "songInfo": {
+        "artist": "Donnel Jones",
+        "song": "U Know What's Up",
+        "album": "",
+        "genre": "Hip-Hop",
+        "BPM": "96",
+        "speed": "slow",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"Ooh say what say what? You know that I like it baby\"; \"Girl you know what's up\""
+      }
+    },
+    {
+      "song": "Dr. Sid; Tiwa Savage -- Oyari",
+      "songInfo": {
+        "artist": "Dr. Sid; Tiwa Savage",
+        "song": "Oyari",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "109.59",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Drake; Lykke Li -- Little Bit",
+      "songInfo": {
+        "artist": "Drake; Lykke Li",
+        "song": "Little Bit",
+        "album": "",
+        "genre": "Hip-Hop",
+        "BPM": "120.41",
+        "speed": "medium-fast",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Eazzy; Mr. Eazi -- Forever",
+      "songInfo": {
+        "artist": "Eazzy; Mr. Eazi",
+        "song": "Forever",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "99.07",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Edie Brickell -- Good Times",
+      "songInfo": {
+        "artist": "Edie Brickell",
+        "song": "Good Times",
+        "album": "",
+        "genre": "Slow Jams",
+        "BPM": "74.8",
+        "speed": "slow",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"You don't even have to try, it comes easy for you.\"; \"The way you moving softly.. it could make me.. cry\"; \"Good times, bad times, give me some of that.\""
+      }
+    },
+    {
+      "song": "Eleance Jazz -- Ngalua Marthe",
+      "songInfo": {
+        "artist": "Eleance Jazz",
+        "song": "Ngalua Marthe",
+        "album": "Melodies of the Republic of Congo",
+        "genre": "Africa Highlife",
+        "BPM": "129.72",
+        "speed": "",
+        "mood": "",
+        "tags": "nostalgic; highlife",
+        "quotes": "\"Ngalua na na Ngalua..\""
+      }
+    },
+    {
+      "song": "Eugy; Mr. Eazi -- Dance For Me",
+      "songInfo": {
+        "artist": "Eugy; Mr. Eazi",
+        "song": "Dance For Me",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "107.26",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Faze -- Koi Kpo Di Kpo",
+      "songInfo": {
+        "artist": "Faze",
+        "song": "Koi Kpo Di Kpo",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"Girl you make me Kpo Kpo di Kpo Kpo di Kpo, Kpo Kpo di Kpo Kpooo..\""
+      }
+    },
+    {
+      "song": "Fela Kuti -- Water No Get Enemy",
+      "songInfo": {
+        "artist": "Fela Kuti",
+        "song": "Water No Get Enemy",
+        "album": "",
+        "genre": "Africa Old School",
+        "BPM": "91.1",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Fela Kuti -- Teacher Don't Teach Me Nonsense",
+      "songInfo": {
+        "artist": "Fela Kuti",
+        "song": "Teacher Don't Teach Me Nonsense",
+        "album": "",
+        "genre": "Africa Old School",
+        "BPM": "108.65",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Firebody DML -- Tattoo",
+      "songInfo": {
+        "artist": "Firebody DML",
+        "song": "Tattoo",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Awele",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Awele",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Baby Na Yoka",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Baby Na Yoka",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Baby Oku (Dance)",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Baby Oku (Dance)",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "124.4",
+        "speed": "fast",
+        "mood": "dance",
+        "tags": "party",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Carolina",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Carolina",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"I salute you oh my baby Carolina..\"; \"The way that she dey shaking her low waist..\"; \"The way that she dey shaking her baca ooo..\""
+      }
+    },
+    {
+      "song": "Flavour -- Chimamanda",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Chimamanda",
+        "album": "",
+        "genre": "Naija Gospel",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Dance",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Dance",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Doings",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Doings",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Egwu",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Egwu",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Ife Adogimma",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Ife Adogimma",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Low Waist",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Low Waist",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Nwa Baby (Remix)",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Nwa Baby (Remix)",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Sexy Rosey",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Sexy Rosey",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Shake",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Shake",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Osondi Owendi",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Osondi Owendi",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Ada Ada",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Ada Ada",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Adamma",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Adamma",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Flavour -- Ashawo",
+      "songInfo": {
+        "artist": "Flavour",
+        "song": "Ashawo",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Fuse ODG; Wyclef Jean -- Antenna",
+      "songInfo": {
+        "artist": "Fuse ODG; Wyclef Jean",
+        "song": "Antenna",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "128.08",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Gramatik -- In My City",
+      "songInfo": {
+        "artist": "Gramatik",
+        "song": "In My City",
+        "album": "",
+        "genre": "Instrumentals",
+        "BPM": "87.8",
+        "speed": "slow",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Gramatik -- Afternoon Soul",
+      "songInfo": {
+        "artist": "Gramatik",
+        "song": "Afternoon Soul",
+        "album": "",
+        "genre": "Instrumentals",
+        "BPM": "92",
+        "speed": "medium",
+        "mood": "",
+        "tags": "sunny day; relax; chillax; chill",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Gyptian -- Hold Yuh",
+      "songInfo": {
+        "artist": "Gyptian",
+        "song": "Hold Yuh",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Hagman -- Focus",
+      "songInfo": {
+        "artist": "Hagman",
+        "song": "Focus",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Harrysong -- Arabanko",
+      "songInfo": {
+        "artist": "Harrysong",
+        "song": "Arabanko",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "134.08",
+        "speed": "fast",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Hezekiah Walker -- Every Praise",
+      "songInfo": {
+        "artist": "Hezekiah Walker",
+        "song": "Every Praise",
+        "album": "",
+        "genre": "Gospel",
+        "BPM": "106.42",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Humblesmith -- Osinachi",
+      "songInfo": {
+        "artist": "Humblesmith",
+        "song": "Osinachi",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Humblesmith; Davido -- Osinachi (remix)",
+      "songInfo": {
+        "artist": "Humblesmith; Davido",
+        "song": "Osinachi (remix)",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Iyanya -- Gift",
+      "songInfo": {
+        "artist": "Iyanya",
+        "song": "Gift",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Iyanya -- Up 2 Sumthin'",
+      "songInfo": {
+        "artist": "Iyanya",
+        "song": "Up 2 Sumthin'",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Jeezy -- Sing Along",
+      "songInfo": {
+        "artist": "Jeezy",
+        "song": "Sing Along",
+        "album": "",
+        "genre": "Hip-Hop",
+        "BPM": "80",
+        "speed": "slow",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"My neck so icy.. my wrist so pricy..\"; \"Half a mil a year and its all on wifey..\""
+      }
+    },
+    {
+      "song": "Joepraize -- Miracle Papa",
+      "songInfo": {
+        "artist": "Joepraize",
+        "song": "Miracle Papa",
+        "album": "",
+        "genre": "Naija Gospel",
+        "BPM": "130.01",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Jonathon Nelson -- I Believe (Island Medley)",
+      "songInfo": {
+        "artist": "Jonathon Nelson",
+        "song": "I Believe (Island Medley)",
+        "album": "",
+        "genre": "Gospel",
+        "BPM": "101.93",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Kanye West -- Can't Tell Me Nothing",
+      "songInfo": {
+        "artist": "Kanye West",
+        "song": "Can't Tell Me Nothing",
+        "album": "",
+        "genre": "Hip-Hop",
+        "BPM": "104.86",
+        "speed": "slow",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Kizz Daniel -- Mama",
+      "songInfo": {
+        "artist": "Kizz Daniel",
+        "song": "Mama",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Kizz Daniel -- Nesesari",
+      "songInfo": {
+        "artist": "Kizz Daniel",
+        "song": "Nesesari",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Kizz Daniel -- One Ticket",
+      "songInfo": {
+        "artist": "Kizz Daniel",
+        "song": "One Ticket",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Kopoke -- Kayana",
+      "songInfo": {
+        "artist": "Kopoke",
+        "song": "Kayana",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Labor Siffre -- My Song",
+      "songInfo": {
+        "artist": "Labor Siffre",
+        "song": "My Song",
+        "album": "",
+        "genre": "Slow Jams",
+        "BPM": "85.6",
+        "speed": "slow",
+        "mood": "",
+        "tags": "Kanye Sample",
+        "quotes": "\"And I wonder, if you know what it means, to find your dream come true\""
+      }
+    },
+    {
+      "song": "Lagbaja -- Konko Below",
+      "songInfo": {
+        "artist": "Lagbaja",
+        "song": "Konko Below",
+        "album": "",
+        "genre": "Africa Old School",
+        "BPM": "93.09",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Lagbaja -- Suru Lere",
+      "songInfo": {
+        "artist": "Lagbaja",
+        "song": "Suru Lere",
+        "album": "",
+        "genre": "Africa Old School",
+        "BPM": "88.82",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Lara George -- Hallelujah",
+      "songInfo": {
+        "artist": "Lara George",
+        "song": "Hallelujah",
+        "album": "",
+        "genre": "Naija Gospel",
+        "BPM": "119.92",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Lil Kesh -- Gbese",
+      "songInfo": {
+        "artist": "Lil Kesh",
+        "song": "Gbese",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "122.08",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Lil Kesh -- Ibile",
+      "songInfo": {
+        "artist": "Lil Kesh",
+        "song": "Ibile",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "124.88",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Lil Kesh -- No Fake Love",
+      "songInfo": {
+        "artist": "Lil Kesh",
+        "song": "No Fake Love",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "110.03",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Lil Kesh -- Shele Gan Gan",
+      "songInfo": {
+        "artist": "Lil Kesh",
+        "song": "Shele Gan Gan",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "139.05",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Lil Kesh; Davido; Olamide -- Shoki (remix)",
+      "songInfo": {
+        "artist": "Lil Kesh; Davido; Olamide",
+        "song": "Shoki (remix)",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Lil Kesh; Patoranking -- Is It Because I Love You",
+      "songInfo": {
+        "artist": "Lil Kesh; Patoranking",
+        "song": "Is It Because I Love You",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "125.02",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Logiq -- Protection",
+      "songInfo": {
+        "artist": "Logiq",
+        "song": "Protection",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "MAJOR -- Why I Love You",
+      "songInfo": {
+        "artist": "MAJOR",
+        "song": "Why I Love You",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "165.22",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Masterkraft -- Hallelu",
+      "songInfo": {
+        "artist": "Masterkraft",
+        "song": "Hallelu",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Masterkraft; Rema -- I Go Dance",
+      "songInfo": {
+        "artist": "Masterkraft; Rema",
+        "song": "I Go Dance",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"Okay I go dance, shake my body\""
+      }
+    },
+    {
+      "song": "Mavins -- Adaobi",
+      "songInfo": {
+        "artist": "Mavins",
+        "song": "Adaobi",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mavins -- Dorobucci",
+      "songInfo": {
+        "artist": "Mavins",
+        "song": "Dorobucci",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mavins; Don Jazzy; Reekado Banks; Di'ja; Korede Bello -- Adaobi",
+      "songInfo": {
+        "artist": "Mavins; Don Jazzy; Reekado Banks; Di'ja; Korede Bello",
+        "song": "Adaobi",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "127.95",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mayorkun -- Mama",
+      "songInfo": {
+        "artist": "Mayorkun",
+        "song": "Mama",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "105.22",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mayorkun -- True ",
+      "songInfo": {
+        "artist": "Mayorkun",
+        "song": "True ",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mayorkun -- Che Che",
+      "songInfo": {
+        "artist": "Mayorkun",
+        "song": "Che Che",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "106.83",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mayorkun -- Eleko",
+      "songInfo": {
+        "artist": "Mayorkun",
+        "song": "Eleko",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "118.02",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mayorkun -- Sade",
+      "songInfo": {
+        "artist": "Mayorkun",
+        "song": "Sade",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "114",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mayorkun -- Yawa",
+      "songInfo": {
+        "artist": "Mayorkun",
+        "song": "Yawa",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "126.51",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mayorkun; Mr. Eazi -- Love You Tire",
+      "songInfo": {
+        "artist": "Mayorkun; Mr. Eazi",
+        "song": "Love You Tire",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "108.95",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "MC Galaxy -- Nek Unek",
+      "songInfo": {
+        "artist": "MC Galaxy",
+        "song": "Nek Unek",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "MC Galaxy -- Sekem",
+      "songInfo": {
+        "artist": "MC Galaxy",
+        "song": "Sekem",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "MI; Flavour -- Africa Rapper Number 1",
+      "songInfo": {
+        "artist": "MI; Flavour",
+        "song": "Africa Rapper Number 1",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi -- Feelings",
+      "songInfo": {
+        "artist": "Mr. Eazi",
+        "song": "Feelings",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "92.02",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi -- Pour Me Water",
+      "songInfo": {
+        "artist": "Mr. Eazi",
+        "song": "Pour Me Water",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi -- Leg Over",
+      "songInfo": {
+        "artist": "Mr. Eazi",
+        "song": "Leg Over",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi -- Sample You",
+      "songInfo": {
+        "artist": "Mr. Eazi",
+        "song": "Sample You",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "105.5",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi; DJ Cuppy -- Fight",
+      "songInfo": {
+        "artist": "Mr. Eazi; DJ Cuppy",
+        "song": "Fight",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "113.05",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi; Efya -- Skin Tight",
+      "songInfo": {
+        "artist": "Mr. Eazi; Efya",
+        "song": "Skin Tight",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "133.34",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi; Joey B -- Hollup",
+      "songInfo": {
+        "artist": "Mr. Eazi; Joey B",
+        "song": "Hollup",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "107.18",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi; Juls; Pappy -- Bankulize",
+      "songInfo": {
+        "artist": "Mr. Eazi; Juls; Pappy",
+        "song": "Bankulize",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "131.73",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi; Mugeez -- Business",
+      "songInfo": {
+        "artist": "Mr. Eazi; Mugeez",
+        "song": "Business",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "134.04",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi; Phyno; Olamide -- Life is Eazi",
+      "songInfo": {
+        "artist": "Mr. Eazi; Phyno; Olamide",
+        "song": "Life is Eazi",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "91.19",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi; Rita Ora; Wizkid -- Skin Tight (Remix)",
+      "songInfo": {
+        "artist": "Mr. Eazi; Rita Ora; Wizkid",
+        "song": "Skin Tight (Remix)",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "133.05",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mr. Eazi; Tekno; BkChatLDN; Odunsi; Temi; Eddie Kadie; Oyemykke -- Short Skirt",
+      "songInfo": {
+        "artist": "Mr. Eazi; Tekno; BkChatLDN; Odunsi; Temi; Eddie Kadie; Oyemykke",
+        "song": "Short Skirt",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "138.72",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Mystro; Davido -- Issa Vibe",
+      "songInfo": {
+        "artist": "Mystro; Davido",
+        "song": "Issa Vibe",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Naira Marley -- Koleyewon",
+      "songInfo": {
+        "artist": "Naira Marley",
+        "song": "Koleyewon",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Naira Marley -- Tesumole",
+      "songInfo": {
+        "artist": "Naira Marley",
+        "song": "Tesumole",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Niniola -- Sicker",
+      "songInfo": {
+        "artist": "Niniola",
+        "song": "Sicker",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Olakira; Davido -- In My Maserati",
+      "songInfo": {
+        "artist": "Olakira; Davido",
+        "song": "In My Maserati",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "130",
+        "speed": "fast",
+        "mood": "baller",
+        "tags": "dance; party; rich; balling; living it up",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Olamide -- Bobo",
+      "songInfo": {
+        "artist": "Olamide",
+        "song": "Bobo",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Olamide -- Don't Stop",
+      "songInfo": {
+        "artist": "Olamide",
+        "song": "Don't Stop",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Olamide -- Infinity",
+      "songInfo": {
+        "artist": "Olamide",
+        "song": "Infinity",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Olamide -- Motigbana",
+      "songInfo": {
+        "artist": "Olamide",
+        "song": "Motigbana",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Olamide -- Wo",
+      "songInfo": {
+        "artist": "Olamide",
+        "song": "Wo",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Omah Lay -- Godly",
+      "songInfo": {
+        "artist": "Omah Lay",
+        "song": "Godly",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Omo Akin -- Borrow Borrow Make Me Shine",
+      "songInfo": {
+        "artist": "Omo Akin",
+        "song": "Borrow Borrow Make Me Shine",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "127.53",
+        "speed": "fast",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Oreke; Joeboy -- E Kelly",
+      "songInfo": {
+        "artist": "Oreke; Joeboy",
+        "song": "E Kelly",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "P-Square -- Bunieya Enu",
+      "songInfo": {
+        "artist": "P-Square",
+        "song": "Bunieya Enu",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "P-Square -- Do Me",
+      "songInfo": {
+        "artist": "P-Square",
+        "song": "Do Me",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "91.5",
+        "speed": "medium",
+        "mood": "romantic",
+        "tags": "",
+        "quotes": "\"Girl I love the way you dey do me\"; \"Nah the way you dey do me\""
+      }
+    },
+    {
+      "song": "P-Square -- Testimony",
+      "songInfo": {
+        "artist": "P-Square",
+        "song": "Testimony",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "P-Square; Waje -- Jeje",
+      "songInfo": {
+        "artist": "P-Square; Waje",
+        "song": "Jeje",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "132",
+        "speed": "fast",
+        "mood": "",
+        "tags": "party; dance",
+        "quotes": "\"Mr. DJ put the song on replay\""
+      }
+    },
+    {
+      "song": "Patoranking -- Abule",
+      "songInfo": {
+        "artist": "Patoranking",
+        "song": "Abule",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Peruzzi -- Southy Love",
+      "songInfo": {
+        "artist": "Peruzzi",
+        "song": "Southy Love",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "120",
+        "speed": "fast",
+        "mood": "love",
+        "tags": "dance; party; love-making",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Phyno -- Connect",
+      "songInfo": {
+        "artist": "Phyno",
+        "song": "Connect",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Phyno -- Fada Fada",
+      "songInfo": {
+        "artist": "Phyno",
+        "song": "Fada Fada",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Phyno -- SFSG",
+      "songInfo": {
+        "artist": "Phyno",
+        "song": "SFSG",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Phyno; P-Square -- Financial Woman",
+      "songInfo": {
+        "artist": "Phyno; P-Square",
+        "song": "Financial Woman",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "108.95",
+        "speed": "slow-medium",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Qdot; Olamide -- Ibadan",
+      "songInfo": {
+        "artist": "Qdot; Olamide",
+        "song": "Ibadan",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "slow",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Reekado Banks -- Like",
+      "songInfo": {
+        "artist": "Reekado Banks",
+        "song": "Like",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Reekado Banks -- Chop Am",
+      "songInfo": {
+        "artist": "Reekado Banks",
+        "song": "Chop Am",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "127.8",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Rema -- Dumebi",
+      "songInfo": {
+        "artist": "Rema",
+        "song": "Dumebi",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Rema -- Ginger Me",
+      "songInfo": {
+        "artist": "Rema",
+        "song": "Ginger Me",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Rema -- Too Correct",
+      "songInfo": {
+        "artist": "Rema",
+        "song": "Too Correct",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Rema -- Woman",
+      "songInfo": {
+        "artist": "Rema",
+        "song": "Woman",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Rexxie Mohbad -- KPK",
+      "songInfo": {
+        "artist": "Rexxie Mohbad",
+        "song": "KPK",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Rotimo; Mystro -- Surrenda",
+      "songInfo": {
+        "artist": "Rotimo; Mystro",
+        "song": "Surrenda",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "114",
+        "speed": "medium",
+        "mood": "romantic",
+        "tags": "dance; party",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Rudeboy -- Fire Fire",
+      "songInfo": {
+        "artist": "Rudeboy",
+        "song": "Fire Fire",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Ruger -- Bounce",
+      "songInfo": {
+        "artist": "Ruger",
+        "song": "Bounce",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Runtown -- Walahi",
+      "songInfo": {
+        "artist": "Runtown",
+        "song": "Walahi",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Runtown; Davido -- Gallardo",
+      "songInfo": {
+        "artist": "Runtown; Davido",
+        "song": "Gallardo",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Samsong; Chioma -- Jesus Odogwu",
+      "songInfo": {
+        "artist": "Samsong; Chioma",
+        "song": "Jesus Odogwu",
+        "album": "",
+        "genre": "Naija Gospel",
+        "BPM": "95",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Selebobo; Davido -- Waka Waka",
+      "songInfo": {
+        "artist": "Selebobo; Davido",
+        "song": "Waka Waka",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Simi -- Duduke",
+      "songInfo": {
+        "artist": "Simi",
+        "song": "Duduke",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Skales -- Shake Body",
+      "songInfo": {
+        "artist": "Skales",
+        "song": "Shake Body",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "130.85",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Skiibii -- Are You Vhere",
+      "songInfo": {
+        "artist": "Skiibii",
+        "song": "Are You Vhere",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Sol Rising -- Love Come, Love Go",
+      "songInfo": {
+        "artist": "Sol Rising",
+        "song": "Love Come, Love Go",
+        "album": "",
+        "genre": "Instrumentals",
+        "BPM": "100",
+        "speed": "medium",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"Love comes.. love goes\""
+      }
+    },
+    {
+      "song": "SOLLO7 -- Still Marry You",
+      "songInfo": {
+        "artist": "SOLLO7",
+        "song": "Still Marry You",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "143.86",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Tarrus Riley -- Royal",
+      "songInfo": {
+        "artist": "Tarrus Riley",
+        "song": "Royal",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Tekno -- Dance",
+      "songInfo": {
+        "artist": "Tekno",
+        "song": "Dance",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Tekno -- Enjoy",
+      "songInfo": {
+        "artist": "Tekno",
+        "song": "Enjoy",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Tekno -- Pana",
+      "songInfo": {
+        "artist": "Tekno",
+        "song": "Pana",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Tekno -- Puttin",
+      "songInfo": {
+        "artist": "Tekno",
+        "song": "Puttin",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "The O'Jays -- Love Train",
+      "songInfo": {
+        "artist": "The O'Jays",
+        "song": "Love Train",
+        "album": "",
+        "genre": "Slow Jams",
+        "BPM": "123",
+        "speed": "medium-fast",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"People all over the world, join in..\""
+      }
+    },
+    {
+      "song": "Third World -- One to One",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "One to One",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "102.11",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- Sense of Purpose",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "Sense of Purpose",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "123.18",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- World of Uncertainty",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "World of Uncertainty",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "86.88",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- Rock Me",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "Rock Me",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "141.2",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- One More Time",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "One More Time",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "115.38",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- Children of the World",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "Children of the World",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "116.36",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- Can't Get You (Outta My Mind)",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "Can't Get You (Outta My Mind)",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "154.93",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- Girl from Hiroshima",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "Girl from Hiroshima",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "143",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- Reggae Jam Boogie",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "Reggae Jam Boogie",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "125.35",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- How Can You",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "How Can You",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "79.3",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- One Song (Nyabinghi)",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "One Song (Nyabinghi)",
+        "album": "Sense of Purpose",
+        "genre": "Reggae",
+        "BPM": "140.77",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Third World -- Always Around",
+      "songInfo": {
+        "artist": "Third World",
+        "song": "Always Around",
+        "album": "",
+        "genre": "",
+        "BPM": "94.2",
+        "speed": "slow",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Timaya -- Balance",
+      "songInfo": {
+        "artist": "Timaya",
+        "song": "Balance",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Timaya -- Bang Bang",
+      "songInfo": {
+        "artist": "Timaya",
+        "song": "Bang Bang",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Timaya -- Don Dada",
+      "songInfo": {
+        "artist": "Timaya",
+        "song": "Don Dada",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Timaya -- Kom Kom",
+      "songInfo": {
+        "artist": "Timaya",
+        "song": "Kom Kom",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Timaya -- Sanko",
+      "songInfo": {
+        "artist": "Timaya",
+        "song": "Sanko",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Timaya -- Telli Person",
+      "songInfo": {
+        "artist": "Timaya",
+        "song": "Telli Person",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Timaya; Davido -- Kekwanu",
+      "songInfo": {
+        "artist": "Timaya; Davido",
+        "song": "Kekwanu",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Timaya; Don Jazzy -- I Concur",
+      "songInfo": {
+        "artist": "Timaya; Don Jazzy",
+        "song": "I Concur",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Timi Dakola -- Amen",
+      "songInfo": {
+        "artist": "Timi Dakola",
+        "song": "Amen",
+        "album": "",
+        "genre": "Naija Gospel",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Tiwa Savage -- All Over",
+      "songInfo": {
+        "artist": "Tiwa Savage",
+        "song": "All Over",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Tiwa Savage -- Koroba",
+      "songInfo": {
+        "artist": "Tiwa Savage",
+        "song": "Koroba",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Toofan -- Gweta",
+      "songInfo": {
+        "artist": "Toofan",
+        "song": "Gweta",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "134.86",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Toyin Ores -- Feel the Same",
+      "songInfo": {
+        "artist": "Toyin Ores",
+        "song": "Feel the Same",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "115",
+        "speed": "medium",
+        "mood": "sensual",
+        "tags": "dance; sensual; tease",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Travis Greene -- Intentional",
+      "songInfo": {
+        "artist": "Travis Greene",
+        "song": "Intentional",
+        "album": "",
+        "genre": "Gospel",
+        "BPM": "76.02",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "UB40 -- The Way You Do The Things You Do",
+      "songInfo": {
+        "artist": "UB40",
+        "song": "The Way You Do The Things You Do",
+        "album": "",
+        "genre": "Reggae",
+        "BPM": "78.6",
+        "speed": "medium",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"You got a smile so bright.. you know you could've been a candle\"; \"As pretty as you are, you know you could've been a flower\"; \"And if looks were a minute.. you know you could've been an hour.\"; \"You make my life so rich, you know you could've been some money.\"; \"And baby you're so sweet.. you know you could've been some honey.\";\"And baby you're so smmmarrrt, you know you could've been a schoolbook.\""
+      }
+    },
+    {
+      "song": "Viktoh; Lil Kesh -- Skibi Dat",
+      "songInfo": {
+        "artist": "Viktoh; Lil Kesh",
+        "song": "Skibi Dat",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "110.95",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wale; Davido; Olamide -- Fine Girl",
+      "songInfo": {
+        "artist": "Wale; Davido; Olamide",
+        "song": "Fine Girl",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Walter Beasley -- Gail's Groove (Remix)",
+      "songInfo": {
+        "artist": "Walter Beasley",
+        "song": "Gail's Groove (Remix)",
+        "album": "",
+        "genre": "Smooth Jazz",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wizboyy -- Salambala",
+      "songInfo": {
+        "artist": "Wizboyy",
+        "song": "Salambala",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wizkid -- Celebrate",
+      "songInfo": {
+        "artist": "Wizkid",
+        "song": "Celebrate",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wizkid -- Essence",
+      "songInfo": {
+        "artist": "Wizkid",
+        "song": "Essence",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wizkid -- Joro",
+      "songInfo": {
+        "artist": "Wizkid",
+        "song": "Joro",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wizkid -- Ojuelegba",
+      "songInfo": {
+        "artist": "Wizkid",
+        "song": "Ojuelegba",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wizkid -- Pull Over",
+      "songInfo": {
+        "artist": "Wizkid",
+        "song": "Pull Over",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wizkid -- Soco",
+      "songInfo": {
+        "artist": "Wizkid",
+        "song": "Soco",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wizkid; Burna Boy -- Ginger",
+      "songInfo": {
+        "artist": "Wizkid; Burna Boy",
+        "song": "Ginger",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wizzboy; Ice Prince -- Jacuzzi",
+      "songInfo": {
+        "artist": "Wizzboy; Ice Prince",
+        "song": "Jacuzzi",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "122.98",
+        "speed": "fast",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "Wizzboy; J Martins -- Screen Saver (Remix)",
+      "songInfo": {
+        "artist": "Wizzboy; J Martins",
+        "song": "Screen Saver (Remix)",
+        "album": "",
+        "genre": "Naija Hip-Hop",
+        "BPM": "97",
+        "speed": "slow",
+        "mood": "",
+        "tags": "",
+        "quotes": "\"Would you be my screen saver?\"; \"I no go mind if i fit get your picture\""
+      }
+    },
+    {
+      "song": "Lupe Fiasco -- Mural",
+      "songInfo": {
+        "artist": "Lupe Fiasco",
+        "song": "Mural",
+        "album": "",
+        "genre": "",
+        "BPM": "",
+        "speed": "",
+        "mood": "",
+        "tags": "",
+        "quotes": ""
+      }
+    },
+    {
+      "song": "DJ Algoriddim -- 'N Your Dress",
+      "songInfo": {
+        "artist": "DJ Algoriddim",
+        "song": "'N Your Dress",
+        "album": "Pure Bliss",
+        "genre": "Hip Hop, R&B",
+        "BPM": "120",
+        "speed": "regular",
+        "mood": "mellow",
+        "tags": "romantic, for my babe",
+        "quotes": "\"Girl you look so sexy in your dress, I just want to confess, can I hang out? It will be alright..\""
+      }
+    }
+  ]
+}

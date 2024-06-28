@@ -1,0 +1,26 @@
+.formContainer {
+    font-size: 20px;
+
+}
+
+.editable {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.editable input {
+    width: 330px;
+    font-weight: bold;
+}
+
+.formContainer input {
+
+}
+
+.formContainer div {
+    margin-bottom: 2px
+}
+
+.formContainer button {
+    margin-top: 5px
+}

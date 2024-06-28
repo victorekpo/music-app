@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "artist,song,album,genre,BPM,speed,mood,tags,quotes" > $musicDir/MUSIC.CSV
+cat $musicDir/MUSIC.JSON | jq -r '.songs[] | [.artist, .song, .album, .genre, .BPM, .speed, .mood, .tags, .quotes] | @tsv' | sed "s/\t/,/g" >> $musicDir/MUSIC.CSV
