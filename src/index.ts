@@ -1,14 +1,10 @@
-// Title: Music Database
-// Author: Victor E.
-// Description: This app will be used to organize music for all uses.
+require('dotenv').config({ path: "./dist/.env"});
 import config from 'config';
 import express, { Request, Response } from 'express';
 import next from 'next';
 import { logger } from "./logger";
-
 import db from "./db/config/connection";
 
-// We can use config here or process.env
 const port = <number>config.get('defaultPort');
 const hostname = <string>config.get('hostname');
 const dev = <boolean>config.get('dev');
