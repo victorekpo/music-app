@@ -1,0 +1,7 @@
+.navBar {
+    position: relative;
+    z-index: 999;
+}
+.pageContainer {
+    height: 86.7vh;
+}

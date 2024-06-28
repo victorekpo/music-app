@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    z-index: 0;
+}
+
+.heading {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.listBoxContainer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 20px; /* Sets the height for each row */
+    gap: 10px; /* Adjusts the space between the items */
+    list-style-type: none; /* Removes the default list bullets */
+    padding: 0; /* Removes the default padding */
+    margin-top: 30px;
+}
