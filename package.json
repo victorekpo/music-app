@@ -8,7 +8,7 @@
     "build-env": "node utils/TransformConfigToEnv.js",
     "build-next": "bash -c 'next build'",
     "build-tsc": "tsc",
-    "concat-env": "cat .env .env.production .env.local > dist/.env",
+    "concat-env": "cat .env .env.production > dist/.env",
     "clean": "rm -rf dist && rm -rf .next",
     "dev": "bash -c 'NODE_CONFIG_ENV=dev npm run build-env' && next dev",
     "lint": "next lint",
