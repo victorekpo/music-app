@@ -110,17 +110,33 @@ const SongPage = ({ params }) => {
             }
           </div>
         ))}
-      { edit ? (<Button
-        color="primary"
-        onClick={() => {
-          setEdit(!edit)
-        }}
-      >
-        Submit
-      </Button>) : (
+      { edit ? (
+        <div style={{width: "100%"}}>
+          <div className={styles.buttonContainer}>
+            <Button
+            color="primary"
+            onClick={() => {
+              setEdit(!edit)
+            }}
+          >
+              Submit
+            </Button>
+            <Button
+              variant="bordered"
+              color="danger"
+              onClick={() => {
+                setEdit(!edit)
+              }}
+            >
+              Delete Song
+            </Button>
+          </div>
+        </div>
+      ) : (
         <Button
           type="submit"
           color="primary"
+          variant="bordered"
           onClick={() => {
             setEdit(!edit)
           }}

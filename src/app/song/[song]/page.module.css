@@ -21,6 +21,12 @@
     margin-bottom: 2px
 }
 
+.buttonContainer {
+    display: flex;
+    width: 205px;
+    justify-content: space-between;
+}
+
 .formContainer button {
-    margin-top: 5px
+    margin-top: 15px
 }
