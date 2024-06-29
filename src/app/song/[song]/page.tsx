@@ -66,10 +66,11 @@ const SongPage = ({ params }) => {
     // Dispatch to update global state music object
     dispatch({
       type: UPDATE_SONG,
-      payload: { oldSongId: song.song, ...formState }
+      payload: { songId: song._id, ...formState }
     });
     // Set new song to local state for current page
     setSong({
+      _id: song._id,
       song: `${formState.artist} -- ${formState.song}`,
       songInfo: { ...formState }
     });
