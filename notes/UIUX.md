@@ -17,3 +17,7 @@
 - [React Admin](https://marmelab.com/react-admin/)
 - [iOS Fix input focus](https://css-tricks.com/16px-or-larger-text-prevents-ios-form-zoom/)
 - [iOS Fix Input focus example](https://codepen.io/chriscoyier/pen/MWJxXWz)
+
+## Next UI
+- [ListBox Component](https://nextui.org/docs/components/listbox)
+- [ListBoxItem Component](https://nextui.org/docs/components/listbox#listboxitem)
