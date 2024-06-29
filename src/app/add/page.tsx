@@ -146,7 +146,13 @@ const AddMusicPage = () => {
               } }
             />
           </div>
-            <Button type="submit" color="primary">Submit</Button>
+            <Button
+              type="submit"
+              color="primary"
+              variant="flat"
+            >
+              Submit
+            </Button>
       </form>
 
     </>
