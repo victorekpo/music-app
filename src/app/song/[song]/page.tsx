@@ -23,21 +23,29 @@ const SongPage = ({ params }) => {
       .replaceAll("%2C",",")
   ), [params.song]);
 
-  const found = useMemo(() => (
-    music?.songs.find((s: SongInfo) => s.song === songId)
-  ), [music, songId]);
+  const found = useMemo(() => {
+    const ignoredKeys = ['__typename'];
+    const f = music?.songs.find((s: SongInfo) => s.song === songId)
+    if (f) {
+      const s = { ...f, songInfo: { ...f.songInfo } };
+      ignoredKeys.forEach(k => {
+        delete s.songInfo[k];
+      });
+      return s;
+    }
+  }, [music, songId]);
 
-  const [song, setSong] = useState(found) as any;
+  const [song, setSong] = useState(found);
 
   useEffect(() => {
-    if (found) {
+    if (found && !song) {
       setSong(found);
     }
-  },[found]);
+  },[song, found]);
 
   useEffect(() => {
     if (song?.songInfo) {
-      setFormState(song?.songInfo);
+      setFormState(song.songInfo);
     }
   },[song]);
 

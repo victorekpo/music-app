@@ -10,7 +10,7 @@ const hostname = <string>config.get('hostname');
 const dev = <boolean>config.get('dev');
 const mappedPaths = <Record<string, string>>config.get('mappedPaths');
 
-console.log("DEV", dev);
+logger.info(`DEV=${dev}`);
 
 const nextApp = next({ dev, dir: '.' });
 const handle = nextApp.getRequestHandler();

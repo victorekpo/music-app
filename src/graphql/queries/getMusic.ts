@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
 export const GET_ALL_MUSIC_QUERY = gql`
-query($user: String){
+query($user: String!){
   getAllMusic(user: $user) {
     songs {
       song

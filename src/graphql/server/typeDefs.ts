@@ -1,8 +1,8 @@
 export const typeDefs = `
   type SongInfo {
     _iD: ID!
-    artist: String
-    song: String
+    artist: String!
+    song: String!
     album: String
     genre: String
     BPM: String
@@ -14,8 +14,8 @@ export const typeDefs = `
   
   type Song {
     _iD: ID!
-    song: String
-    songInfo: SongInfo
+    song: String!
+    songInfo: SongInfo!
   }
   
   type MusicCollection {
@@ -38,13 +38,13 @@ export const typeDefs = `
   }
   
   type Query {
-    getAllMusic(user: String): MusicCollection
-    getSong(song: String): Song
+    getAllMusic(user: String!): MusicCollection
+    getSong(song: String!): Song
     searchMusic(songQuery: String, artistQuery: String, albumQuery: String, genreQuery: String, tagsQuery: String, quotesQuery: String): [Song]
   }
   
   type Mutation {
-    addMusic(song: SongInput): Song
-    updateMusic(oldSongId: String, song: SongInput): Song
+    addMusic(user: String!, song: SongInput!): Song
+    updateMusic(user: String!, oldSongId: String!, song: SongInput!): Song
   }
 `;

@@ -3,6 +3,7 @@ import { SongInfo } from "@/@types/Music";
 
 export const addMusic = async (user: String, newSongData: SongInfo) => {
   try {
+    console.log("ADDING MUSIC", user, newSongData)
     // Step 1: Get the MusicCollection
     const musicCollection = await MusicCollections.findOne({ user });
 
@@ -20,7 +21,7 @@ export const addMusic = async (user: String, newSongData: SongInfo) => {
 
     // Step 3: Save the updated MusicCollection
     await musicCollection.save();
-    console.log('New song added to music collection.');
+    console.info('New song added to music collection.');
     return newSong;
   } catch (error) {
     console.error('Error adding new song:', error);

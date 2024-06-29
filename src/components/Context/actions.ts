@@ -14,4 +14,6 @@ export const SET_QUOTES_QUERY = 'SET_QUOTES_QUERY';
 
 export const SET_SEARCH_RESULTS = 'SET_SEARCH_RESULTS';
 
+export const ADD_SONG = 'UPDATE_SONG';
+
 export const UPDATE_SONG = 'UPDATE_SONG';

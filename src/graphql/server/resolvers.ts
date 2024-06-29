@@ -8,9 +8,7 @@ import type { SearchQuery } from "@/@types/SearchQuery";
 export const resolvers = {
   Query: {
     getAllMusic: async (_, { user }) => {
-      const currentMusic = await readMusic(user);
-      console.log("music found", currentMusic.songs.length)
-      return currentMusic;
+      return await readMusic(user);
     },
 
     // Not currently being used since it introduces latency, currently getting song from State
@@ -41,7 +39,7 @@ export const resolvers = {
   },
 
   Mutation: {
-    addMusic: (_, { song, user }) => {
+    addMusic: (_, { user, song }) => {
       return addMusic(user, song);
     },
 

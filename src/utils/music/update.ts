@@ -23,7 +23,7 @@ export const updateMusic = async (user: string, songId: string, updatedSongData:
       throw new Error(`Failed to find updated song with ID '${songId}'`);
     }
 
-    console.log(`Song with ID '${songId}' updated successfully.`);
+    console.info(`Song with ID '${songId}' updated successfully.`);
     return updatedSong;
   } catch (error) {
     console.error('Error updating song:', error);
