@@ -18,10 +18,10 @@ const SongPage = ({ params }) => {
 
   const songId = useMemo(() => (
     params.song
-      .replace("--"," -- ")
-      .replaceAll("_"," ")
-      .replaceAll("%3B",";")
-      .replaceAll("%2C",",")
+      .replace("--", " -- ")
+      .replaceAll("_", " ")
+      .replaceAll("%3B", ";")
+      .replaceAll("%2C", ",")
   ), [params.song]);
 
   const found = useMemo(() => {
@@ -42,17 +42,18 @@ const SongPage = ({ params }) => {
     if (found && !song) {
       setSong(found);
     }
-  },[song, found]);
+  }, [song, found]);
 
   useEffect(() => {
     if (song?.songInfo) {
       setFormState(song.songInfo);
     }
-  },[song]);
+  }, [song]);
 
-  const [updateSong, { error } ] = useMutation(UPDATE_MUSIC_QUERY);
+  const [updateSong, { error }] = useMutation(UPDATE_MUSIC_QUERY);
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e) => {
+    console.log("editing song")
     e.preventDefault();
     // Mutation query to update song in db
     await updateSong({
@@ -78,7 +79,7 @@ const SongPage = ({ params }) => {
 
   return (
     <>
-      <h1 className='' style={{fontSize: "30px"}}>
+      <h1 className='' style={{ fontSize: "30px" }}>
         {song?.song}
       </h1>
       <br/>
@@ -86,15 +87,15 @@ const SongPage = ({ params }) => {
         className={styles.formContainer + " " + (edit ? styles.editable + " flex w-full flex-wrap md:flex-nowrap gap-2 sm:gap-4" : "")}
         onSubmit={handleSubmit}
       >
-        {Object.entries(song?.songInfo || {}).map(([k,v], i) => (
+        {Object.entries(song?.songInfo || {}).map(([k, v], i) => (
           <div key={i}>
-            { edit ? (
+            {edit ? (
               <>
                 <Input
                   type={k}
                   label={k}
                   value={formState[k]}
-                  onChange={({target: { value }}) => {
+                  onChange={({ target: { value } }) => {
                     setFormState(prev => ({
                       ...prev,
                       [k]: value
@@ -104,46 +105,46 @@ const SongPage = ({ params }) => {
               </>
             ) : (
               <>
-                <strong>{k}:</strong> {v} <br />
+                <strong>{k}:</strong> {v} <br/>
               </>
-              )
+            )
             }
           </div>
         ))}
-      { edit ? (
-        <div style={{width: "100%"}}>
-          <div className={styles.buttonContainer}>
-            <Button
+        {edit ? (
+          <div style={{ width: "100%" }}>
+            <div className={styles.buttonContainer}>
+              <Button
+                color="primary"
+                onClick={(e) => {
+                  setEdit(!edit)
+                  handleSubmit(e)
+                }}
+              >
+                Submit
+              </Button>
+              <Button
+                variant="bordered"
+                color="danger"
+                onClick={() => {
+                  setEdit(!edit)
+                }}
+              >
+                Delete Song
+              </Button>
+            </div>
+          </div>
+        ) : (
+          <Button
             color="primary"
+            variant="bordered"
             onClick={() => {
               setEdit(!edit)
             }}
           >
-              Submit
-            </Button>
-            <Button
-              variant="bordered"
-              color="danger"
-              onClick={() => {
-                setEdit(!edit)
-              }}
-            >
-              Delete Song
-            </Button>
-          </div>
-        </div>
-      ) : (
-        <Button
-          type="submit"
-          color="primary"
-          variant="bordered"
-          onClick={() => {
-            setEdit(!edit)
-          }}
-        >
-          Edit Song
-        </Button>
-      ) }
+            Edit Song
+          </Button>
+        )}
       </form>
     </>
   )
