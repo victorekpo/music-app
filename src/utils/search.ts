@@ -6,7 +6,12 @@ import type { SearchQuery } from "@/@types/SearchQuery";
  * @param {Object} searchObj Object containing query parameters.
  * @returns {Array} An array of matching song objects.
  */
-export const searchMusicObject = (songs: Song[], searchObj: SearchQuery): Song[] => {
+export const searchMusicObject = (songs: Song[] | null, searchObj: SearchQuery): Song[] | null => {
+  if (!songs) {
+    console.error("No songs provided");
+    return null;
+  }
+
   // Create a list of query keys and their corresponding values
   const queries = Object.entries(searchObj).filter(([_, value]) => value);
 

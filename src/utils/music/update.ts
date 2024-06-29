@@ -1,5 +1,5 @@
 import { MusicCollections } from "@/db/models/Music";
-import { MusicCollection, Song, SongInfo } from "@/@types/Music";
+import type { MusicCollection, Song, SongInfo } from "@/@types/Music";
 
 export const updateMusic = async (user: string, songId: string, updatedSongData: Partial<SongInfo>): Promise<Song | null> => {
   try {

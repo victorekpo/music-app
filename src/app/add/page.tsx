@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { useMutation } from "@apollo/client";
 import { useCtx } from "@/components/Context";
 import { Button, Input } from "@nextui-org/react";
@@ -28,19 +28,22 @@ const AddMusicPage = () => {
 
   const [addMusic, { error }] = useMutation(ADD_MUSIC_QUERY)
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("form state", formState);
+    // Mutation query to add song in db
     await addMusic({
       variables: {
         song: { ...formState },
         user
       }
-    })
+    });
+    // Dispatch to update global state music object
     dispatch({
       type: ADD_SONG,
       payload: { ...formState }
-    })
+    });
+    // Delete local storage to force a refresh
+    localStorage.removeItem('musicData');
   }
 
   return (

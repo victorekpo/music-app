@@ -1,7 +1,7 @@
 'use client'
 
 import { Button, Input } from "@nextui-org/react";
-import { useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import { useCtx } from "@/components/Context";
 import { useMutation } from "@apollo/client";
 import { UPDATE_SONG } from "@/components/Context/actions";
@@ -52,7 +52,7 @@ const SongPage = ({ params }) => {
 
   const [updateSong, { error } ] = useMutation(UPDATE_MUSIC_QUERY);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Mutation query to update song in db
     await updateSong({
