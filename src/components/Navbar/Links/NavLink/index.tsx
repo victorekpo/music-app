@@ -4,7 +4,7 @@ import styles from './navbarlink.module.css';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export const NavLink = ({ item }) => {
+export const NavLink = ({ item, setOpen }) => {
   const pathName = usePathname();
 
   return (
@@ -15,6 +15,7 @@ export const NavLink = ({ item }) => {
         pathName === item.path && styles.active 
         }`
       }
+      onClick={() => setOpen(false)}
     >
       {item.title}
     </Link>

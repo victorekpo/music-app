@@ -22,20 +22,22 @@
     .menuButton {
         display: block;
         cursor: pointer;
+        transition: height 2s ease-in-out;
     }
     .mobileLinks {
-        position: absolute;
-        top: 100px;
+        position: fixed;
+        top: 70px;
         right: 0;
-        width: 50%;
+        width: 30%;
         height: calc(100vh - 100px);
         /*background-color: var(--bg);*/
-        background-color: rebeccapurple;
+        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         gap: 10px;
+        padding-top: 30px;
         transition: height 0.5s ease-in-out;
     }
 }

@@ -17,7 +17,11 @@ export const Links = () => {
     <div className={ styles.container }>
       <div className={ styles.links }>
         { links.map(link => {
-          return <NavLink item={ link } key={ link.title }/>
+          return <NavLink
+            setOpen={setOpen}
+            item={ link }
+            key={ link.title }
+          />
         }) }
         { session ? (
           <>
@@ -25,15 +29,27 @@ export const Links = () => {
             <button className={ styles.logout }>Logout</button>
           </>
         ) : (
-          <NavLink item={ { title: "Login", path: "/login" } }/>
+          <NavLink
+            setOpen={setOpen}
+            item={ { title: "Login", path: "/login" } }
+          />
         )
         }
       </div>
-      <button className={styles.menuButton} onClick = {() => setOpen(!open)}>Menu</button>
+      <button
+        className={styles.menuButton}
+        onClick = {() => setOpen(!open)}
+      >
+        Menu
+      </button>
       { open && (
           <div className={styles.mobileLinks}>
           {links.map(link =>
-            <NavLink item={link} key={link.title} />
+            <NavLink
+              item={link}
+              key={link.title}
+              setOpen={setOpen}
+            />
           )}
           </div>
         )}
