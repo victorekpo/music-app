@@ -1,11 +1,10 @@
 import { MusicCollections } from "@/db/models/Music";
-import { SongInfo } from "@/@types/Music";
+import { MusicCollection, Song, SongInfo } from "@/@types/Music";
 
-export const addMusic = async (user: String, newSongData: SongInfo) => {
+export const addMusic = async (user: String, newSongData: SongInfo): Promise<Song | null> => {
   try {
-    console.log("ADDING MUSIC", user, newSongData)
     // Step 1: Get the MusicCollection
-    const musicCollection = await MusicCollections.findOne({ user });
+    const musicCollection: MusicCollection | null = await MusicCollections.findOne({ user });
 
     if (!musicCollection) {
       throw new Error('Music collection not found for user');
@@ -13,7 +12,8 @@ export const addMusic = async (user: String, newSongData: SongInfo) => {
 
     // Step 2: Add the new song to the MusicCollection
     const songTrack = `${ newSongData.artist } -- ${ newSongData.song }`;
-    const newSong = {
+    // Assert Song type since mongoose will automatically add the _id
+    const newSong = <Song>{
       song: songTrack,
       songInfo: { ...newSongData }
     };
@@ -25,5 +25,6 @@ export const addMusic = async (user: String, newSongData: SongInfo) => {
     return newSong;
   } catch (error) {
     console.error('Error adding new song:', error);
+    return null;
   }
 };

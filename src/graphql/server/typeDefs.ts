@@ -13,14 +13,14 @@ export const typeDefs = `
   }
   
   type Song {
-    _iD: ID!
+    _id: ID!
     song: String!
     songInfo: SongInfo!
   }
   
   type MusicCollection {
     _id: ID!
-    user: String,
+    user: String!,
     songs: [Song]
     
   }

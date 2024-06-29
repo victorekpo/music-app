@@ -10,9 +10,10 @@ import styles from './page.module.css';
 import type { SongInfo } from "@/@types/Music";
 
 const SongPage = ({ params }) => {
+  const [state, dispatch] = useCtx() as any;
+  const { user } = state;
   const [edit, setEdit] = useState(false);
   const [formState, setFormState] = useState({}) as any;
-  const [state, dispatch] = useCtx() as any;
   const { music } = state;
 
   const songId = useMemo(() => (
@@ -55,7 +56,11 @@ const SongPage = ({ params }) => {
     e.preventDefault();
     // Mutation query to update song in db
     await updateSong({
-      variables: { oldSongId: song.song, song: { ...formState } }
+      variables: {
+        user,
+        oldSongId: song._id,
+        song: { ...formState }
+      }
     })
     // Dispatch to update global state music object
     dispatch({
@@ -66,7 +71,9 @@ const SongPage = ({ params }) => {
     setSong({
       song: `${formState.artist} -- ${formState.song}`,
       songInfo: { ...formState }
-    })
+    });
+    // Delete local storage to force a refresh
+    localStorage.removeItem('musicData');
   };
 
   return (
