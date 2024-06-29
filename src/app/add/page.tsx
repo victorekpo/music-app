@@ -1,11 +1,12 @@
 'use client'
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { useMutation } from "@apollo/client";
+import { useCtx } from "@/components/Context";
 import { Button, Input } from "@nextui-org/react";
+import { ADD_SONG } from "@/components/Context/actions";
 import { ADD_MUSIC_QUERY } from "@/graphql/queries/addMusic";
 import styles from "./page.module.css";
-import { useCtx } from "@/components/Context";
 
 const initialFormState = {
   artist: '',
@@ -21,22 +22,28 @@ const initialFormState = {
 
 const AddMusicPage = () => {
   const [state, dispatch] = useCtx() as any;
+  const { user } = state;
+
   const [formState, setFormState] = useState(initialFormState);
-  // call useMutation query here
+
   const [addMusic, { error }] = useMutation(ADD_MUSIC_QUERY)
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("form state", formState);
+    // Mutation query to add song in db
     await addMusic({
       variables: {
-        song: { ...formState }
+        song: { ...formState },
+        user
       }
-    })
+    });
+    // Dispatch to update global state music object
     dispatch({
-      type: 'ADD_NEW_SONG',
+      type: ADD_SONG,
       payload: { ...formState }
-    })
+    });
+    // Delete local storage to force a refresh
+    localStorage.removeItem('musicData');
   }
 
   return (
@@ -69,7 +76,6 @@ const AddMusicPage = () => {
           <Input
             type="Album"
             label="Album"
-            required
             onChange={ (e) => {
               setFormState((prev) => ({
                 ...prev,
@@ -77,10 +83,9 @@ const AddMusicPage = () => {
               }))
             } }
           />
-          <Input
+          <Input // change to dropdown
             type="Genre"
             label="Genre"
-            required
             onChange={ (e) => {
               setFormState((prev) => ({
                 ...prev,
@@ -91,7 +96,6 @@ const AddMusicPage = () => {
           <Input
             type="BPM"
             label="BPM"
-            required
             onChange={ (e) => {
               setFormState((prev) => ({
                 ...prev,
@@ -99,10 +103,9 @@ const AddMusicPage = () => {
               }))
             } }
           />
-          <Input
+          <Input // change to dropdown
             type="Speed"
             label="Speed"
-            required
             onChange={ (e) => {
               setFormState((prev) => ({
                 ...prev,
@@ -112,10 +115,9 @@ const AddMusicPage = () => {
           />
         </div>
           <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
-            <Input
+            <Input // change to dropdown
               type="Mood"
               label="Mood"
-              required
               onChange={ (e) => {
                 setFormState((prev) => ({
                   ...prev,
@@ -123,10 +125,9 @@ const AddMusicPage = () => {
                 }))
               } }
             />
-            <Input
+            <Input // change to array
               type="Tags"
               label="Tags"
-              required
               onChange={ (e) => {
                 setFormState((prev) => ({
                   ...prev,
@@ -134,10 +135,9 @@ const AddMusicPage = () => {
                 }))
               } }
             />
-            <Input
+            <Input // change to array
               type="Quotes"
               label="Quotes"
-              required
               onChange={ (e) => {
                 setFormState((prev) => ({
                   ...prev,

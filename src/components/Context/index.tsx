@@ -10,7 +10,10 @@ const AppContext = createContext({});
 
 export const useCtx = () => useContext(AppContext);
 
+const user = '667ced56d3ac2d92c0fa5326';
+
 const initialState = {
+  user,
   songQuery: '',
   artistQuery: '',
   albumQuery: '',
@@ -22,8 +25,9 @@ const initialState = {
 };
 
 export const AppContextProvider = ({ children }) => {
+  // prefetch data based on current user
   const { data: musicData } = useQuery(GET_ALL_MUSIC_QUERY, {
-    variables: { user: '667ced56d3ac2d92c0fa5326'}
+    variables: { user }
   });
   const [state, dispatch] = useReducer(reducer, { ...initialState });
 

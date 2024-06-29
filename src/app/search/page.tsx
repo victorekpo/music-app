@@ -13,6 +13,7 @@ import {
 import { SEARCH_MUSIC_QUERY } from "@/graphql/queries/searchMusic";
 import { Button, Input, Listbox, ListboxItem } from "@nextui-org/react";
 import { shuffleArr } from "@/utils/shuffle";
+import type { FormEvent } from "react";
 import styles from './page.module.css';
 
 export const dynamic = "force-dynamic";
@@ -22,7 +23,7 @@ const SearchPage = () => {
   const [searchMusic, { loading, error }] = useLazyQuery(SEARCH_MUSIC_QUERY);
   const router = useRouter();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const { data } = await searchMusic({
       variables: {
@@ -43,7 +44,7 @@ const SearchPage = () => {
         <h1 className={styles.heading}>Search for your music!</h1>
         <div>
           <form onSubmit={handleSubmit}>
-            <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+            <div className="flex w-full flex-wrap md:flex-nowrap gap-4 sm:gap-4">
               <Input
                 type="SongSearch"
                 label="Song Search"
@@ -98,9 +99,6 @@ const SearchPage = () => {
                 }
                 }
               />
-            </div>
-            <br/>
-            <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
               <Input
                 type="GenreQuery"
                 label="Genre Search"
@@ -157,7 +155,13 @@ const SearchPage = () => {
               />
             </div>
             <br/>
-            <Button type="submit" color="primary">Submit</Button>
+            <Button
+              type="submit"
+              color="primary"
+              variant="flat"
+            >
+              Submit
+            </Button>
           </form>
         </div>
         <div className={styles.listBoxContainer}>

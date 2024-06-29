@@ -1,10 +1,10 @@
 import { MusicCollections } from "@/db/models/Music";
-import { SongInfo } from "@/@types/Music";
+import type { MusicCollection, Song, SongInfo } from "@/@types/Music";
 
-export const updateMusic = async (user: string, songId: string, updatedSongData: Partial<SongInfo>): Promise<SongInfo | null> => {
+export const updateMusic = async (user: string, songId: string, updatedSongData: Partial<SongInfo>): Promise<Song | null> => {
   try {
     // Step 1. Update specific attributes of the song in MusicCollections
-    const updatedMusicCollection = await MusicCollections.findOneAndUpdate(
+    const musicCollection: MusicCollection | null = await MusicCollections.findOneAndUpdate(
       { user, 'songs._id': songId },
       {
         $set: { 'songs.$.songInfo': updatedSongData }, // Update specific fields of songInfo
@@ -13,17 +13,17 @@ export const updateMusic = async (user: string, songId: string, updatedSongData:
     );
 
     // Step 2: Check if the update was successful and retrieve the updated song info
-    if (!updatedMusicCollection) {
+    if (!musicCollection) {
       throw new Error(`Failed to update song with ID '${songId}'`);
     }
 
-    const updatedSong = updatedMusicCollection.songs.find(song => song._id === songId);
+    const updatedSong: Song | undefined = musicCollection.songs.find((song: Song) => song._id.toString() === songId);
 
     if (!updatedSong) {
       throw new Error(`Failed to find updated song with ID '${songId}'`);
     }
 
-    console.log(`Song with ID '${songId}' updated successfully.`);
+    console.info(`Song with ID '${songId}' updated successfully.`);
     return updatedSong;
   } catch (error) {
     console.error('Error updating song:', error);

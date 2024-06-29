@@ -1,7 +1,7 @@
 'use client'
 
 import { Button, Input } from "@nextui-org/react";
-import { useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import { useCtx } from "@/components/Context";
 import { useMutation } from "@apollo/client";
 import { UPDATE_SONG } from "@/components/Context/actions";
@@ -10,9 +10,10 @@ import styles from './page.module.css';
 import type { SongInfo } from "@/@types/Music";
 
 const SongPage = ({ params }) => {
+  const [state, dispatch] = useCtx() as any;
+  const { user } = state;
   const [edit, setEdit] = useState(false);
   const [formState, setFormState] = useState({}) as any;
-  const [state, dispatch] = useCtx() as any;
   const { music } = state;
 
   const songId = useMemo(() => (
@@ -23,31 +24,43 @@ const SongPage = ({ params }) => {
       .replaceAll("%2C",",")
   ), [params.song]);
 
-  const found = useMemo(() => (
-    music?.songs.find((s: SongInfo) => s.song === songId)
-  ), [music, songId]);
+  const found = useMemo(() => {
+    const ignoredKeys = ['__typename'];
+    const f = music?.songs.find((s: SongInfo) => s.song === songId)
+    if (f) {
+      const s = { ...f, songInfo: { ...f.songInfo } };
+      ignoredKeys.forEach(k => {
+        delete s.songInfo[k];
+      });
+      return s;
+    }
+  }, [music, songId]);
 
-  const [song, setSong] = useState(found) as any;
+  const [song, setSong] = useState(found);
 
   useEffect(() => {
-    if (found) {
+    if (found && !song) {
       setSong(found);
     }
-  },[found]);
+  },[song, found]);
 
   useEffect(() => {
     if (song?.songInfo) {
-      setFormState(song?.songInfo);
+      setFormState(song.songInfo);
     }
   },[song]);
 
   const [updateSong, { error } ] = useMutation(UPDATE_MUSIC_QUERY);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Mutation query to update song in db
     await updateSong({
-      variables: { oldSongId: song.song, song: { ...formState } }
+      variables: {
+        user,
+        oldSongId: song._id,
+        song: { ...formState }
+      }
     })
     // Dispatch to update global state music object
     dispatch({
@@ -58,7 +71,9 @@ const SongPage = ({ params }) => {
     setSong({
       song: `${formState.artist} -- ${formState.song}`,
       songInfo: { ...formState }
-    })
+    });
+    // Delete local storage to force a refresh
+    localStorage.removeItem('musicData');
   };
 
   return (
@@ -68,7 +83,7 @@ const SongPage = ({ params }) => {
       </h1>
       <br/>
       <form
-        className={styles.formContainer + " " + (edit ? styles.editable + " flex w-full flex-wrap md:flex-nowrap gap-4" : "")}
+        className={styles.formContainer + " " + (edit ? styles.editable + " flex w-full flex-wrap md:flex-nowrap gap-2 sm:gap-4" : "")}
         onSubmit={handleSubmit}
       >
         {Object.entries(song?.songInfo || {}).map(([k,v], i) => (
@@ -95,17 +110,33 @@ const SongPage = ({ params }) => {
             }
           </div>
         ))}
-      { edit ? (<Button
-        color="primary"
-        onClick={() => {
-          setEdit(!edit)
-        }}
-      >
-        Submit
-      </Button>) : (
+      { edit ? (
+        <div style={{width: "100%"}}>
+          <div className={styles.buttonContainer}>
+            <Button
+            color="primary"
+            onClick={() => {
+              setEdit(!edit)
+            }}
+          >
+              Submit
+            </Button>
+            <Button
+              variant="bordered"
+              color="danger"
+              onClick={() => {
+                setEdit(!edit)
+              }}
+            >
+              Delete Song
+            </Button>
+          </div>
+        </div>
+      ) : (
         <Button
           type="submit"
           color="primary"
+          variant="bordered"
           onClick={() => {
             setEdit(!edit)
           }}

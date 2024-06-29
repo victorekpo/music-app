@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
 export const ADD_MUSIC_QUERY = gql`
-mutation ($song: SongInput) {
-  addMusic(song: $song) {
+mutation ($user: String! $song: SongInput!) {
+  addMusic(user: $user, song: $song) {
     song
     songInfo {
       artist

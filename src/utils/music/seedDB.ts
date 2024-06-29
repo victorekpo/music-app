@@ -24,11 +24,11 @@ export const seedDatabase = async () => {
       email: 'vic@neweradesign.net',
       password: 'password123'
     });
-    console.log('User created successfully:', newUser);
+    console.info('User created successfully:', newUser);
 
     // Insert data into the collection
     const result = await MusicCollections.insertMany(musicData);
-    console.log(`${result.length} music collections were inserted with ${musicData.songs.length} songs`);
+    console.info(`${result.length} music collections were inserted with ${musicData.songs.length} songs`);
   } catch (err) {
     console.error('Error seeding the database:', err);
   }
