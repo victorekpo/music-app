@@ -44,7 +44,7 @@ const SearchPage = () => {
         <h1 className={styles.heading}>Search for your music!</h1>
         <div>
           <form onSubmit={handleSubmit}>
-            <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+            <div className="flex w-full flex-wrap md:flex-nowrap gap-4 sm:gap-4">
               <Input
                 type="SongSearch"
                 label="Song Search"
@@ -99,9 +99,6 @@ const SearchPage = () => {
                 }
                 }
               />
-            </div>
-            <br/>
-            <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
               <Input
                 type="GenreQuery"
                 label="Genre Search"

@@ -83,7 +83,7 @@ const SongPage = ({ params }) => {
       </h1>
       <br/>
       <form
-        className={styles.formContainer + " " + (edit ? styles.editable + " flex w-full flex-wrap md:flex-nowrap gap-4" : "")}
+        className={styles.formContainer + " " + (edit ? styles.editable + " flex w-full flex-wrap md:flex-nowrap gap-2 sm:gap-4" : "")}
         onSubmit={handleSubmit}
       >
         {Object.entries(song?.songInfo || {}).map(([k,v], i) => (

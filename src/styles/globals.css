@@ -84,4 +84,8 @@ input {
     .container {
         width: 440px;
     }
+
+    [data-slot="input-wrapper"] {
+        height: 48px !important;
+    }
 }
