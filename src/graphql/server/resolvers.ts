@@ -2,7 +2,7 @@ import { readMusic } from "@/utils/music/read";
 import { searchQuery } from "@/utils/music";
 import { addMusic } from "@/utils/music/add";
 import { updateMusic } from "@/utils/music/update";
-import type { SongInfo } from "@/@types/Music";
+import type { Song } from "@/@types/Music";
 import type { SearchQuery } from "@/@types/SearchQuery";
 
 export const resolvers = {
@@ -14,7 +14,11 @@ export const resolvers = {
     // Not currently being used since it introduces latency, currently getting song from State
     getSong: async (_, { user, song }) => {
       const currentMusic = await readMusic(user);
-      return currentMusic.songs.find((s: SongInfo) => s.song === song)
+      if (!currentMusic) {
+        console.error('No music retrieved');
+        return null;
+      }
+      return currentMusic.songs.find((s: Song) => s.song === song)
     },
 
     searchMusic: (_, args: SearchQuery & { user: string }) => {
