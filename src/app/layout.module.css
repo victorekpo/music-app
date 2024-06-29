@@ -1,7 +1,14 @@
+.mainContainer {
+    margin-bottom: 100px;
+}
 .navBar {
     position: relative;
     z-index: 999;
 }
 .pageContainer {
-    height: 86.7vh;
+    height: auto;
+}
+.footerContainer {
+    width: 100%;
+    bottom: 0;
 }

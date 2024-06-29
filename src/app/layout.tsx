@@ -32,15 +32,19 @@ export default function RootLayout({
        <AppContextProvider>
         <html lang="en">
           <body className="container">
-          <div className={style.navBar}>
-            <Navbar />
-          </div>
-          <div className={style.pageContainer}>
-            <NextUIProvider>
-              {children}
-            </NextUIProvider>
-          </div>
-          <Footer />
+            <div className={style.mainContainer}>
+              <div className={style.navBar}>
+                <Navbar />
+              </div>
+              <div className={style.pageContainer}>
+                <NextUIProvider>
+                  {children}
+                </NextUIProvider>
+              </div>
+            </div>
+            <div className={style.footerContainer}>
+              <Footer />
+            </div>
           </body>
         </html>
       </AppContextProvider>

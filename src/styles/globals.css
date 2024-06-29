@@ -4,8 +4,7 @@
 
 /* Global variables in globals.css can be used in other stylesheets */
 html {
-    max-height: 100vh;
-    background-color: #05050a !important;
+    background-color: var(--bg) !important;
 }
 
 :root {
@@ -25,7 +24,6 @@ html {
 
 
 body {
-    background-color: var(--bg);
     color: var(--text);
 }
 
@@ -36,13 +34,14 @@ a {
 
 .container {
     width: 1536px;
-    margin: auto;
+    margin: 0 auto 30px auto;
     padding-left: 50px;
     padding-right: 50px;
-    min-height: 98vh;
+    min-height: 96vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 input {

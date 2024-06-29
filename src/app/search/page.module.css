@@ -4,18 +4,24 @@
 }
 
 .heading {
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: -30px;
+    margin-top: -5px;
 }
 
 .listBoxContainer ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 20px; /* Sets the height for each row */
+    grid-auto-rows: 25px; /* Sets the height for each row */
     gap: 10px; /* Adjusts the space between the items */
     list-style-type: none; /* Removes the default list bullets */
     padding: 0; /* Removes the default padding */
     margin-top: 30px;
+}
+
+@media (max-width: 640px) {
+    .listBoxContainer ul {
+        grid-template-columns: 1fr;
+    }
 }
