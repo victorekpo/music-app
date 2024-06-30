@@ -8,6 +8,7 @@ import { UPDATE_SONG } from "@/components/Context/actions";
 import { UPDATE_MUSIC_QUERY } from "@/graphql/queries/updateMusic";
 import styles from './page.module.css';
 import type { SongInfo } from "@/@types/Music";
+import toast from "react-hot-toast";
 
 const SongPage = ({ params }) => {
   const [state, dispatch] = useCtx() as any;
@@ -54,7 +55,6 @@ const SongPage = ({ params }) => {
   const [updateSong, { error }] = useMutation(UPDATE_MUSIC_QUERY);
 
   const handleSubmit = async (e) => {
-    console.log("editing song")
     e.preventDefault();
     // Mutation query to update song in db
     await updateSong({
@@ -63,20 +63,26 @@ const SongPage = ({ params }) => {
         oldSongId: song._id,
         song: { ...formState }
       }
-    })
-    // Dispatch to update global state music object
-    dispatch({
-      type: UPDATE_SONG,
-      payload: { songId: song._id, ...formState }
     });
-    // Set new song to local state for current page
-    setSong({
-      _id: song._id,
-      song: `${formState.artist} -- ${formState.song}`,
-      songInfo: { ...formState }
-    });
-    // Delete local storage to force a refresh
-    localStorage.removeItem('musicData');
+
+    if (!error) {
+      toast.success("Song updated successfully");
+      // Dispatch to update global state music object
+      dispatch({
+        type: UPDATE_SONG,
+        payload: { songId: song._id, ...formState }
+      });
+      // Set new song to local state for current page
+      setSong({
+        _id: song._id,
+        song: `${formState.artist} -- ${formState.song}`,
+        songInfo: { ...formState }
+      });
+      // Delete local storage to force a refresh
+      localStorage.removeItem('musicData');
+    } else {
+      toast.error("Error updating song");
+    }
   };
 
   return (

@@ -1,8 +1,9 @@
 'use client'
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { useMutation } from "@apollo/client";
 import { useCtx } from "@/components/Context";
+import toast from "react-hot-toast";
 import { Button, Input } from "@nextui-org/react";
 import { ADD_SONG } from "@/components/Context/actions";
 import { ADD_MUSIC_QUERY } from "@/graphql/queries/addMusic";
@@ -26,7 +27,7 @@ const AddMusicPage = () => {
 
   const [formState, setFormState] = useState(initialFormState);
 
-  const [addMusic, { error }] = useMutation(ADD_MUSIC_QUERY)
+  const [addMusic, { error }] = useMutation(ADD_MUSIC_QUERY);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -37,13 +38,21 @@ const AddMusicPage = () => {
         user
       }
     });
-    // Dispatch to update global state music object
-    dispatch({
-      type: ADD_SONG,
-      payload: { ...formState }
-    });
-    // Delete local storage to force a refresh
-    localStorage.removeItem('musicData');
+
+    if (!error) {
+      // Send toast notification
+      toast.success("New music added successfully.");
+
+      // Dispatch to update global state music object
+      dispatch({
+        type: ADD_SONG,
+        payload: { ...formState }
+      });
+      // Delete local storage to force a refresh
+      localStorage.removeItem('musicData');
+    } else {
+      toast.error("Error adding new music.")
+    }
   }
 
   return (
@@ -156,7 +165,6 @@ const AddMusicPage = () => {
       </form>
 
     </>
-)
-}
+)};
 
-export default AddMusicPage
+export default AddMusicPage;
