@@ -8,6 +8,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import db from '../db/config/connection';
 import '@/styles/globals.css';
 import style from './layout.module.css';
+import { Toaster } from "react-hot-toast";
 
 if (process.env.NODE_ENV !== 'production') {
   db.once("open", () => {
@@ -31,23 +32,24 @@ export default function RootLayout({
     <ApolloWrapper>
        <AppContextProvider>
         <html lang="en">
-          <body className="container">
-            <div className={style.mainContainer}>
-              <div className={style.navBar}>
-                <Navbar />
-              </div>
-              <div className={style.pageContainer}>
-                <NextUIProvider>
-                  {children}
-                </NextUIProvider>
-              </div>
-            </div>
-            <div className={style.footerContainer}>
-              <Footer />
-            </div>
-          </body>
+        <body className="container">
+        <div className={style.mainContainer}>
+          <div className={style.navBar}>
+            <Navbar/>
+          </div>
+          <div><Toaster/></div>
+          <div className={style.pageContainer}>
+            <NextUIProvider>
+              {children}
+            </NextUIProvider>
+          </div>
+        </div>
+        <div className={style.footerContainer}>
+          <Footer/>
+        </div>
+        </body>
         </html>
-      </AppContextProvider>
+       </AppContextProvider>
     </ApolloWrapper>
   );
 }
