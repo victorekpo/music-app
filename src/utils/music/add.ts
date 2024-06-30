@@ -16,7 +16,7 @@ export const addMusic = async (user: String, newSongData: SongInfo): Promise<Son
 
     if (songExists) {
       console.info('Song already exists in the music collection.');
-      throw new Error('Track already exists');
+      throw new Error('Track already exists, check track name');
     }
 
     // Step 3: Add the new song to the MusicCollection
@@ -31,7 +31,8 @@ export const addMusic = async (user: String, newSongData: SongInfo): Promise<Son
     console.info('New song added to music collection.');
     return newSong;
   } catch (error) {
-    console.error('Error adding new song:', error);
-    throw new Error(error);
+    const errorMessage = `Error adding new song: ${error}`;
+    console.error(errorMessage);
+    throw new Error(errorMessage);
   }
 };

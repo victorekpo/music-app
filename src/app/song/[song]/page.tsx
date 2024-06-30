@@ -16,17 +16,18 @@ const SongPage = ({ params }) => {
   const [formState, setFormState] = useState({}) as any;
   const { music } = state;
 
-  const songId = useMemo(() => (
+  const songTrack = useMemo(() => (
     params.song
       .replace("--", " -- ")
       .replaceAll("_", " ")
-      .replaceAll("%3B", ";")
       .replaceAll("%2C", ",")
+      .replaceAll("%3A", ":")
+      .replaceAll("%3B", ";")
   ), [params.song]);
 
   const found = useMemo(() => {
     const ignoredKeys = ['__typename'];
-    const f = music?.songs.find((s: SongInfo) => s.song === songId)
+    const f = music?.songs.find((s: SongInfo) => s.song === songTrack)
     if (f) {
       const s = { ...f, songInfo: { ...f.songInfo } };
       ignoredKeys.forEach(k => {
@@ -34,7 +35,7 @@ const SongPage = ({ params }) => {
       });
       return s;
     }
-  }, [music, songId]);
+  }, [music, songTrack]);
 
   const [song, setSong] = useState(found);
 
