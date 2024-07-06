@@ -6,9 +6,9 @@ import { useCtx } from "@/components/Context";
 import { useMutation } from "@apollo/client";
 import { UPDATE_SONG } from "@/components/Context/actions";
 import { UPDATE_MUSIC_QUERY } from "@/graphql/queries/updateMusic";
+import toast from "react-hot-toast";
 import styles from './page.module.css';
 import type { SongInfo } from "@/@types/Music";
-import toast from "react-hot-toast";
 
 const SongPage = ({ params }) => {
   const [state, dispatch] = useCtx() as any;
@@ -87,7 +87,7 @@ const SongPage = ({ params }) => {
 
   return (
     <>
-      <h1 className='' style={{ fontSize: "30px" }}>
+      <h1 className={styles.songHeading}>
         {song?.song}
       </h1>
       <br/>
@@ -113,7 +113,7 @@ const SongPage = ({ params }) => {
               </>
             ) : (
               <>
-                <strong>{k}:</strong> {v} <br/>
+                <span className={styles.fields}>{k}:</span> {v} <br/>
               </>
             )
             }

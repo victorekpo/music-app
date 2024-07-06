@@ -1,6 +1,15 @@
+.songHeading {
+    font-size: 30px;
+    font-weight: 600;
+}
+
 .formContainer {
     font-size: 20px;
+    max-width: 90%;
+}
 
+.fields {
+    font-weight: 600;
 }
 
 .editable {
@@ -29,4 +38,14 @@
 
 .formContainer button {
     margin-top: 15px
+}
+
+@media (max-width: 640px) {
+    .songHeading {
+        font-size: 20px;
+    }
+
+    .formContainer {
+        font-size: 16px;
+    }
 }

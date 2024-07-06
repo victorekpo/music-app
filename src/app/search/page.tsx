@@ -25,7 +25,25 @@ const SearchPage = () => {
   const router = useRouter();
 
   const searchResults = useMemo(() => state?.searchResults?.slice(0, 20), [state?.searchResults]);
-
+  /**
+   * Memoizes the debounced function to avoid unnecessary re-renders and ensure
+   * consistent debounce behavior.
+   *
+   * The `debounce` function creates a debounced version of the async search function,
+   * preventing it from being called too frequently by ensuring that it waits for the
+   * specified delay (1000ms) between calls. The debounced function maintains a single
+   * `timeoutId` across calls due to closure, enabling proper debounce logic. This
+   * closure happens because we save the returned function in a variable.
+   *
+   * `useMemo` is used to memoize the debounced function, ensuring that the same instance
+   * of the debounced function is used across renders unless the dependencies change.
+   * This prevents the creation of a new debounced function on each render, preserving
+   * the internal state (like `timeoutId`) and ensuring efficient performance.
+   *
+   * The dependencies array `[searchMusic, dispatch]` ensures that the debounced function
+   * is only recreated if either `searchMusic` or `dispatch` changes, further optimizing
+   * performance and avoiding unnecessary re-renders.
+   */
   const debouncedSearchMusic = useMemo(() =>
       debounce(async (variables) => {
         const { data } = await searchMusic({ variables });
@@ -33,7 +51,7 @@ const SearchPage = () => {
           type: SET_SEARCH_RESULTS,
           payload: shuffleArr(data?.searchMusic)
         });
-      }, 300),
+      }, 1000),
     [searchMusic, dispatch]
   );
 
