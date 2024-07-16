@@ -4,17 +4,18 @@
   "description": "This app will be used to organize music for all uses.",
   "main": "App.js",
   "scripts": {
-    "build": "npm run clean && bash -c 'NODE_CONFIG_ENV=prod npm run build-env' && npm run build-next && npm run build-tsc && npm run concat-env",
+    "build": "npm run clean && bash -c 'NODE_CONFIG_ENV=prod npm run build-env' && npm run build-next && npm run type-check && npm run build-tsc && npm run concat-env",
     "build-env": "node utils/TransformConfigToEnv.js",
     "build-next": "bash -c 'next build'",
-    "build-tsc": "tsc",
+    "build-tsc": "tsc --project tsconfig-build.json",
     "concat-env": "cat .env .env.production > dist/.env",
     "clean": "rm -rf dist && rm -rf .next",
     "dev": "bash -c 'NODE_CONFIG_ENV=dev npm run build-env' && next dev",
     "lint": "next lint",
     "next-start": "bash -c 'NODE_CONFIG_ENV=dev next start'",
     "restart": "npm run build && npm run start",
-    "start": "bash -c 'NODE_CONFIG_ENV=prod NODE_ENV=production node dist/src/index.js'",
+    "start": "bash -c 'NODE_CONFIG_ENV=prod NODE_ENV=production node dist/index.js'",
+    "type-check": "tsc --noEmit",
     "test": "bash -c 'NODE_CONFIG_ENV=test jest --coverage'"
   },
   "repository": {
